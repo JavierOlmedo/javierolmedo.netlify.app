@@ -226,7 +226,7 @@ url = "https://tryhackme.com/p/JavierOlmedo"
 
 # Exploit-DB
 [[params.socialIcons]]
-name = "exploitdb"
+name = "other"
 url = "https://www.exploit-db.com/?author=9580"
 
 # Oday Today
