@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Javier Olmedo Blog</title>
+    <link>http://localhost:1313/es/posts/</link>
+    <description>Recent content in Posts on Javier Olmedo Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 08 Feb 2025 01:47:24 +0100</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Htb Machine Explore</title>
+      <link>http://localhost:1313/es/posts/htb-machine-explore/</link>
+      <pubDate>Sat, 08 Feb 2025 01:47:24 +0100</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/htb-machine-explore/</guid>
+      
+      <description>&lt;p&gt;Welcome to the writeup of the &lt;strong&gt;explore machine&lt;/strong&gt; of the Hack The Box platform. Explore is an &lt;strong&gt;easy&lt;/strong&gt; difficulty machine on android.&lt;/p&gt;
+&lt;h1 id=&#34;before-starting&#34;&gt;Before starting&lt;/h1&gt;
+&lt;p&gt;Connect to &lt;strong&gt;Hack The Box VPN&lt;/strong&gt; in background with &lt;code&gt;TMUX&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s htb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo openvpn ~/.vpn/htb.ovpn
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Add&lt;/strong&gt; machine to &lt;code&gt;/etc/hosts&lt;/code&gt; file, &lt;strong&gt;check connection&lt;/strong&gt; with &lt;code&gt;ping&lt;/code&gt; and &lt;strong&gt;create work folders&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;10.10.10.247 explore.htb&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; /etc/hosts
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping -c &lt;span class=&#34;m&#34;&gt;4&lt;/span&gt; explore.htb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/htb/explorer.htb/&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;exploits,fuzz,http,nmap&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;recon&#34;&gt;Recon&lt;/h1&gt;
+&lt;p&gt;Check &lt;strong&gt;all open ports&lt;/strong&gt;, detect the service and its version with &lt;code&gt;nmap&lt;/code&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

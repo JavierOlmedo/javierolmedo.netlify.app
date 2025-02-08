@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Javier Olmedo Blog</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Javier Olmedo Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTB Machine BountyHunter</title>
+      <link>http://localhost:1313/posts/htb-machine-bountyhunter/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/htb-machine-bountyhunter/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/htb-machine-bountyhunter/htb-machine-bountyhunter_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/htb-machine-bountyhunter/htb-machine-bountyhunter_banner.png&#34; alt=&#34;Hack The Box - Machine - BountyHunter&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;Welcome to the writeup of the &lt;strong&gt;bountyhunter machine&lt;/strong&gt; of the Hack The Box platform. BountyHunter is a Linux based machine that was active since July 24th to November 20th, on this machine we will find a XXE vulnerability and use it with a php wrapper to read internal files and get sensitive information, with the information gotten we will be able to connect to the machine through SSH, once inside the machine we will analyze a python script to find how we can abuse it to get code execution as root user and finish with the machine.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>HTB Machine Explore</title>
+      <link>http://localhost:1313/posts/htb-machine-explore/</link>
+      <pubDate>Sat, 30 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/htb-machine-explore/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/htb-machine-explore/htb-machine-explore_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/htb-machine-explore/htb-machine-explore_banner.png&#34; alt=&#34;Hack The Box - Machine - Explore&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Welcome to the writeup of the &lt;strong&gt;explore machine&lt;/strong&gt; of the Hack The Box platform. Explore is an &lt;strong&gt;easy&lt;/strong&gt; difficulty machine on android.&lt;/p&gt;
+&lt;h1 id=&#34;before-starting&#34;&gt;Before starting&lt;/h1&gt;
+&lt;p&gt;Connect to &lt;strong&gt;Hack The Box VPN&lt;/strong&gt; in background with &lt;code&gt;TMUX&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s htb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo openvpn ~/.vpn/htb.ovpn
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Add&lt;/strong&gt; machine to &lt;code&gt;/etc/hosts&lt;/code&gt; file, &lt;strong&gt;check connection&lt;/strong&gt; with &lt;code&gt;ping&lt;/code&gt; and &lt;strong&gt;create work folders&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;10.10.10.247 explore.htb&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; /etc/hosts
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping -c &lt;span class=&#34;m&#34;&gt;4&lt;/span&gt; explore.htb
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/htb/explorer.htb/&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;exploits,fuzz,http,nmap&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;recon&#34;&gt;Recon&lt;/h1&gt;
+&lt;p&gt;Check &lt;strong&gt;all open ports&lt;/strong&gt;, detect the service and its version with &lt;code&gt;nmap&lt;/code&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Create your own log-free VPN</title>
+      <link>http://localhost:1313/posts/create-your-own-log-free-vpn/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/create-your-own-log-free-vpn/</guid>
+      
+      <description>&lt;!-- BANNER --&gt;
+&lt;a href=&#34;http://localhost:1313/assets/images/create-your-own-log-free-vpn/create-your-own-log-free-vpn_banner.png&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/assets/images/create-your-own-log-free-vpn/create-your-own-log-free-vpn_banner.png&#34; alt=&#34;Create your own log-free VPN&#34;&gt;
+&lt;/a&gt;
+&lt;!-- PREFACE --&gt;
+&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
+&lt;p&gt;Welcome to the tutorial on &lt;strong&gt;how to create our own log-free VPN&lt;/strong&gt; by setting up an OpenVPN server on a cloud machine.&lt;/p&gt;
+&lt;p&gt;Before starting with the tutorial, you must create a machine in the cloud, for this tutorial, we have chosen to use a &lt;strong&gt;DigitalOcean VPS&lt;/strong&gt; with an Ubuntu 20.04 machine, which has a cost of $5 per month, through the following &lt;a href=&#34;https://m.do.co/c/67dd38080d62&#34;&gt;link&lt;/a&gt; you can get &lt;strong&gt;$100 for free&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
