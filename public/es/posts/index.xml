@@ -5,7 +5,7 @@
     <link>http://localhost:1313/es/posts/</link>
     <description>Recent content in Posts on Javier Olmedo Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es</language>
+    <language>es-es</language>
     <lastBuildDate>Sat, 08 Feb 2025 01:47:24 +0100</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Htb Machine Explore</title>
@@ -25,6 +25,31 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/htb/explorer.htb/&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;exploits,fuzz,http,nmap&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;recon&#34;&gt;Recon&lt;/h1&gt;
 &lt;p&gt;Check &lt;strong&gt;all open ports&lt;/strong&gt;, detect the service and its version with &lt;code&gt;nmap&lt;/code&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Obtener información con The Harvester</title>
+      <link>http://localhost:1313/es/posts/obtener-informacion-con-the-harvester/</link>
+      <pubDate>Mon, 09 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/obtener-informacion-con-the-harvester/</guid>
+      
+      <description>&lt;p&gt;Antes de realizar cualquier intento de penetrar en un sistema informático, es necesario la &lt;strong&gt;recolección de información&lt;/strong&gt; sobre la empresa u organismo que se quiere penetrar o auditar, intentar cualquier ataque sin tener información sería &lt;strong&gt;«ir dando palos de ciego»&lt;/strong&gt; sin sentido, aunque parezca que es una pérdida de tiempo en un principio, durante la fase de explotación echaremos de menos no haber recolectado los suficientes datos.&lt;/p&gt;
+&lt;p&gt;Siempre suelo utilizar una &lt;strong&gt;herramienta esencial, The Harvester.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Presentación de mi blog sobre Seguridad Informática y Hacking</title>
+      <link>http://localhost:1313/es/posts/blog-seguridad-informatica-hacking/</link>
+      <pubDate>Thu, 05 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/blog-seguridad-informatica-hacking/</guid>
+      
+      <description>&lt;p&gt;Bienvenido a mi blog sobre &lt;strong&gt;Hacking, Seguridad Informática y Programación&lt;/strong&gt;, antes de nada, me presentaré, mi nombre es &lt;strong&gt;Javier Olmedo&lt;/strong&gt; y soy Técnico en Sistemas Informáticos y Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, desde hace unos años aprendo seguridad informática de manera autodidacta.&lt;/p&gt;
+&lt;h2 id=&#34;a-quién-va-dirigido-este-blog&#34;&gt;¿A quién va dirigido este blog?&lt;/h2&gt;
+&lt;p&gt;Este blog va dirigido a &lt;strong&gt;personas que deseen empezar&lt;/strong&gt; en el mundo del hacking y seguridad de sistemas informáticos, no pretendo hacer un blog demasiado técnico.&lt;/p&gt;</description>
       
     </item>
     

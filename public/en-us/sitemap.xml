@@ -9,7 +9,7 @@
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="http://localhost:1313/es/"
                 />
     <xhtml:link
@@ -22,7 +22,7 @@
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="http://localhost:1313/es/posts/"
                 />
     <xhtml:link
@@ -35,7 +35,7 @@
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="http://localhost:1313/es/posts/htb-machine-explore/"
                 />
     <xhtml:link
@@ -47,10 +47,22 @@
     <loc>http://localhost:1313/posts/create-your-own-log-free-vpn/</loc>
     <lastmod>2020-11-24T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/pages/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/pages/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/pages/about/"
+                />
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="http://localhost:1313/es/categories/"
                 />
     <xhtml:link
@@ -59,10 +71,46 @@
                 href="http://localhost:1313/categories/"
                 />
   </url><url>
+    <loc>http://localhost:1313/pages/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/pages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/pages/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/projects/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/projects/projects/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/projects/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/projects/projects/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="http://localhost:1313/es/tags/"
                 />
     <xhtml:link

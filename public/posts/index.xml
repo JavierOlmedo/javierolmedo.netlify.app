@@ -49,11 +49,7 @@
       
       <guid>http://localhost:1313/posts/create-your-own-log-free-vpn/</guid>
       
-      <description>&lt;!-- BANNER --&gt;
-&lt;a href=&#34;http://localhost:1313/assets/images/create-your-own-log-free-vpn/create-your-own-log-free-vpn_banner.png&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/assets/images/create-your-own-log-free-vpn/create-your-own-log-free-vpn_banner.png&#34; alt=&#34;Create your own log-free VPN&#34;&gt;
-&lt;/a&gt;
-&lt;!-- PREFACE --&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/create-your-own-log-free-vpn/create-your-own-log-free-vpn_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/create-your-own-log-free-vpn/create-your-own-log-free-vpn_banner.png&#34; alt=&#34;Create your own log-free VPN&#34;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;
 &lt;p&gt;Welcome to the tutorial on &lt;strong&gt;how to create our own log-free VPN&lt;/strong&gt; by setting up an OpenVPN server on a cloud machine.&lt;/p&gt;
 &lt;p&gt;Before starting with the tutorial, you must create a machine in the cloud, for this tutorial, we have chosen to use a &lt;strong&gt;DigitalOcean VPS&lt;/strong&gt; with an Ubuntu 20.04 machine, which has a cost of $5 per month, through the following &lt;a href=&#34;https://m.do.co/c/67dd38080d62&#34;&gt;link&lt;/a&gt; you can get &lt;strong&gt;$100 for free&lt;/strong&gt;.&lt;/p&gt;</description>

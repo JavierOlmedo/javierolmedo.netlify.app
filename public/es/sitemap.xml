@@ -11,7 +11,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="http://localhost:1313/es/posts/htb-machine-explore/"
                 />
   </url><url>
@@ -24,7 +24,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="http://localhost:1313/es/"
                 />
   </url><url>
@@ -37,8 +37,26 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="http://localhost:1313/es/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/posts/obtener-informacion-con-the-harvester/</loc>
+    <lastmod>2015-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/blog-seguridad-informatica-hacking/</loc>
+    <lastmod>2015-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/pages/about/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/pages/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/pages/about/"
                 />
   </url><url>
     <loc>http://localhost:1313/es/categories/</loc>
@@ -49,8 +67,44 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="http://localhost:1313/es/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/pages/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/pages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/pages/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/projects/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/projects/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/projects/projects/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/projects/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/projects/projects/"
                 />
   </url><url>
     <loc>http://localhost:1313/es/tags/</loc>
@@ -61,7 +115,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="http://localhost:1313/es/tags/"
                 />
   </url>

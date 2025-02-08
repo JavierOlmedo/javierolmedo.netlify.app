@@ -37,7 +37,7 @@ theme = "hugo-blog-awesome"
   [markup.goldmark.renderer]
     unsafe = true
 	[markup.tableOfContents]
-		startLevel = 2 # ToC starts from H2
+		startLevel = 1 # ToC starts from H2
 		endLevel = 4 # ToC ends at H4
 		ordered = false # generates <ul> instead of <ol>
 
@@ -74,7 +74,7 @@ theme = "hugo-blog-awesome"
 
 [Languages.en-us.params]
   sitename = "Javier Olmedo´s Blog"
-  defaultColor = "dark" # set color mode: dark, light, auto
+  defaultColor = "auto" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
   # You can take a look at layouts/index.html for more information.
@@ -114,7 +114,7 @@ theme = "hugo-blog-awesome"
 ############################## Spanish language ################################
 [Languages.es]
   languageName = "Spanish"
-  languageCode = "es"
+  languageCode = "es-es"
   contentDir = "content/es"
   weight = 2
   [Languages.es.menu]
@@ -221,17 +221,17 @@ url = "https://javierolmedo.medium.com/"
 
 # TryHackMe
 [[params.socialIcons]]
-name = "other"
+name = "tryhackme"
 url = "https://tryhackme.com/p/JavierOlmedo"
 
 # Exploit-DB
 [[params.socialIcons]]
-name = "other"
+name = "exploitdb"
 url = "https://www.exploit-db.com/?author=9580"
 
 # Oday Today
 [[params.socialIcons]]
-name = "other"
+name = "0day"
 url = "https://0day.today/author/33736"
 
 [[params.socialIcons]]

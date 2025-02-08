@@ -5,7 +5,7 @@
     <link>http://localhost:1313/es/</link>
     <description>Recent content on Javier Olmedo Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es</language>
+    <language>es-es</language>
     <lastBuildDate>Sat, 08 Feb 2025 01:47:24 +0100</lastBuildDate><atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Htb Machine Explore</title>
@@ -25,6 +25,203 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/htb/explorer.htb/&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;exploits,fuzz,http,nmap&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;recon&#34;&gt;Recon&lt;/h1&gt;
 &lt;p&gt;Check &lt;strong&gt;all open ports&lt;/strong&gt;, detect the service and its version with &lt;code&gt;nmap&lt;/code&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Obtener información con The Harvester</title>
+      <link>http://localhost:1313/es/posts/obtener-informacion-con-the-harvester/</link>
+      <pubDate>Mon, 09 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/obtener-informacion-con-the-harvester/</guid>
+      
+      <description>&lt;p&gt;Antes de realizar cualquier intento de penetrar en un sistema informático, es necesario la &lt;strong&gt;recolección de información&lt;/strong&gt; sobre la empresa u organismo que se quiere penetrar o auditar, intentar cualquier ataque sin tener información sería &lt;strong&gt;«ir dando palos de ciego»&lt;/strong&gt; sin sentido, aunque parezca que es una pérdida de tiempo en un principio, durante la fase de explotación echaremos de menos no haber recolectado los suficientes datos.&lt;/p&gt;
+&lt;p&gt;Siempre suelo utilizar una &lt;strong&gt;herramienta esencial, The Harvester.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Presentación de mi blog sobre Seguridad Informática y Hacking</title>
+      <link>http://localhost:1313/es/posts/blog-seguridad-informatica-hacking/</link>
+      <pubDate>Thu, 05 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/blog-seguridad-informatica-hacking/</guid>
+      
+      <description>&lt;p&gt;Bienvenido a mi blog sobre &lt;strong&gt;Hacking, Seguridad Informática y Programación&lt;/strong&gt;, antes de nada, me presentaré, mi nombre es &lt;strong&gt;Javier Olmedo&lt;/strong&gt; y soy Técnico en Sistemas Informáticos y Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, desde hace unos años aprendo seguridad informática de manera autodidacta.&lt;/p&gt;
+&lt;h2 id=&#34;a-quién-va-dirigido-este-blog&#34;&gt;¿A quién va dirigido este blog?&lt;/h2&gt;
+&lt;p&gt;Este blog va dirigido a &lt;strong&gt;personas que deseen empezar&lt;/strong&gt; en el mundo del hacking y seguridad de sistemas informáticos, no pretendo hacer un blog demasiado técnico.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/es/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/pages/about/</guid>
+      
+      <description>&lt;h1 id=&#34;hi&#34;&gt;Hi&lt;/h1&gt;
+&lt;p&gt;I´m Javier Olmedo, author of Hackpuntes Blog | Cybersecurity enthusiast and CTF Player | 🌏 Toledo, Spain&lt;/p&gt;
+&lt;h1 id=&#34;certifications&#34;&gt;Certifications&lt;/h1&gt;
+&lt;a title=&#34;OSCP Certification&#34; href=&#34;https://www.credential.net/4e346191-179b-4063-89ed-2b5a197ff07f&#34; target=&#34;_blank&#34;&gt;
+&lt;img align=&#34;center&#34; src=&#34;https://templates.images.credential.net/1677682410975725023965573912354.png&#34; alt=&#34;OSCP Certification&#34; height=&#34;100&#34;&gt;&lt;/a&gt;
+&lt;a title=&#34;OSWE Certification&#34; href=&#34;https://www.credly.com/badges/818636d7-b447-42be-8f4f-cde81c44e26f&#34; target=&#34;_blank&#34;&gt;
+&lt;img align=&#34;center&#34; src=&#34;https://images.credly.com/size/340x340/images/0a375324-4f9e-412d-b276-b6e96c428709/image.png&#34; alt=&#34;OSWE Certification&#34; height=&#34;100&#34;&gt;&lt;/a&gt;
+&lt;a title=&#34;ICSI | CNSS Certified Network Security Specialist&#34; href=&#34;https://www.credential.net/ccca6121-5126-4eb4-b85e-618d3e9d668b#gs.0z7no9&#34; target=&#34;_blank&#34;&gt;
+&lt;img align=&#34;center&#34; src=&#34;https://raw.githubusercontent.com/JavierOlmedo/JavierOlmedo/main/img/cnss.png&#34; alt=&#34;OSWE Certification&#34; height=&#34;100&#34;&gt;&lt;/a&gt;
+&lt;a title=&#34;Offshore Pro Lab&#34; href=&#34;https://app.hackthebox.com/profile/37005&#34; target=&#34;_blank&#34;&gt;
+&lt;img align=&#34;center&#34; src=&#34;https://raw.githubusercontent.com/JavierOlmedo/JavierOlmedo/main/img/offshore.gif&#34; alt=&#34;Offshore Pro Lab&#34; height=&#34;100&#34;&gt;&lt;/a&gt;
+&lt;h2 id=&#34;my-cves&#34;&gt;My CVEs&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;CVE&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;Name&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;CVSS3&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;CVSS2&lt;/th&gt;
+          &lt;th style=&#34;text-align: center&#34;&gt;ExploitDB&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13832&#34;&gt;CVE-2018-13832&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-13832-wordpress-plugin-all-in-one-favicon-4-6-autenticado-multiples-cross-site-scripting-persistentes/&#34;&gt;All In One Favicon &amp;lt;= 4.6 - Multiple Stored Authenticated XSS&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.8 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.5 LOW 🟢&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;​&lt;a href=&#34;https://www.exploit-db.com/exploits/45056&#34;&gt;✅&lt;/a&gt;​&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14430&#34;&gt;CVE-2018-14430&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-14430-wordpress-plugin-multi-step-form-125-multiples-xss-reflejados/&#34;&gt;Multi Step Form &amp;lt;= 1.2.5 - Multiple Unauthenticated Reflected XSS&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6.1 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.3 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;​&lt;a href=&#34;https://www.exploit-db.com/?author=9580&#34;&gt;❌&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15571&#34;&gt;CVE-2018-15571&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-15571-wordpress-plugin-export-users-to-csv-1-1-1-csv-injection/&#34;&gt;Export Users to CSV &amp;lt;= 1.1.1 CSV Injection&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8.6 HIGH 🔴&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6.8 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/exploits/45206&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15873&#34;&gt;CVE-2018-15873&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-15873-sentrifugo-hrms-3-2-blind-sql-injection/&#34;&gt;Sentrifugo HRMS 3.2 - Blind SQL Injection&lt;/a&gt;​&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;9.8 CRITICAL 🟣&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;7.5 HIGH 🔴&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;​&lt;a href=&#34;https://www.exploit-db.com/exploits/45266&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15917&#34;&gt;CVE-2018-15917&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-15917-jorani-leave-management-system-0-6-5-cross-site-scripting-persistente/&#34;&gt;Jorani Leave Management System 0.6.5 - Cross-Site Scripting Persistente&lt;/a&gt;​&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.4 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.5 LOW 🟢&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/exploits/45338&#34;&gt;✅&lt;/a&gt;​&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15918&#34;&gt;CVE-2018-15918&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-15918-jorani-leave-management-system-0-6-5-sql-injection/&#34;&gt;Jorani Leave Management System 0.6.5 - SQL Injection&lt;/a&gt;​&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.4 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.5 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/exploits/45340&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18478&#34;&gt;CVE-2018-18478&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-18478-libre-nms-1-43-cross-site-scripting-persistente/&#34;&gt;Libre Network Monitoring System 1.43 - Stored Cross-Site Scripting&lt;/a&gt;​&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6.1 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.3 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;​&lt;a href=&#34;https://www.exploit-db.com/?author=9580&#34;&gt;❌&lt;/a&gt;​&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18921&#34;&gt;CVE-2018-18921&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery/&#34;&gt;PHP Server Monitor 3.3.1 - Cross-Site Request Forgery&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6.5 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.8 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/exploits/45932&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18922&#34;&gt;CVE-2018-18922&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-18922-ticketly-1-0-escalacion-de-privilegios-crear-cuenta-administrador/&#34;&gt;Ticketly 1.0 - Privilege Escalation&lt;/a&gt;​&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;9.8 CRITICAL 🟣&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.0 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;​&lt;a href=&#34;https://www.exploit-db.com/exploits/45892&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-18923&#34;&gt;CVE-2018-18923&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-18923-ticketly-1-0-multiples-sql-injections/&#34;&gt;Ticketly 1.0 - Multiple SQL Injection&lt;/a&gt;​&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;9.8 CRITICAL 🟣&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;7.5 HIGH 🔴&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/exploits/45895&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19828&#34;&gt;CVE-2018-19828&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-19828-integria-ims-5-0-83-cross-site-scripting-reflejado/&#34;&gt;Integria IMS 5.0.83 - Cross-Site Scripting&lt;/a&gt;​&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6.1 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.3 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/exploits/46012&#34;&gt;✅&lt;/a&gt;​&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19829&#34;&gt;CVE-2018-19829&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2018-19829-integria-ims-5-0-83-cross-site-request-forgery/&#34;&gt;Integria IMS 5.0.83 – Cross-Site Request Forgery&lt;/a&gt;​&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6.5 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.8 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/exploits/46013&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-7400&#34;&gt;CVE-2019-7400&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado/&#34;&gt;Rukovoditel ERP &amp;amp; CRM 2.4.1 - &amp;lsquo;path&amp;rsquo; Cross-Site Scripting&lt;/a&gt;​&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6.1 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;4.3 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;​&lt;a href=&#34;https://www.exploit-db.com/exploits/46608&#34;&gt;✅&lt;/a&gt;​&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15092&#34;&gt;CVE-2019-15092&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2019-15092-wordpress-plugin-import-export-users-1-3-0-csv-injection/&#34;&gt;WordPress Plugin Import Export WordPress Users 1.3.1 - CSV Injection&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;7.3 HIGH 🔴&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;6.0 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/exploits/47303&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19031&#34;&gt;CVE-2019-19031&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2019-19031-easy-xml-editor-1-7-8-inyeccion-xml/&#34;&gt;Easy XML Editor &amp;lt;= 1.7.8 - XML External Entity Injection&lt;/a&gt;​&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8.1 HIGH 🔴&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.5 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;​&lt;a href=&#34;https://www.exploit-db.com/exploits/47945&#34;&gt;✅&lt;/a&gt;​&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19032&#34;&gt;CVE-2019-19032&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://hackpuntes.com/cve-2019-19032-xmlblueprint-16-191112-inyeccion-xml/&#34;&gt;XMLBlueprint &amp;lt;= 16.191112 - XML External Entity Injection&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;8.1 HIGH 🔴&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.5 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/exploits/47974&#34;&gt;✅&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9038&#34;&gt;CVE-2020-9038&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://github.com/laurent22/joplin/commit/3db47b575b9cb0a765da3d283baa2c065df0d0bc&#34;&gt;Joplin through 1.0.184 allows Arbitrary File Read via XSS&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.4 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;3.5 LOW 🟢&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/?author=9580&#34;&gt;❌&lt;/a&gt;​&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-43091&#34;&gt;CVE-2021-43091&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://huntr.dev/bounties/07f245a7-ee9f-4b55-a0cc-13d5cb1be6e0/&#34;&gt;SQL Injection in yeswiki/yeswiki&lt;/a&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;7.5 HIGH 🔴&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;5.0 MEDIUM 🟠&lt;/td&gt;
+          &lt;td style=&#34;text-align: center&#34;&gt;&lt;a href=&#34;https://www.exploit-db.com/?author=9580&#34;&gt;❌&lt;/a&gt;​&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/es/projects/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/projects/projects/</guid>
+      
+      <description></description>
       
     </item>
     
