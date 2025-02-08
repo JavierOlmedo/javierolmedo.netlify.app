@@ -1,0 +1,4 @@
+baseURL = "https://javierolmedo.netlify.app/"
+languageCode = "en-us"
+title = "Javier Olmedo Blog"
+theme = "hugo-blog-awesome"
