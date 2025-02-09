@@ -29,6 +29,161 @@
     </item>
     
     <item>
+      <title>Accediendo al sistema de control de las gasolineras</title>
+      <link>http://localhost:1313/es/posts/accediendo-al-sistema-de-control-de-las-gasolineras/</link>
+      <pubDate>Sun, 29 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/accediendo-al-sistema-de-control-de-las-gasolineras/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/accediendo-al-sistema-de-control-de-las-gasolineras/accediendo-al-sistema-de-control-de-las-gasolineras_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/accediendo-al-sistema-de-control-de-las-gasolineras/accediendo-al-sistema-de-control-de-las-gasolineras_banner.png&#34; alt=&#34;/images/accediendo-al-sistema-de-control-de-las-gasolineras/accediendo-al-sistema-de-control-de-las-gasolineras_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ayer por la noche estaba leyendo un articulo de &lt;strong&gt;Amador Aparicio de la Fuente&lt;/strong&gt; en el que aseguraba que los conversores de serie a Ethernet del tipo &lt;strong&gt;GC-NET2 32-DTE&lt;/strong&gt; que &lt;strong&gt;utilizan las gasolineras españolas&lt;/strong&gt; para controlar los tanques de combustible &lt;strong&gt;eran vulnerables&lt;/strong&gt; (más que vulnerables, mala securización), nada más leer el artículo algo me decía que &lt;strong&gt;ya había leído&lt;/strong&gt; yo eso en algún sitio, hasta que recordé y ví el siguiente &lt;a href=&#34;https://x.com/cybergibbons/status/558551285776273408&#34;&gt;tweet&lt;/a&gt;, que en un principio no dí mucha importancia ni me dio por investigar.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>China ataca GitHub introduciendo un troyano en Baidu</title>
+      <link>http://localhost:1313/es/posts/china-ataca-github-intruduciendo-un-troyano-en-baidu/</link>
+      <pubDate>Sat, 28 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/china-ataca-github-intruduciendo-un-troyano-en-baidu/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/china-ataca-github-intruduciendo-un-troyano-en-baidu/china-ataca-github-intruduciendo-un-troyano-en-baidu_banner.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/china-ataca-github-intruduciendo-un-troyano-en-baidu/china-ataca-github-intruduciendo-un-troyano-en-baidu_banner.jpg&#34; alt=&#34;/images/china-ataca-github-intruduciendo-un-troyano-en-baidu/china-ataca-github-intruduciendo-un-troyano-en-baidu_banner.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Seguro que muchos de los lectores de este blog, teniendo en cuenta cuál es su público más habitual, ya habrán notado que el funcionamiento de &lt;strong&gt;&lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;&lt;/strong&gt; esta mañana ha sido intermitente.&lt;/p&gt;
+&lt;p&gt;Como es habitual, este mal funcionamiento del servicio se debió a un nuevo ataque DDoS, como se puede comprobar en la &lt;strong&gt;&lt;a href=&#34;https://www.githubstatus.com/messages&#34;&gt;página de estado&lt;/a&gt;&lt;/strong&gt; de GitHub.&lt;/p&gt;
+&lt;p&gt;Siendo los ataques a GitHub tan habituales, ¿por qué prestarle atención a este en concreto? Porque, en primer lugar, según la información disponible, este parece tener un atacante identificado con bastante probabilidad: el Gran Firewall chino. Sin embargo, tampoco es el primer ataque conocido con este origen: recordemos que, a principios de enero, el Gran Firewall hizo que el nombre de dominio de webs censuradas como Facebook resolviese a la dirección IP de la organización ciberactivista francesa La Quadrature du Net, provocando un volumen de tráfico para el que no estaban preparados y que &lt;strong&gt;&lt;a href=&#34;https://benjamin.sonntag.fr/en/2015/ddos-on-la-quadrature-du-net-analysis.html&#34;&gt;provocó una denegación de servicio&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hacking Wifi – Parte III – Instalación de Aircrack-ng</title>
+      <link>http://localhost:1313/es/posts/hacking-wifi-parte-iii-instalacion-de-aircrack-ng/</link>
+      <pubDate>Fri, 27 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/hacking-wifi-parte-iii-instalacion-de-aircrack-ng/</guid>
+      
+      <description>&lt;p&gt;En esta tercera parte, comenzaremos con la práctica, lo primero que haremos será &lt;strong&gt;instalar Aircrack-ng&lt;/strong&gt; y comprobar que ha sido correctamente instalado.&lt;/p&gt;
+&lt;p&gt;Tengo que aclarar que Aircrack-ng &lt;strong&gt;NO es una sola herramienta&lt;/strong&gt;, es una &lt;strong&gt;suite&lt;/strong&gt; de software de seguridad inalámbrica, es decir, una recopilación de herramientas para auditar redes inalámbricas, esto debe de quedar claro porque utilizaremos varias herramientas de la suite de forma independiente, algunas de las herramientas más utilizadas son:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hacking Wifi – Parte II – Requisitos antes de empezar</title>
+      <link>http://localhost:1313/es/posts/hacking-wifi-parte-ii-requisitos-antes-de-empezar/</link>
+      <pubDate>Wed, 25 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/hacking-wifi-parte-ii-requisitos-antes-de-empezar/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/hacking-wifi-parte-ii-requisitos-antes-de-empezar/hacking-wifi-parte-ii-requisitos-antes-de-empezar_banner.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/hacking-wifi-parte-ii-requisitos-antes-de-empezar/hacking-wifi-parte-ii-requisitos-antes-de-empezar_banner.jpg&#34; alt=&#34;/images/hacking-wifi-parte-ii-requisitos-antes-de-empezar/hacking-wifi-parte-ii-requisitos-antes-de-empezar_banner.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Antes de empezar&lt;/strong&gt; con estas entradas, aclararé que deberemos de probar nuestros ataques &lt;strong&gt;únicamente sobre redes propias&lt;/strong&gt;, la idea de estas entradas es para fines educativos y de aprendizaje, &lt;strong&gt;no me responsabilizo de un mal uso de ellas&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Acceder a una red Wi-Fi ajena&lt;/strong&gt; a la nuestra, se traduce jurídicamente en conectarse fraudulentamente a través de un sistema de conexión inalámbrico para evitar tener que soportar su coste y que lo asuma la empresa proveedora del servicio o bien un particular, algo que &lt;strong&gt;está penado&lt;/strong&gt; en los art. 255, 256 y 623.4 de nuestro Código Penal, en resumen estaréis cometiendo un &lt;strong&gt;delito&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Examen Programación Hilos - HinchaGlobos y PinchaGlobos</title>
+      <link>http://localhost:1313/es/posts/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/</link>
+      <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/examen-programacion-hilos-hinchaglobos-y-pinchaglobos_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/examen-programacion-hilos-hinchaglobos-y-pinchaglobos_banner.png&#34; alt=&#34;/images/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/examen-programacion-hilos-hinchaglobos-y-pinchaglobos_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Recientemente acabo de &lt;strong&gt;terminar mis exámenes&lt;/strong&gt; de programación, y en este caso me gustaría compartir con vosotros el examen de &lt;strong&gt;programación de servicios y procesos&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;El &lt;strong&gt;lenguaje de programación&lt;/strong&gt; que se ha utilizado para &lt;strong&gt;resolver&lt;/strong&gt; el ejercicio es &lt;strong&gt;Java&lt;/strong&gt;, y el examen decía lo siguiente (Dejo la nota de cada punto por si queréis intentarlo vosotros y calcular cual sería vuestra nota):&lt;/p&gt;
+&lt;h2 id=&#34;examen-programación-servicios-y-procesos&#34;&gt;Examen Programación Servicios y Procesos&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Hacer un programa compuesto por cuatro clases:
+• Clases hilos HinchaGlobos (HG) (encargada de hinchar los globos)
+• Clase hilo PinchaGlobos (PG) (encargada de pinchar los globos)
+• Clase Globos (almacén de globos)
+• Clase Inicio (contiene el código main e instancia al resto)
+
+En relación a la clase Globos (tendremos 1 instancia de esta clase)
+• En el almacén habrá un máximo de 10 globos .
+• Se irán entregando de uno en uno numerándolos desde 1 a 10.
+• Una vez entregados se podrán hinchar hasta que estallen o los pinchen.
+• Sólo podrá haber 3 globos hinchándose a la vez.
+• Los globos tendrán volumen de 1 a 5. Si se llena más de 5 estallan.
+• El globo se entrega con un volumen inicial de l.
+• Los globos pueden ser pinchados mientras se están hinchando.
+• Se escribirá un mensaje con el número de globo cada vez que:
+o Se entregue un globo (indicaremos el nombre del hilo ejem: GLOBO 5 ENTREGADO A HG3) o Se hinche un globo e indicaremos el nuevo volumen (ejem: GLOBO 5 VOLUMEN 5)
+o Se estalle un globo por inflar de más (ejem : GLOBO 5 ESTALLA)
+o Un PG pinche un globo (indicaremos el nombre del hilo ejem : GLOBO 5 PINCHADO POR PG3)
+
+En relación a la clase HinchaGlobos (tendremos 5 instancias de esta clase)
+• (0,5) Obtendrá un globo de la clase globos cada vez y en orden salvo que no queden más.
+• (2) Si ya hubiera tres hinchándose se esperará hasta que uno se pinche o estalle .
+• Los tendremos que numerar y nombrar con HG seguido de su número. (ejem: HG3)
+• (1) Intentará hincharlo hasta estallarlo salvo que sea pinchando.
+• (1) Cada segundo aumentará el volumen del globo desde 1 hasta estallarlo.
+• (1) Si estalla o se pincha volverá a por otro globo hasta que no queden más.
+
+En relación a la clase PinchaGlobos (tendremos 5 instancias de esta clase)
+• (1) Intentará pinchar uno de los globos que se está hinchando cada un tiempo aleatorio de 1 a 10 segundos .
+• (1) Si no hay globos que pinchar se quedará en espera.
+• (0,5) Dejará de pinchar cuando no queden globos que pinchar.
+• Sus instancias las tendremos que numerar y nombrar con PG seguida de su número (ejem : PG 2)
+
+Los distintos apartados serán comprobados por la impresión de los mensajes detallados en la clase Globos .
+
+Se deberá tener en cuenta que aquellos dormidos deberán ser despertados convenientemente:
+(1) Caso de HG dormidos
+(1) Caso de PG dormidos
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A continuación &lt;strong&gt;adjunto las 4 clases&lt;/strong&gt;, lo que sería el &lt;strong&gt;examen perfecto&lt;/strong&gt; con nota de &lt;strong&gt;10&lt;/strong&gt;, he intentado &lt;strong&gt;comentar&lt;/strong&gt; todo para que podáis seguir el examen, si no entendéis algo lo modificaré.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hacking Wifi - Parte I - Introducción</title>
+      <link>http://localhost:1313/es/posts/hacking-wifi-parte-i-introduccion/</link>
+      <pubDate>Fri, 20 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/hacking-wifi-parte-i-introduccion/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/hacking-wifi-parte-i-introduccion/hacking-wifi-parte-i-introduccion_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/hacking-wifi-parte-i-introduccion/hacking-wifi-parte-i-introduccion_banner.png&#34; alt=&#34;/images/hacking-wifi-parte-i-introduccion/hacking-wifi-parte-i-introduccion_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bienvenido a la entrada de hoy, este será el primer post de una &lt;strong&gt;serie de entradas&lt;/strong&gt; que publicaré &lt;strong&gt;sobre Hacking Wifi&lt;/strong&gt;, existen en la red miles de artículos relacionados con este tema, pero casi todos son guías para que copies y pegues comandos en la terminal a &lt;strong&gt;diestro y siniestro&lt;/strong&gt; sin entender ni tener idea de que estas haciendo realmente y el motivo por el cual has mandado ese comando a la terminal.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>IP-Box: Dispositivo para crackear claves de iPhone</title>
+      <link>http://localhost:1313/es/posts/ip-box-dispositivo-para-crackear-claves-de-iphone/</link>
+      <pubDate>Tue, 17 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/ip-box-dispositivo-para-crackear-claves-de-iphone/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/ip-box-dispositivo-para-crackear-claves-de-iphone/ip-box-dispositivo-para-crackear-claves-de-iphone_banner.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/ip-box-dispositivo-para-crackear-claves-de-iphone/ip-box-dispositivo-para-crackear-claves-de-iphone_banner.jpg&#34; alt=&#34;/images/ip-box-dispositivo-para-crackear-claves-de-iphone/ip-box-dispositivo-para-crackear-claves-de-iphone.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;IP-BOX permite por menos de 200€ obtener la contraseña de 4 dígitos de cualquier iPhone con iOS 8 o inferior.&lt;/p&gt;
+&lt;p&gt;Realiza &lt;strong&gt;un ataque de fuerza bruta (efectivo en menos de 17 horas) y probablemente se aprovecha de la vulnerabilidad &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-4451&#34;&gt;CVE-2014-4451&lt;/a&gt;&lt;/strong&gt; que afecta a todos los iOS anteriores a 8.1.1 que no controlan adecuadamente el límite de intentos de acceso.&lt;/p&gt;
+&lt;p&gt;IP-BOX realiza de manera agresiva un corte de alimentación después de cada intento fallido, evitando así «Borrar datos después de 10 intentos«, aunque no garantiza que el dispositivo no sea «formateado» si tiene activado esta configuración.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Ataques SQL injection contra Bases de Datos mediante SQLmap</title>
+      <link>http://localhost:1313/es/posts/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap/</link>
+      <pubDate>Wed, 11 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap_banner.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap_banner.jpg&#34; alt=&#34;/images/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap_banner.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hoy en día, uno de los ataques que &lt;strong&gt;más se utiliza&lt;/strong&gt; contra aplicaciones web son los llamados &lt;strong&gt;SQL Injection,&lt;/strong&gt; estos ataques tienen como &lt;strong&gt;objetivo&lt;/strong&gt; acceder a la base de datos del sitio web, y &lt;strong&gt;obtener información sensible&lt;/strong&gt; sobre ella, como por ejemplo los &lt;strong&gt;datos para administrar el sitio web, contraseñas de los usuarios, correos electrónicos, DNI, dirección e incluso números de tarjetas de crédito con los códigos de verificación, etc.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Detectando aplicaciones maliciosas para Android en Google Play</title>
+      <link>http://localhost:1313/es/posts/detectando-aplicaciones-maliciosas-para-android-en-google-play/</link>
+      <pubDate>Wed, 11 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/detectando-aplicaciones-maliciosas-para-android-en-google-play/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/detectando-aplicaciones-maliciosas-para-android-en-google-play/detectando-aplicaciones-maliciosas-para-android-en-google-play_banner.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/detectando-aplicaciones-maliciosas-para-android-en-google-play/detectando-aplicaciones-maliciosas-para-android-en-google-play_banner.jpg&#34; alt=&#34;/images/detectando-aplicaciones-maliciosas-para-android-en-google-play/detectando-aplicaciones-maliciosas-para-android-en-google-play_banner.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Una de las principales formas de prevenir una infección con malware en dispositivos con sistema operativo Android es no descargar e instalar aplicaciones que no sean de Google Play, es decir, no utilizar repositorios no oficiales, como solemos decir. Pero, ¿es esta medida suficiente?&lt;/p&gt;
+&lt;p&gt;En el día de ayer estuvimos cubriendo la décima edición de &lt;a href=&#34;https://www.welivesecurity.com/la-es/tag/segurinfo/&#34;&gt;SEGURINFO&lt;/a&gt; 2015 en Argentina, donde la exposición de cierre quedó en manos de un carismático disertante como es &lt;strong&gt;Chema Alonso&lt;/strong&gt;, con su presentación “Can I Play with madness?” (en honor a Iron Maiden). En ella abordó temas referidos a aplicaciones maliciosas dentro de Google Play, combinados con divertidas ironías que hicieron reír a la totalidad de la sala -tan colmada que hasta había gente sentada en el piso.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Obtener información con The Harvester</title>
       <link>http://localhost:1313/es/posts/obtener-informacion-con-the-harvester/</link>
       <pubDate>Mon, 09 Mar 2015 00:00:00 +0000</pubDate>
