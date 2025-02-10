@@ -6,25 +6,82 @@
     <description>Recent content in Posts on Javier Olmedo Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sat, 08 Feb 2025 01:47:24 +0100</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Apr 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Htb Machine Explore</title>
-      <link>http://localhost:1313/es/posts/htb-machine-explore/</link>
-      <pubDate>Sat, 08 Feb 2025 01:47:24 +0100</pubDate>
+      <title>Nueva vulnerabilidad SMB afecta a todas las versiones de Windows</title>
+      <link>http://localhost:1313/es/posts/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/</link>
+      <pubDate>Tue, 14 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/es/posts/htb-machine-explore/</guid>
+      <guid>http://localhost:1313/es/posts/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/</guid>
       
-      <description>&lt;p&gt;Welcome to the writeup of the &lt;strong&gt;explore machine&lt;/strong&gt; of the Hack The Box platform. Explore is an &lt;strong&gt;easy&lt;/strong&gt; difficulty machine on android.&lt;/p&gt;
-&lt;h1 id=&#34;before-starting&#34;&gt;Before starting&lt;/h1&gt;
-&lt;p&gt;Connect to &lt;strong&gt;Hack The Box VPN&lt;/strong&gt; in background with &lt;code&gt;TMUX&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;tmux new -s htb
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo openvpn ~/.vpn/htb.ovpn
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Add&lt;/strong&gt; machine to &lt;code&gt;/etc/hosts&lt;/code&gt; file, &lt;strong&gt;check connection&lt;/strong&gt; with &lt;code&gt;ping&lt;/code&gt; and &lt;strong&gt;create work folders&lt;/strong&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;10.10.10.247 explore.htb&amp;#39;&lt;/span&gt; &amp;gt;&amp;gt; /etc/hosts
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping -c &lt;span class=&#34;m&#34;&gt;4&lt;/span&gt; explore.htb
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/htb/explorer.htb/&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;exploits,fuzz,http,nmap&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;recon&#34;&gt;Recon&lt;/h1&gt;
-&lt;p&gt;Check &lt;strong&gt;all open ports&lt;/strong&gt;, detect the service and its version with &lt;code&gt;nmap&lt;/code&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows_banner.jpeg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows_banner.jpeg&#34; alt=&#34;/images/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows_banner.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.kb.cert.org/vuls/id/672268&#34;&gt;Nuevo fallo al protocolo SMB&lt;/a&gt; &lt;strong&gt;(Server Message Block)&lt;/strong&gt; que afecta a todas las versiones de Windows, esta vulnerabilidad ha sido clasificada como grave. Dicha vulnerabilidad &lt;strong&gt;permite que un atacante pueda robar las credenciales de servicios del usuario&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;El error está relacionado con la forma en que Windows y otro software manejan algunas peticiones HTTP, y los investigadores dicen que &lt;strong&gt;afecta a una amplia gama de aplicaciones, incluyendo iTunes y Adobe Flash, algunos clientes de GitHub, Oracle y AVG Anti-virus&lt;/strong&gt;. La vulnerabilidad, divulgada el lunes por los investigadores en Cylance, es una extensión de la investigación realizada por Aaron Spangler hace casi 20 años, conocida como “redirect to SMB”. Esta debilidad puede permitir a un atacante forzar a las víctimas para que se autentiquen mediante &lt;a href=&#34;http://www.estacion-informatica.com/2013/03/evita-hijacking-en-tu-cuenta.html&#34;&gt;hijacking&lt;/a&gt; en un servidor controlado por el atacante, mediante ataques &lt;a href=&#34;http://www.estacion-informatica.com/2015/03/lenovo-no-era-el-unico-con-superfish.html&#34;&gt;man-in-the-middle&lt;/a&gt; y luego enviarlos a servidores maliciosos SMB. Con lo que ello supone, robo de credenciales.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Desarrollo de un Stealer sencillo para Twitter en Visual Studio</title>
+      <link>http://localhost:1313/es/posts/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/</link>
+      <pubDate>Sun, 12 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio_banner.png&#34; alt=&#34;/images/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;No os sorprendáis, &lt;strong&gt;Twitter no ha lanzado&lt;/strong&gt; un aplicación para PC, en la entrada de hoy vengo a enseñaros como desarrollar un &lt;strong&gt;Stealer&lt;/strong&gt; para la &lt;strong&gt;obtención de usuarios y contraseñas&lt;/strong&gt; de esta red social, posteriormente lo programaremos para que nos envie lo &lt;strong&gt;«recolectado»&lt;/strong&gt; a nuestro correo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Todo lo que publico en mi blog, lo hago con fines educativos y de aprendizaje, por lo tanto no me hago responsable del mal uso que algunos puedan darle al conocimiento adquirido en este blog.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hacking Wifi - Parte V - Modificando la dirección MAC con macchanger</title>
+      <link>http://localhost:1313/es/posts/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger/</link>
+      <pubDate>Thu, 09 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger/</guid>
+      
+      <description>&lt;p&gt;&lt;strong&gt;La dirección MAC&lt;/strong&gt; de la tarjeta de red o dirección física, es un identificador de 48 &lt;a href=&#34;https://es.wikipedia.org/wiki/Bit&#34;&gt;bits&lt;/a&gt; (6 bloques &lt;a href=&#34;https://es.wikipedia.org/wiki/Sistema_hexadecimal&#34;&gt;hexadecimales&lt;/a&gt;) que identifica de manera inequívoca a un dispositivo de red, &lt;strong&gt;es una de las maneras más fáciles de&lt;/strong&gt; rastrear e &lt;strong&gt;identificar un equipo&lt;/strong&gt; al &lt;strong&gt;no existir dos direcciones MAC iguales&lt;/strong&gt; en el mundo.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger_001.png&#34; alt=&#34;/images/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;como-es-posible-que-no-se-repitan-y-sean-únicas&#34;&gt;¿Como es posible que no se repitan y sean únicas?&lt;/h2&gt;
+&lt;p&gt;El &lt;strong&gt;Instituto de Ingeniería Eléctrica y Electrónica (IEEE)&lt;/strong&gt; es la que le asigna los &lt;strong&gt;primeros 24 bits a los fabricantes de tarjetas de red y los otros 24 bits quedan a elección del fabricante&lt;/strong&gt; de tarjetas de red. Por supuesto bajo supervisión y respetando que no se repitan ninguna dirección MAC.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hacking Wifi - Parte IV - Comandos Básicos</title>
+      <link>http://localhost:1313/es/posts/hacking-wifi-parte-iv-comandos-basicos/</link>
+      <pubDate>Sun, 05 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/hacking-wifi-parte-iv-comandos-basicos/</guid>
+      
+      <description>&lt;p&gt;En esta parte de entradas sobre hacking wifi, vamos a empezar a trabajar con nuestra tarjeta de red inalámbrica y a conocer los &lt;strong&gt;comandos básicos&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Uno de los comandos básicos que siempre debemos de utilizar para comprobar que nuestra tarjeta de red &lt;strong&gt;ha sido aceptada por el sistema operativo&lt;/strong&gt; es:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ifconfig
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Este comando permite configurar numerosos parámetros de las interfaces de red, como la direccion IP o la máscara de red. &lt;strong&gt;Si se llama sin argumentos&lt;/strong&gt; (como la acabo de llamar yo) &lt;strong&gt;muestra la configuración vigente&lt;/strong&gt; de las interfaces de red &lt;strong&gt;activas&lt;/strong&gt; (con esto confirmamos que la tarjeta de red inalámbrica ha sido aceptada por el sistema y no es necesario drivers para ponerla en funcionamiento), con detalles como la direccion MAC o el tráfico que ha circulado por las mismas hasta el momento.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Miles de cuentas de Uber, supuestamente vendidas en la deep web</title>
+      <link>http://localhost:1313/es/posts/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web/</link>
+      <pubDate>Sat, 04 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web_banner.png&#34; alt=&#34;/images/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;El medio online Motherboard &lt;a href=&#34;https://www.vice.com/en/article/stolen-uber-customer-accounts-are-for-sale-on-the-dark-web-for-1/&#34;&gt;ha informado&lt;/a&gt; recientemente de algo serio. &lt;strong&gt;Miles de cuentas de usuario de Uber se estarían vendiendo en la deep web&lt;/strong&gt; (concretamente en un portal relativamente nuevo llamado AlphaBay), a un precio que cualquiera se puede permitir: un dólar. Hay vendedores que presumen de tener varios miles de esas cuentas en oferta, en forma de las contraseñas que se necesitan para entrar en ellas, e incluso se venden en packs con descuento.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>SPARTA - La Caja de Herramientas del Pentester</title>
+      <link>http://localhost:1313/es/posts/sparta-la-caja-de-herramientas-del-pentester/</link>
+      <pubDate>Tue, 31 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/sparta-la-caja-de-herramientas-del-pentester/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/sparta-la-caja-de-herramientas-del-pentester/sparta-la-caja-de-herramientas-del-pentester_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/sparta-la-caja-de-herramientas-del-pentester/sparta-la-caja-de-herramientas-del-pentester_banner.png&#34; alt=&#34;/images/sparta-la-caja-de-herramientas-del-pentester/sparta-la-caja-de-herramientas-del-pentester_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SPARTA es una &lt;strong&gt;aplicación GUI&lt;/strong&gt; (Interfaz Gráfica de Usuario) &lt;strong&gt;escrita en Python&lt;/strong&gt;, con la cual nos simplifica las &lt;strong&gt;pruebas de penetración&lt;/strong&gt; en una determinada infraestructura de red y nos permite realizar diversas pruebas de penetración en la &lt;strong&gt;fase de escaneo y enumeración&lt;/strong&gt;. Estas cualidades permite al pentester &lt;strong&gt;ahorrar tiempo&lt;/strong&gt; en el momento de realizar una auditoria. SPARTA &lt;strong&gt;equivale&lt;/strong&gt; a tener acceso a su &lt;strong&gt;caja de herramientas&lt;/strong&gt; en la cual nos muestra toda la producción de las herramientas de una manera conveniente y ordenada.&lt;/p&gt;</description>
       
     </item>
     
