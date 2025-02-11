@@ -6,7 +6,119 @@
     <description>Recent content in Posts on Javier Olmedo Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Tue, 14 Apr 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 13 Jun 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dendroid - Crea tu propio Troyano para Android - Parte I</title>
+      <link>http://localhost:1313/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-i/</link>
+      <pubDate>Sat, 13 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-i/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/dendroid-crea-tu-propio-troyano-para-android-parte-i/dendroid-crea-tu-propio-troyano-para-android-parte-i_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/dendroid-crea-tu-propio-troyano-para-android-parte-i/dendroid-crea-tu-propio-troyano-para-android-parte-i_banner.png&#34; alt=&#34;/images/dendroid-crea-tu-propio-troyano-para-android-parte-i/dendroid-crea-tu-propio-troyano-para-android-parte-i_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Android se ha convertido en el &lt;strong&gt;sistema operativo más utilizado&lt;/strong&gt; en nuestros dispositivos móviles, objeto por el cual &lt;strong&gt;ha sido blanco de muchos ciberdelincuentes&lt;/strong&gt;, que han pasado de atacar ordenadores personales a dispositivos móviles, puesto que es mas &lt;strong&gt;fácil de atacar&lt;/strong&gt;, cuenta en cierta medida con &lt;strong&gt;menos protección&lt;/strong&gt; y el porcentaje de &lt;strong&gt;ataque con éxito es mayor&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;En esta entrada os mostraré como &lt;strong&gt;crear nuestro propio troyano&lt;/strong&gt; para dispositivos Android, cada uno utilizará los conocimientos adquiridos en este tutorial con sus propios fines éticos, pero esto nos puede servir de gran ayuda en el caso que &lt;strong&gt;nuestro móvil se pierda o nos lo roben&lt;/strong&gt;, ya que tendremos total control sobre el dispositivo que infectemos, recordad que infectar un dispositivo ajeno al nuestro sin consentimiento del propietario puede ser un &lt;strong&gt;delito&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>XXE - XML External Entity - El Nuevo SQLi</title>
+      <link>http://localhost:1313/es/posts/xxe-xml-external-entity-el-nuevo-sqli/</link>
+      <pubDate>Sat, 30 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/xxe-xml-external-entity-el-nuevo-sqli/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/xxe-xml-external-entity-el-nuevo-sqli/xxe-xml-external-entity-el-nuevo-sqli_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/xxe-xml-external-entity-el-nuevo-sqli/xxe-xml-external-entity-el-nuevo-sqli_banner.png&#34; alt=&#34;/images/xxe-xml-external-entity-el-nuevo-sqli/xxe-xml-external-entity-el-nuevo-sqli_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;XXE (Xml eXternal Entity)&lt;/strong&gt; es un tipo de vulnerabilidad que se produce en aplicaciones que hacen uso de &lt;strong&gt;«parsers»&lt;/strong&gt; XML. Es decir aplicaciones que reciben como entrada un documento XML y para procesarlo hacen uso de alguna librería de parseo como LibXML, Xerces, MiniDOM, SAX etc. El atacante entonces puede aprovechar esta vulnerabilidad y enviar un documento XML especialmente manipulado para conseguir que el parser XML divulgue información del sistema, consuma recursos en exceso, ejecute comandos u otras formas de explotación.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hacking Wifi - Parte VII - Seleccionar el Objetivo y capturar los paquetes</title>
+      <link>http://localhost:1313/es/posts/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes/</link>
+      <pubDate>Sun, 24 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes/</guid>
+      
+      <description>&lt;p&gt;Lo que intentaremos en esta entrada, será &lt;strong&gt;conseguir paquetes de la red objetivo&lt;/strong&gt; (evidentemente sin estar asociados a ella) y &lt;strong&gt;guardarlos&lt;/strong&gt; en un archivo con extension &lt;strong&gt;.PCAP&lt;/strong&gt; (Packet Capture Data), para que cuando tengamos suficientes &lt;strong&gt;IVs&lt;/strong&gt; crackearlo para obtener la clave.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes_banner.png&#34; alt=&#34;/images/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Me he encontrado por casa un router que tenía sin utilizar para realizar esta entrada, lo he configurado con &lt;strong&gt;cifrado WEP&lt;/strong&gt; y he cambiado el &lt;strong&gt;SSID&lt;/strong&gt; (nombre de la red) a &lt;strong&gt;WiFi-Hackpuntes&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Ataque DNS Spoofing con Cain&amp;Abel</title>
+      <link>http://localhost:1313/es/posts/ataque-dns-spoofing-con-cainabel/</link>
+      <pubDate>Thu, 07 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/ataque-dns-spoofing-con-cainabel/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/ataque-dns-spoofing-con-cainabel/ataque-dns-spoofing-con-cainabel_banner.jpeg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/ataque-dns-spoofing-con-cainabel/ataque-dns-spoofing-con-cainabel_banner.jpeg&#34; alt=&#34;/images/ataque-dns-spoofing-con-cainabel/ataque-dns-spoofing-con-cainabel_banner.jpeg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En la entrada de hoy, os mostraré como realizar un &lt;strong&gt;ataque DNS Spoofing&lt;/strong&gt; en una red de area local, normalmente no suelo trabajar con Windows, pero en esta entrada lo utilizaremos, dado que la herramienta que vamos a trabajar solo está disponible para este SO.&lt;/p&gt;
+&lt;p&gt;La herramienta se llama &lt;strong&gt;Cain&amp;amp;Abel&lt;/strong&gt;, y la podéis descargar de su &lt;strong&gt;pagina oficial&lt;/strong&gt; &lt;a href=&#34;http://www.oxid.it/cain.html&#34;&gt;AQUI&lt;/a&gt;, puede que vuestro navegador os indique que estáis a punto de descargar una &lt;strong&gt;herramienta potencialmente peligrosa&lt;/strong&gt;, de igual manera somos conscientes del uso de ella y aceptamos para descargarla.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Cómo crear un USB Keylogger/Stealer para recuperar contraseñas</title>
+      <link>http://localhost:1313/es/posts/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/</link>
+      <pubDate>Sat, 02 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas_banner.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas_banner.jpg&#34; alt=&#34;/images/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas_banner.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hace unas semana publiqué una entrada sobre &lt;strong&gt;Stealers&lt;/strong&gt; y expliqué lo que eran y para que servían, hoy vengo a explicaros como crear un USB que se autoejecute y &lt;strong&gt;recupere todas nuestras contraseñas del PC&lt;/strong&gt; de manera automática, únicamente con conectarlo a nuestro PC, sin tocar absolutamente nada, ademas tendrá una función Keylogger, que registrará en un archivo .txt todo lo que pulsemos en nuestro teclado mientras el USB esté conectado al PC.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt</title>
+      <link>http://localhost:1313/es/posts/herramienta-para-recuperar-los-archivos-cifrados-por-el-ransomware-teslacrypt/</link>
+      <pubDate>Sat, 02 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/herramienta-para-recuperar-los-archivos-cifrados-por-el-ransomware-teslacrypt/</guid>
+      
+      <description>&lt;p&gt;Cifrar los archivos de la víctima y luego pedir bitcoins para descifrarlos es un negocio muy lucrativo: &lt;strong&gt;las campañas de ramsonware se están convirtiendo en una amenaza cada vez mayor&lt;/strong&gt;. Después de la caída de CryptoLocker surgió &lt;a href=&#34;https://es.wikipedia.org/wiki/CryptoLocker&#34;&gt;Cryptowall&lt;/a&gt;, con técnicas anti-depuración avanzadas, y después &lt;strong&gt;numerosas variantes que se incluyen en campañas dirigidas cada vez más numerosas&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las últimas variantes se llama &lt;strong&gt;TeslaCrypt y parece ser un derivado del ransomware CryptoLocker original&lt;/strong&gt;. Este ransomware está &lt;strong&gt;dirigido específicamente a gamers&lt;/strong&gt; y, aunque dice estar usando RSA-2048 asimétrico para cifrar archivos, &lt;strong&gt;realmente está usando AES simétrico&lt;/strong&gt;, lo que ha permitido a &lt;a href=&#34;http://blogs.cisco.com/author/talos&#34;&gt;Talos Group&lt;/a&gt; (Talos Security Intelligence &amp;amp; Research Group) desarrollar una herramienta que descifra los archivos…&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hacking Wifi - Parte VI - Seguridad en redes Wi-Fi</title>
+      <link>http://localhost:1313/es/posts/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi/</link>
+      <pubDate>Tue, 28 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi/</guid>
+      
+      <description>&lt;p&gt;Antes de empezar a atacar una red Wi-Fi, &lt;strong&gt;tenemos que saber que tipo de seguridad tiene&lt;/strong&gt;, para posteriormente auditarla de la forma más eficiente y correcta posible.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi_001.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi_001.jpg&#34; alt=&#34;/images/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi_001.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;No debemos de creer&lt;/strong&gt;, que únicamente consiguiendo la clave del Wi-Fi ya tendremos acceso a ella, puesto que únicamente hemos conseguido romper la &lt;strong&gt;seguridad a nivel de protocolo&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad en las redes inalámbricas, se pueden diferenciar en dos grandes grupos: &lt;strong&gt;seguridad a nivel de enlace y seguridad a nivel de protocolo&lt;/strong&gt; mediante sistemas de cifrado de información.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Cómo usar tu pendrive como contraseña en Windows 7</title>
+      <link>http://localhost:1313/es/posts/como-usar-tu-pendrive-como-contrasena-en-windows-7/</link>
+      <pubDate>Thu, 23 Apr 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/como-usar-tu-pendrive-como-contrasena-en-windows-7/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_banner.png&#34; alt=&#34;/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Si eres de los que olvidas las contraseñas fácilmente o simplemente quieres otro método distinto para identificarte en Windows 7, en esta entrada te mostraré como puedes &lt;strong&gt;utilizar tu pendrive como contraseña&lt;/strong&gt; para Windows 7.&lt;/p&gt;
+&lt;h2 id=&#34;pasos-a-seguir&#34;&gt;Pasos a seguir&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Inserta tu pendrive formateado en NTFS, si no sabes formatearlo en NTFS, haz &lt;strong&gt;«Click derecho»&lt;/strong&gt; sobre la unidad y en &lt;strong&gt;«Formatear»&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_001.png&#34; alt=&#34;/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_002.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_002.png&#34; alt=&#34;/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_002.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;En &lt;strong&gt;«Inicio &amp;raquo; Buscar»&lt;/strong&gt; escribimos:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;compmgmt.msc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Otra manera es ir a &lt;strong&gt;«Equipo &amp;raquo; Administrar»&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Nueva vulnerabilidad SMB afecta a todas las versiones de Windows</title>
       <link>http://localhost:1313/es/posts/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/</link>

@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-i/</loc>
+    <lastmod>2015-06-13T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/es/</loc>
-    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2015-06-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -15,11 +18,8 @@
                 href="http://localhost:1313/es/"
                 />
   </url><url>
-    <loc>http://localhost:1313/es/posts/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/</loc>
-    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/es/posts/</loc>
-    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
+    <lastmod>2015-06-13T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -30,6 +30,30 @@
                 hreflang="es-es"
                 href="http://localhost:1313/es/posts/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/es/posts/xxe-xml-external-entity-el-nuevo-sqli/</loc>
+    <lastmod>2015-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes/</loc>
+    <lastmod>2015-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/ataque-dns-spoofing-con-cainabel/</loc>
+    <lastmod>2015-05-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/</loc>
+    <lastmod>2015-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/herramienta-para-recuperar-los-archivos-cifrados-por-el-ransomware-teslacrypt/</loc>
+    <lastmod>2015-05-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi/</loc>
+    <lastmod>2015-04-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/como-usar-tu-pendrive-como-contrasena-en-windows-7/</loc>
+    <lastmod>2015-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/</loc>
+    <lastmod>2015-04-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/es/posts/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/</loc>
     <lastmod>2015-04-12T00:00:00+00:00</lastmod>
