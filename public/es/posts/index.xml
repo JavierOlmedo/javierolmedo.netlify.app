@@ -6,7 +6,58 @@
     <description>Recent content in Posts on Javier Olmedo Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sat, 13 Jun 2015 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Navega por la Deep Web con Tails y un USB</title>
+      <link>http://localhost:1313/es/posts/navega-la-deep-web-tails-usb/</link>
+      <pubDate>Sun, 29 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/navega-la-deep-web-tails-usb/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/navega-la-deep-web-tails-usb/navega-la-deep-web-tails-usb_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/navega-la-deep-web-tails-usb/navega-la-deep-web-tails-usb_banner.png&#34; alt=&#34;/images/navega-la-deep-web-tails-usb/navega-la-deep-web-tails-usb_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Cómo instalar Parrot OS en VMware</title>
+      <link>http://localhost:1313/es/posts/instalar-parrot-os-vmware/</link>
+      <pubDate>Sun, 17 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/instalar-parrot-os-vmware/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/instalar-parrot-os-vmware/instalar-parrot-os-vmware_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/instalar-parrot-os-vmware/instalar-parrot-os-vmware_banner.png&#34; alt=&#34;/images/instalar-parrot-os-vmware/instalar-parrot-os-vmware_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Hoy vengo a hablaros sobre una de las distribuciones «top» orientadas a la seguridad informática y pentesting, &lt;strong&gt;Parrot OS&lt;/strong&gt;, que junto a &lt;strong&gt;Kali Linux&lt;/strong&gt; y &lt;strong&gt;Bugtraq&lt;/strong&gt; son a día de hoy &lt;strong&gt;las más utilizadas&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Parrot OS es una &lt;strong&gt;distribución de Linux basada en Debian&lt;/strong&gt; con el kernel de Linux 4.3 (en su versión 2.2.1), ha sido desarrollada por &lt;strong&gt;un equipo de hackers italianos llamados FrozenBox, utiliza MATE 1.8.1 como escritorio&lt;/strong&gt; y debido a la gran cantidad de herramientas y la importancia de actualizarlas, &lt;strong&gt;tiene un modelo de actualización continua&lt;/strong&gt; (Rolling release).&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Dendroid - Crea tu propio Troyano para Android - Parte III</title>
+      <link>http://localhost:1313/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-iii/</link>
+      <pubDate>Sun, 13 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-iii/</guid>
+      
+      <description>&lt;p&gt;Esta será la &lt;strong&gt;última parte de configuración&lt;/strong&gt; de nuestro troyano para Android, en la cual bindearemos (fusionaremos o uniremos) la APK maliciosa generada en el &lt;a href=&#34;https://hackpuntes.com/dendroid-crea-tu-propio-troyano-para-android-parte-ii/&#34;&gt;anterior tutorial&lt;/a&gt; por nosotros con otra APK legítima de Google Play para camuflarla.&lt;/p&gt;
+&lt;p&gt;Lo primero, deberemos de &lt;strong&gt;descargarnos una APK desde Google Play&lt;/strong&gt;, yo voy a elegir la APK de Angry Birds.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/dendroid-crea-tu-propio-troyano-para-android-parte-iii/dendroid-crea-tu-propio-troyano-para-android-parte-iii_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/dendroid-crea-tu-propio-troyano-para-android-parte-iii/dendroid-crea-tu-propio-troyano-para-android-parte-iii_001.png&#34; alt=&#34;/images/dendroid-crea-tu-propio-troyano-para-android-parte-iii/dendroid-crea-tu-propio-troyano-para-android-parte-iii_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Existen muchas maneras de conseguir la APK desde Google Play, yo &lt;strong&gt;os explicaré dos posibilidades&lt;/strong&gt;, la primera &lt;strong&gt;accediendo directamente&lt;/strong&gt; en nuestro terminal a la ruta &lt;strong&gt;/data/app&lt;/strong&gt; (lugar donde se almacenan las APK cuando se descargan de Google Play antes de su instalación) y &lt;strong&gt;copiando la APK a nuestro PC&lt;/strong&gt; (esta opción es la más recomendada, pero posiblemente necesitemos ser root en nuestro terminal).&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Dendroid - Crea tu propio Troyano para Android - Parte II</title>
+      <link>http://localhost:1313/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-ii/</link>
+      <pubDate>Thu, 09 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-ii/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/dendroid-crea-tu-propio-troyano-para-android-parte-ii/dendroid-crea-tu-propio-troyano-para-android-parte-ii_banner.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/dendroid-crea-tu-propio-troyano-para-android-parte-ii/dendroid-crea-tu-propio-troyano-para-android-parte-ii_banner.jpg&#34; alt=&#34;/images/dendroid-crea-tu-propio-troyano-para-android-parte-ii/dendroid-crea-tu-propio-troyano-para-android-parte-ii_banner.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En la &lt;a href=&#34;https://hackpuntes.com/dendroid-crea-tu-propio-troyano-para-android-parte-i/&#34;&gt;entrada anterior&lt;/a&gt; vimos como &lt;strong&gt;crear un panel de control&lt;/strong&gt; en un servidor web para administrar los dispositivos que infectaremos posteriormente, en esta entrada, os mostraré como crear una &lt;strong&gt;APK Maliciosa&lt;/strong&gt; para &lt;strong&gt;infectar dispositivos&lt;/strong&gt; que ejecuten el sistema operativo Android (Smartphone, Tablets, etc).&lt;/p&gt;
+&lt;p&gt;Para este tutorial, necesitaremos tener instalado &lt;a href=&#34;http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/marsr&#34;&gt;Eclipse&lt;/a&gt; + &lt;a href=&#34;https://developer.android.com/sdk/installing/index.html?pkg=tools&#34;&gt;SDK de Android&lt;/a&gt; y tener instalado en el sistema el &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#34;&gt;JDK&lt;/a&gt;, si tenéis cualquier tipo de problema en instalarlo, podéis buscar en &lt;a href=&#34;https://www.google.es/webhp?sourceid=chrome-instant&amp;amp;ion=1&amp;amp;espv=2&amp;amp;es_th=1&amp;amp;ie=UTF-8#safe=off&amp;amp;q=eclipse&amp;#43;%2B&amp;#43;sdk&amp;#43;%2B&amp;#43;jdk&#34;&gt;Google&lt;/a&gt;, existen miles de tutoriales de como preparar Eclipse para el desarrollo de aplicaciones Android.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Dendroid - Crea tu propio Troyano para Android - Parte I</title>
       <link>http://localhost:1313/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-i/</link>
