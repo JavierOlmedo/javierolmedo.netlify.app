@@ -6,7 +6,25 @@
     <description>Recent content in Posts on Javier Olmedo Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snyk Fetch The Flag - Zero Ex Six One</title>
+      <link>http://localhost:1313/posts/snyk_fetch_the_flag_zero_ex_six_one/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/snyk_fetch_the_flag_zero_ex_six_one/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this challenge, we obtain a file named &lt;code&gt;flag.txt.encry&lt;/code&gt;, which contains a hexadecimal string.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ cat flag.txt.encry
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;0x070x0d0x000x060x1a0x020x540x510x050x590x530x020x510x000x530x540x070x520x040x570x550x550x050x510x560x510x530x030x550x500x050x030x050x510x590x540x000x1c
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The 💡 hint in the challenge description suggests that an &lt;strong&gt;XOR encryption&lt;/strong&gt; was used, and the challenge title, &lt;strong&gt;Zero Ex Six One&lt;/strong&gt;, might indicate that the encryption key is &lt;code&gt;0x61&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;I&amp;#39;m XORta out of ideas for how to get the flag. Does this look like anything to you?
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;solution-1---using-the-encryption-key&#34;&gt;Solution 1 - Using the Encryption Key&lt;/h2&gt;
+&lt;p&gt;In this first solution, &lt;strong&gt;we convert the hexadecimal string into bytes&lt;/strong&gt; and apply an &lt;strong&gt;XOR decryption&lt;/strong&gt; using the key &lt;code&gt;0x61&lt;/code&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>HTB Machine BountyHunter</title>
       <link>http://localhost:1313/posts/htb-machine-bountyhunter/</link>

@@ -6,7 +6,25 @@
     <description>Recent content on Javier Olmedo Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sun, 29 May 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snyk Fetch The Flag - Zero Ex Six One</title>
+      <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_zero_ex_six_one/</link>
+      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/snyk_fetch_the_flag_zero_ex_six_one/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En este desafío obtenemos un archivo llamado &lt;code&gt;flag.txt.encry&lt;/code&gt;, el cual contiene una cadena en formato hexadecimal.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ cat flag.txt.encry
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;0x070x0d0x000x060x1a0x020x540x510x050x590x530x020x510x000x530x540x070x520x040x570x550x550x050x510x560x510x530x030x550x500x050x030x050x510x590x540x000x1c
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;La 💡 pista en la descripción del reto sugiere que se ha utilizado un cifrado &lt;strong&gt;XOR&lt;/strong&gt;, y el título del desafío, &lt;strong&gt;Zero Ex Six One&lt;/strong&gt;, podría indicar que la clave de cifrado es &lt;code&gt;0x61&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;I&amp;#39;m XORta out of ideas for how to get the flag. Does this look like anything to you?
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;solución-1---usando-la-clave-de-cifrado&#34;&gt;Solución 1 - Usando la clave de cifrado&lt;/h2&gt;
+&lt;p&gt;En esta primera solución, &lt;strong&gt;convertimos la cadena hexadecimal en bytes&lt;/strong&gt; y aplicamos un &lt;strong&gt;cifrado XOR&lt;/strong&gt; con la clave &lt;code&gt;0x61&lt;/code&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Navega por la Deep Web con Tails y un USB</title>
       <link>http://localhost:1313/es/posts/navega-la-deep-web-tails-usb/</link>

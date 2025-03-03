@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/htb-machine-bountyhunter/</loc>
-    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
@@ -19,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-03T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
@@ -30,6 +27,22 @@
                 hreflang="en-us"
                 href="http://localhost:1313/posts/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/posts/snyk_fetch_the_flag_zero_ex_six_one/</loc>
+    <lastmod>2025-03-03T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/posts/snyk_fetch_the_flag_zero_ex_six_one/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/posts/snyk_fetch_the_flag_zero_ex_six_one/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/htb-machine-bountyhunter/</loc>
+    <lastmod>2021-11-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/htb-machine-explore/</loc>
     <lastmod>2021-10-30T00:00:00+00:00</lastmod>
