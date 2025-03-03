@@ -22,7 +22,7 @@ I'm XORta out of ideas for how to get the flag. Does this look like anything to 
 
 ## Solución 1 - Usando la clave de cifrado
 
-En esta primera solución, **convertimos la cadena hexadecimal en bytes** y aplicamos un **cifrado XOR** con la clave `0x61`.
+En esta primera solución, **convertimos la cadena hexadecimal en bytes** y aplicamos un **cifrado XOR** con la clave 🔑 `0x61`.
 
 ```python
 # Cadena cifrada en hexadecimal proporcionada
@@ -46,14 +46,12 @@ print(decrypted.decode('utf-8', errors='ignore'))
 
 ```bash
 $ python zero_ex_six_one.py 
-flag{c50d82c0a25f3e644d0702b41dbd085a}
+flag{not_really_tho}
 ```
 
 ## Solución 2 - Sin conocer la clave de cifrado
 
-En esta solución, **no se usa una clave de cifrado**, dado que deducimos que las 4 primeras letras corresponden a `f`, `l`, `a` y `g`.
-
-En esta segunda solución, **no utilizamos una clave de cifrado predefinida**. En su lugar, deducimos la clave basándonos en el hecho de que las primeras letras del texto descifrado deben ser `flag`.
+En esta segunda solución, **no utilizamos una clave de cifrado predefinida**. En su lugar, deducimos la clave basándonos en el hecho de que las primeras letras del texto descifrado deben ser `flag` 🤔.
 
 ```python
 # Cadena cifrada en hexadecimal proporcionada
@@ -82,7 +80,7 @@ print(decrypted.decode('utf-8', errors='ignore'))
 
 ```bash
 $ python zero_ex_six_one_no_key.py 
-flag{c50d82c0a25f3e644d0702b41dbd085a}
+flag{not_really_tho}
 ```
 
 Ambas soluciones permiten obtener la flag correctamente, ya sea conociendo la clave de cifrado de antemano o deduciéndola a partir de texto en claro conocido.

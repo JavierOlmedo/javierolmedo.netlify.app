@@ -1,39 +1,31 @@
 <!DOCTYPE html>
-<html lang="es-es"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Posts | Javier Olmedo Blog</title>
-<meta property="og:title" content="Posts | Javier Olmedo Blog" />
-<meta name="twitter:title" content="Posts | Javier Olmedo Blog" />
-<meta itemprop="name" content="Posts | Javier Olmedo Blog" />
-<meta name="application-name" content="Posts | Javier Olmedo Blog" />
-<meta property="og:site_name" content="Awesome hugo blog" />
+<title itemprop="name">Snyk Fetch The Flag - Unfurl | Javier Olmedo Blog</title>
+<meta property="og:title" content="Snyk Fetch The Flag - Unfurl | Javier Olmedo Blog" />
+<meta name="twitter:title" content="Snyk Fetch The Flag - Unfurl | Javier Olmedo Blog" />
+<meta itemprop="name" content="Snyk Fetch The Flag - Unfurl | Javier Olmedo Blog" />
+<meta name="application-name" content="Snyk Fetch The Flag - Unfurl | Javier Olmedo Blog" />
+<meta property="og:site_name" content="Javier Olmedo´s Blog" />
 
-<meta name="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
-<meta itemprop="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale" />
-<meta property="og:description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale" />
-<meta name="twitter:description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale" />
+<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
+<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
 
-<meta property="og:locale" content="es-es" />
-<meta name="language" content="es-es" />
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
 
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/posts/" title="English" />
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/posts/snyk_fetch_the_flag_unfurl/" title="English" />
 
-  <link rel="alternate" hreflang="es" href="http://localhost:1313/es/posts/" title="Spanish" />
-
-
+  <link rel="alternate" hreflang="es" href="http://localhost:1313/es/posts/snyk_fetch_the_flag_unfurl/" title="Spanish" />
 
 
 
-    
-    
-    
-    
-    
-    <link rel="first" href="/es/posts/" />
-    <link rel="last" href="/es/posts/" />
-    
+
+
     
     
     
@@ -41,7 +33,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2025-03-03T00:00:00Z />
     <meta property="article:published_time" content=2025-03-03T00:00:00Z />
-    <meta property="og:url" content="http://localhost:1313/es/posts/" />
+    <meta property="og:url" content="http://localhost:1313/posts/snyk_fetch_the_flag_unfurl/" />
 
     
     <meta property="og:article:author" content="Javier Olmedo" />
@@ -56,14 +48,14 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Posts",
+        "headline": "Snyk Fetch The Flag - Unfurl",
         "author": {
         "@type": "Person",
         "name": ""
         },
         "datePublished": "2025-03-03",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  373 ,
         "mainEntityOfPage": "True",
         "dateModified": "2025-03-03",
         "image": {
@@ -81,26 +73,33 @@
 <meta name="generator" content="Hugo 0.143.1">
 
     
-    <meta property="og:url" content="http://localhost:1313/es/posts/">
+    <meta property="og:url" content="http://localhost:1313/posts/snyk_fetch_the_flag_unfurl/">
   <meta property="og:site_name" content="Javier Olmedo Blog">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
-  <meta property="og:locale" content="es_es">
-  <meta property="og:type" content="website">
+  <meta property="og:title" content="Snyk Fetch The Flag - Unfurl">
+  <meta property="og:description" content="In this challenge, we face a web application that fetches metadata from any URL entered into the form.
+A quick analysis of the source code reveals that the application is developed in NodeJS, and the use of the child_process module suggests the possibility of remote command execution (RCE).
+📄 adminRoutes.js file
+const { exec } = require(&#39;child_process&#39;); router.get(&#39;/execute&#39;, (req, res) =&gt; { // This isn&#39;t terribly secure, but we&#39;re only going to bind this app to the localhost so you&#39;d need to be on the actual host to run any commands. // So I think we&#39;re good! const clientIp = req.ip; // Definitely making sure to lock this down to the localhost if (clientIp !== &#39;127.0.0.1&#39; &amp;&amp; clientIp !== &#39;::1&#39;) { console.warn(`[WARN] Unauthorized access attempt from ${clientIp}`); return res.status(403).send(&#39;Forbidden: Access is restricted to localhost.&#39;); } const cmd = req.query.cmd; if (!cmd) { return res.status(400).send(&#39;No command provided!&#39;); } exec(cmd, (error, stdout, stderr) =&gt; { if (error) { console.error(`[ERROR] Command execution failed: ${error.message}`); return res.status(500).send(`Error: ${error.message}`); } console.log(`[INFO] Command executed: ${cmd}`); res.send(` &lt;h1&gt;Command Output&lt;/h1&gt; &lt;pre&gt;${stdout || stderr}&lt;/pre&gt; &lt;a href=&#34;/admin&#34;&gt;Back to Admin Panel&lt;/a&gt; `); }); }); The code indicates that the application allows executing commands on the /execute endpoint via the cmd parameter, but only locally.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-03T00:00:00+00:00">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
+  <meta name="twitter:title" content="Snyk Fetch The Flag - Unfurl">
+  <meta name="twitter:description" content="In this challenge, we face a web application that fetches metadata from any URL entered into the form.
+A quick analysis of the source code reveals that the application is developed in NodeJS, and the use of the child_process module suggests the possibility of remote command execution (RCE).
+📄 adminRoutes.js file
+const { exec } = require(&#39;child_process&#39;); router.get(&#39;/execute&#39;, (req, res) =&gt; { // This isn&#39;t terribly secure, but we&#39;re only going to bind this app to the localhost so you&#39;d need to be on the actual host to run any commands. // So I think we&#39;re good! const clientIp = req.ip; // Definitely making sure to lock this down to the localhost if (clientIp !== &#39;127.0.0.1&#39; &amp;&amp; clientIp !== &#39;::1&#39;) { console.warn(`[WARN] Unauthorized access attempt from ${clientIp}`); return res.status(403).send(&#39;Forbidden: Access is restricted to localhost.&#39;); } const cmd = req.query.cmd; if (!cmd) { return res.status(400).send(&#39;No command provided!&#39;); } exec(cmd, (error, stdout, stderr) =&gt; { if (error) { console.error(`[ERROR] Command execution failed: ${error.message}`); return res.status(500).send(`Error: ${error.message}`); } console.log(`[INFO] Command executed: ${cmd}`); res.send(` &lt;h1&gt;Command Output&lt;/h1&gt; &lt;pre&gt;${stdout || stderr}&lt;/pre&gt; &lt;a href=&#34;/admin&#34;&gt;Back to Admin Panel&lt;/a&gt; `); }); }); The code indicates that the application allows executing commands on the /execute endpoint via the cmd parameter, but only locally.">
 
 
     
 
-    <link rel="canonical" href="http://localhost:1313/es/posts/">
-    <link href="/es/posts/index.xml" rel="alternate" type="application/rss+xml" title="Javier Olmedo Blog">
-    <link href="/es/posts/index.xml" rel="feed" type="application/rss+xml" title="Javier Olmedo Blog">
+    <link rel="canonical" href="http://localhost:1313/posts/snyk_fetch_the_flag_unfurl/">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -126,13 +125,13 @@
     
     
 </head>
-<body data-theme = "dark" class="notransition">
+<body data-theme = "auto" class="notransition">
 
 <script src="/js/theme.js"></script>
 
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
-        <a href="http://localhost:1313/es/" class="logo">
+        <a href="http://localhost:1313/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -153,29 +152,29 @@ stroke-linejoin="round" class="feather feather-home">
                 
                 
                 <li>
-                    <a class="menu-link " href="/es/">
-                        Inicio
+                    <a class="menu-link " href="/">
+                        Home
                     </a>
                     
                 </li>
                 
                 <li>
-                    <a class="menu-link active" href="/es/posts/">
-                        Artículos
+                    <a class="menu-link active" href="/posts/">
+                        Posts
                     </a>
                     
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/es/projects/">
-                        Proyectos
+                    <a class="menu-link " href="/projects/">
+                        Projects
                     </a>
                     
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/es/pages/about/">
-                        Sobre mí
+                    <a class="menu-link " href="/pages/about/">
+                        About
                     </a>
                     
                 </li>
@@ -195,7 +194,8 @@ stroke-linejoin="round" class="feather feather-home">
                                     
                                         
                                         
-                                            <option id="en-us" value="http://localhost:1313/posts/">EN-US</option>
+                                            <option id="en-us" value="http://localhost:1313/posts/snyk_fetch_the_flag_unfurl/" selected>EN-US
+                                            </option>
                                         
                                     
                                 
@@ -209,8 +209,7 @@ stroke-linejoin="round" class="feather feather-home">
                                     
                                         
                                         
-                                            <option id="es" value="http://localhost:1313/es/posts/" selected>ES-ES
-                                            </option>
+                                            <option id="es" value="http://localhost:1313/es/posts/snyk_fetch_the_flag_unfurl/">ES-ES</option>
                                         
                                     
                                 
@@ -231,566 +230,93 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2025</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_zero_ex_six_one/">Snyk Fetch The Flag - Zero Ex Six One</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-03T00:00:00Z">
-        3 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_unfurl/">Snyk Fetch The Flag - Unfurl</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-03T00:00:00Z">
-        3 marzo 2025
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2016</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/navega-la-deep-web-tails-usb/">Navega por la Deep Web con Tails y un USB</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-05-29T00:00:00Z">
-        29 mayo 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/instalar-parrot-os-vmware/">Cómo instalar Parrot OS en VMware</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-04-17T00:00:00Z">
-        17 abril 2016
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2015</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-iii/">Dendroid - Crea tu propio Troyano para Android - Parte III</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-09-13T00:00:00Z">
-        13 septiembre 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-ii/">Dendroid - Crea tu propio Troyano para Android - Parte II</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-07-09T00:00:00Z">
-        9 julio 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-i/">Dendroid - Crea tu propio Troyano para Android - Parte I</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-06-13T00:00:00Z">
-        13 junio 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/xxe-xml-external-entity-el-nuevo-sqli/">XXE - XML External Entity - El Nuevo SQLi</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-30T00:00:00Z">
-        30 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes/">Hacking Wifi - Parte VII - Seleccionar el Objetivo y capturar los paquetes</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-24T00:00:00Z">
-        24 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/ataque-dns-spoofing-con-cainabel/">Ataque DNS Spoofing con Cain&amp;Abel</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-07T00:00:00Z">
-        7 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/herramienta-para-recuperar-los-archivos-cifrados-por-el-ransomware-teslacrypt/">Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-02T00:00:00Z">
-        2 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/">Cómo crear un USB Keylogger/Stealer para recuperar contraseñas</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-02T00:00:00Z">
-        2 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi/">Hacking Wifi - Parte VI - Seguridad en redes Wi-Fi</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-28T00:00:00Z">
-        28 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/como-usar-tu-pendrive-como-contrasena-en-windows-7/">Cómo usar tu pendrive como contraseña en Windows 7</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-23T00:00:00Z">
-        23 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/">Nueva vulnerabilidad SMB afecta a todas las versiones de Windows</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-14T00:00:00Z">
-        14 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/">Desarrollo de un Stealer sencillo para Twitter en Visual Studio</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-12T00:00:00Z">
-        12 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger/">Hacking Wifi - Parte V - Modificando la dirección MAC con macchanger</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-09T00:00:00Z">
-        9 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-iv-comandos-basicos/">Hacking Wifi - Parte IV - Comandos Básicos</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-05T00:00:00Z">
-        5 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web/">Miles de cuentas de Uber, supuestamente vendidas en la deep web</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-04T00:00:00Z">
-        4 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/sparta-la-caja-de-herramientas-del-pentester/">SPARTA - La Caja de Herramientas del Pentester</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-31T00:00:00Z">
-        31 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/accediendo-al-sistema-de-control-de-las-gasolineras/">Accediendo al sistema de control de las gasolineras</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-29T00:00:00Z">
-        29 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/china-ataca-github-intruduciendo-un-troyano-en-baidu/">China ataca GitHub introduciendo un troyano en Baidu</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-28T00:00:00Z">
-        28 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-iii-instalacion-de-aircrack-ng/">Hacking Wifi – Parte III – Instalación de Aircrack-ng</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-27T00:00:00Z">
-        27 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-ii-requisitos-antes-de-empezar/">Hacking Wifi – Parte II – Requisitos antes de empezar</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-25T00:00:00Z">
-        25 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-i-introduccion/">Hacking Wifi - Parte I - Introducción</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-20T00:00:00Z">
-        20 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/">Examen Programación Hilos - HinchaGlobos y PinchaGlobos</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-20T00:00:00Z">
-        20 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/ip-box-dispositivo-para-crackear-claves-de-iphone/">IP-Box: Dispositivo para crackear claves de iPhone</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-17T00:00:00Z">
-        17 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/detectando-aplicaciones-maliciosas-para-android-en-google-play/">Detectando aplicaciones maliciosas para Android en Google Play</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-11T00:00:00Z">
-        11 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap/">Ataques SQL injection contra Bases de Datos mediante SQLmap</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-11T00:00:00Z">
-        11 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/obtener-informacion-con-the-harvester/">Obtener información con The Harvester</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-09T00:00:00Z">
-        9 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/blog-seguridad-informatica-hacking/">Presentación de mi blog sobre Seguridad Informática y Hacking</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-05T00:00:00Z">
-        5 marzo 2015
-        
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Snyk Fetch The Flag - Unfurl</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-03-03T00:00:00&#43;00:00" itemprop="datePublished"> Mar 3, 2025 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p><a href="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_banner.png"><img src="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_banner.png" alt="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_banner.png"></a></p>
+<p>In this challenge, we face a web application that <strong>fetches metadata</strong> from any URL entered into the form.</p>
+<p><a href="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_001.png"><img src="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_001.png" alt="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_001.png"></a></p>
+<p>A quick analysis of the source code reveals that the application is developed in <strong>NodeJS</strong>, and the use of the <code>child_process</code> module suggests the possibility of <strong>remote command execution (RCE)</strong>.</p>
+<p>📄 <code>adminRoutes.js</code> file</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="p">{</span> <span class="nx">exec</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;child_process&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">router</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/execute&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// This isn&#39;t terribly secure, but we&#39;re only going to bind this app to the localhost so you&#39;d need to be on the actual host to run any commands.
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// So I think we&#39;re good!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="kr">const</span> <span class="nx">clientIp</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">ip</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Definitely making sure to lock this down to the localhost
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="nx">clientIp</span> <span class="o">!==</span> <span class="s1">&#39;127.0.0.1&#39;</span> <span class="o">&amp;&amp;</span> <span class="nx">clientIp</span> <span class="o">!==</span> <span class="s1">&#39;::1&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="sb">`[WARN] Unauthorized access attempt from </span><span class="si">${</span><span class="nx">clientIp</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">403</span><span class="p">).</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;Forbidden: Access is restricted to localhost.&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">cmd</span> <span class="o">=</span> <span class="nx">req</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">cmd</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">cmd</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">400</span><span class="p">).</span><span class="nx">send</span><span class="p">(</span><span class="s1">&#39;No command provided!&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">exec</span><span class="p">(</span><span class="nx">cmd</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">stdout</span><span class="p">,</span> <span class="nx">stderr</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="sb">`[ERROR] Command execution failed: </span><span class="si">${</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="nx">res</span><span class="p">.</span><span class="nx">status</span><span class="p">(</span><span class="mi">500</span><span class="p">).</span><span class="nx">send</span><span class="p">(</span><span class="sb">`Error: </span><span class="si">${</span><span class="nx">error</span><span class="p">.</span><span class="nx">message</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`[INFO] Command executed: </span><span class="si">${</span><span class="nx">cmd</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="sb">`
+</span></span></span><span class="line"><span class="cl"><span class="sb">            &lt;h1&gt;Command Output&lt;/h1&gt;
+</span></span></span><span class="line"><span class="cl"><span class="sb">            &lt;pre&gt;</span><span class="si">${</span><span class="nx">stdout</span> <span class="o">||</span> <span class="nx">stderr</span><span class="si">}</span><span class="sb">&lt;/pre&gt;
+</span></span></span><span class="line"><span class="cl"><span class="sb">            &lt;a href=&#34;/admin&#34;&gt;Back to Admin Panel&lt;/a&gt;
+</span></span></span><span class="line"><span class="cl"><span class="sb">        `</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>The code indicates that the application allows executing commands on the <code>/execute</code> endpoint via the <code>cmd</code> parameter, but only <strong>locally</strong>.</p>
+<p>Upon reviewing the code, we find a function that generates a <strong>random port between 1024 and 4999</strong>, excluding port <strong>5000</strong>.</p>
+<p>📄 <code>admin.js</code> file</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">// This should keep people away from the admin panel!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kd">function</span> <span class="nx">getRandomPort</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">MIN_PORT</span> <span class="o">=</span> <span class="mi">1024</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">const</span> <span class="nx">MAX_PORT</span> <span class="o">=</span> <span class="mi">4999</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">let</span> <span class="nx">port</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">do</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">port</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">random</span><span class="p">()</span> <span class="o">*</span> <span class="p">(</span><span class="nx">MAX_PORT</span> <span class="o">-</span> <span class="nx">MIN_PORT</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="nx">MIN_PORT</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="nx">port</span> <span class="o">===</span> <span class="mi">5000</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="nx">port</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">adminPort</span> <span class="o">=</span> <span class="nx">getRandomPort</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="nx">adminApp</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">adminPort</span><span class="p">,</span> <span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`[INFO] Admin app running on http://127.0.0.1:</span><span class="si">${</span><span class="nx">adminPort</span><span class="si">}</span><span class="sb">`</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>We attempt to fetch metadata using <code>http://127.0.0.1:5000</code>, and it works. However, when trying to execute commands at <code>http://127.0.0.1:5000/execute?cmd=whoami</code>, we receive the error 🔴 <strong>&ldquo;Failed to unfurl the URL&rdquo;</strong>.</p>
+<p><a href="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_002.png"><img src="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_002.png" alt="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_002.png"></a></p>
+<p><a href="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_003.png"><img src="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_003.png" alt="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_003.png"></a></p>
+<p>The key lies in discovering the random port generated internally by the application. To achieve this, we use <strong>Burp Suite</strong> with <code>Intruder</code> to perform <strong>fuzzing</strong>.</p>
+<p><a href="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_004.png"><img src="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_004.png" alt="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_004.png"></a></p>
+<p><a href="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_005.png"><img src="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_005.png" alt="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_005.png"></a></p>
+<p>The fuzz reveals that port <strong>1064</strong> responds with a <code>200 OK</code> status code and returns the HTML of the admin panel.</p>
+<p>Finally, we test command execution on this port and successfully retrieve the flag.</p>
+<p><a href="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_006.png"><img src="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_006.png" alt="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_006.png"></a></p>
+<p><a href="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_007.png"><img src="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_007.png" alt="/images/snyk_fetch_the_flag_unfurl/snyk_fetch_the_flag_unfurl_007.png"></a></p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 

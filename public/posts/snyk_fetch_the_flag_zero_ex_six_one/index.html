@@ -55,7 +55,7 @@
         },
         "datePublished": "2025-03-03",
         "description": "",
-        "wordCount":  314 ,
+        "wordCount":  316 ,
         "mainEntityOfPage": "True",
         "dateModified": "2025-03-03",
         "image": {
@@ -78,7 +78,7 @@
   <meta property="og:title" content="Snyk Fetch The Flag - Zero Ex Six One">
   <meta property="og:description" content="In this challenge, we obtain a file named flag.txt.encry, which contains a hexadecimal string.
 $ cat flag.txt.encry 0x070x0d0x000x060x1a0x020x540x510x050x590x530x020x510x000x530x540x070x520x040x570x550x550x050x510x560x510x530x030x550x500x050x030x050x510x590x540x000x1c The 💡 hint in the challenge description suggests that an XOR encryption was used, and the challenge title, Zero Ex Six One, might indicate that the encryption key is 0x61.
-I&#39;m XORta out of ideas for how to get the flag. Does this look like anything to you? Solution 1 - Using the Encryption Key In this first solution, we convert the hexadecimal string into bytes and apply an XOR decryption using the key 0x61.">
+I&#39;m XORta out of ideas for how to get the flag. Does this look like anything to you? Solution 1 - Using the Encryption Key In this first solution, we convert the hexadecimal string into bytes and apply an XOR decryption using the key 🔑 0x61.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -92,7 +92,7 @@ I&#39;m XORta out of ideas for how to get the flag. Does this look like anything
   <meta name="twitter:title" content="Snyk Fetch The Flag - Zero Ex Six One">
   <meta name="twitter:description" content="In this challenge, we obtain a file named flag.txt.encry, which contains a hexadecimal string.
 $ cat flag.txt.encry 0x070x0d0x000x060x1a0x020x540x510x050x590x530x020x510x000x530x540x070x520x040x570x550x550x050x510x560x510x530x030x550x500x050x030x050x510x590x540x000x1c The 💡 hint in the challenge description suggests that an XOR encryption was used, and the challenge title, Zero Ex Six One, might indicate that the encryption key is 0x61.
-I&#39;m XORta out of ideas for how to get the flag. Does this look like anything to you? Solution 1 - Using the Encryption Key In this first solution, we convert the hexadecimal string into bytes and apply an XOR decryption using the key 0x61.">
+I&#39;m XORta out of ideas for how to get the flag. Does this look like anything to you? Solution 1 - Using the Encryption Key In this first solution, we convert the hexadecimal string into bytes and apply an XOR decryption using the key 🔑 0x61.">
 
 
     
@@ -251,7 +251,7 @@ stroke-linejoin="round" class="feather feather-home">
 </span></span></code></pre></div><p>The 💡 hint in the challenge description suggests that an <strong>XOR encryption</strong> was used, and the challenge title, <strong>Zero Ex Six One</strong>, might indicate that the encryption key is <code>0x61</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">I&#39;m XORta out of ideas for how to get the flag. Does this look like anything to you?
 </span></span></code></pre></div><h2 id="solution-1---using-the-encryption-key">Solution 1 - Using the Encryption Key</h2>
-<p>In this first solution, <strong>we convert the hexadecimal string into bytes</strong> and apply an <strong>XOR decryption</strong> using the key <code>0x61</code>.</p>
+<p>In this first solution, <strong>we convert the hexadecimal string into bytes</strong> and apply an <strong>XOR decryption</strong> using the key 🔑 <code>0x61</code>.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Encrypted hexadecimal string provided</span>
 </span></span><span class="line"><span class="cl"><span class="n">hex_data</span> <span class="o">=</span> <span class="s2">&#34;0x070x0d0x000x060x1a0x020x540x510x050x590x530x020x510x000x530x540x070x520x040x570x550x550x050x510x560x510x530x030x550x500x050x030x050x510x590x540x000x1c&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -269,10 +269,10 @@ stroke-linejoin="round" class="feather feather-home">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Display the result in readable text</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">decrypted</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">))</span>
-</span></span></code></pre></div><pre tabindex="0"><code>$ python zero_ex_six_one.py 
-flag{c50d82c0a25f3e644d0702b41dbd085a}
-</code></pre><h2 id="solution-2---without-knowing-the-encryption-key">Solution 2 - Without Knowing the Encryption Key</h2>
-<p>In this solution, <strong>we do not use a predefined encryption key</strong>. Instead, we deduce the key based on the assumption that the first letters of the decrypted text should be <code>flag</code>.</p>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ python zero_ex_six_one.py 
+</span></span><span class="line"><span class="cl">flag<span class="o">{</span>not_really_tho<span class="o">}</span>
+</span></span></code></pre></div><h2 id="solution-2---without-knowing-the-encryption-key">Solution 2 - Without Knowing the Encryption Key</h2>
+<p>In this solution, <strong>we do not use a predefined encryption key</strong>. Instead, we deduce the key based on the assumption that the first letters of the decrypted text should be <code>flag</code> 🤔.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Encrypted hexadecimal string provided</span>
 </span></span><span class="line"><span class="cl"><span class="n">hex_data</span> <span class="o">=</span> <span class="s2">&#34;0x070x0d0x000x060x1a0x020x540x510x050x590x530x020x510x000x530x540x070x520x040x570x550x550x050x510x560x510x530x030x550x500x050x030x050x510x590x540x000x1c&#34;</span>
 </span></span><span class="line"><span class="cl">
@@ -296,7 +296,7 @@ flag{c50d82c0a25f3e644d0702b41dbd085a}
 </span></span><span class="line"><span class="cl"><span class="c1"># Display the result in readable text</span>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">decrypted</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">))</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ python zero_ex_six_one_no_key.py 
-</span></span><span class="line"><span class="cl">flag<span class="o">{</span>c50d82c0a25f3e644d0702b41dbd085a<span class="o">}</span>
+</span></span><span class="line"><span class="cl">flag<span class="o">{</span>not_really_tho<span class="o">}</span>
 </span></span></code></pre></div><p>Both solutions successfully retrieve the flag, either by knowing the encryption key beforehand or by deducing it from known plaintext patterns.</p>
 
             </div>

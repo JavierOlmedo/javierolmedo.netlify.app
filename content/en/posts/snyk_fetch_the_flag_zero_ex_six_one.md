@@ -22,7 +22,7 @@ I'm XORta out of ideas for how to get the flag. Does this look like anything to 
 
 ## Solution 1 - Using the Encryption Key
 
-In this first solution, **we convert the hexadecimal string into bytes** and apply an **XOR decryption** using the key `0x61`.
+In this first solution, **we convert the hexadecimal string into bytes** and apply an **XOR decryption** using the key 🔑 `0x61`.
 
 ```python
 # Encrypted hexadecimal string provided
@@ -44,14 +44,14 @@ decrypted = bytes([b ^ key for b in ciphertext])
 print(decrypted.decode('utf-8', errors='ignore'))
 ```
 
-```
+```bash
 $ python zero_ex_six_one.py 
-flag{c50d82c0a25f3e644d0702b41dbd085a}
+flag{not_really_tho}
 ```
 
 ## Solution 2 - Without Knowing the Encryption Key
 
-In this solution, **we do not use a predefined encryption key**. Instead, we deduce the key based on the assumption that the first letters of the decrypted text should be `flag`.
+In this solution, **we do not use a predefined encryption key**. Instead, we deduce the key based on the assumption that the first letters of the decrypted text should be `flag` 🤔.
 
 ```python
 # Encrypted hexadecimal string provided
@@ -80,7 +80,7 @@ print(decrypted.decode('utf-8', errors='ignore'))
 
 ```bash
 $ python zero_ex_six_one_no_key.py 
-flag{c50d82c0a25f3e644d0702b41dbd085a}
+flag{not_really_tho}
 ```
 
 Both solutions successfully retrieve the flag, either by knowing the encryption key beforehand or by deducing it from known plaintext patterns.
