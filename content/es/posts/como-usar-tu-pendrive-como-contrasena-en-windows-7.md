@@ -2,6 +2,7 @@
 date = "2015-04-23"
 title = "Cómo usar tu pendrive como contraseña en Windows 7"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_banner.png](/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_banner.png)](/images/como-usar-tu-pendrive-como-contrasena-en-windows-7/como-usar-tu-pendrive-como-contrasena-en-windows-7_banner.png)

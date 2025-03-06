@@ -2,6 +2,7 @@
 date = "2015-03-05"
 title = "Presentación de mi blog sobre Seguridad Informática y Hacking"
 author = "Javier Olmedo"
+toc = false
 +++
 
 Bienvenido a mi blog sobre **Hacking, Seguridad Informática y Programación**, antes de nada, me presentaré, mi nombre es **Javier Olmedo** y soy Técnico en Sistemas Informáticos y Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, desde hace unos años aprendo seguridad informática de manera autodidacta.

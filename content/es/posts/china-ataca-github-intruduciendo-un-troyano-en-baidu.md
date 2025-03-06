@@ -2,6 +2,7 @@
 date = "2015-03-28"
 title = "China ataca GitHub introduciendo un troyano en Baidu"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/china-ataca-github-intruduciendo-un-troyano-en-baidu/china-ataca-github-intruduciendo-un-troyano-en-baidu_banner.jpg](/images/china-ataca-github-intruduciendo-un-troyano-en-baidu/china-ataca-github-intruduciendo-un-troyano-en-baidu_banner.jpg)](/images/china-ataca-github-intruduciendo-un-troyano-en-baidu/china-ataca-github-intruduciendo-un-troyano-en-baidu_banner.jpg)

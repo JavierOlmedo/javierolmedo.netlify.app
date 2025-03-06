@@ -2,6 +2,7 @@
 date = "2016-04-17"
 title = "Cómo instalar Parrot OS en VMware"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/instalar-parrot-os-vmware/instalar-parrot-os-vmware_banner.png](/images/instalar-parrot-os-vmware/instalar-parrot-os-vmware_banner.png)](/images/instalar-parrot-os-vmware/instalar-parrot-os-vmware_banner.png)

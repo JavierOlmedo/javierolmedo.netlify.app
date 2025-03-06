@@ -2,6 +2,7 @@
 date = "2015-03-25"
 title = "Hacking Wifi – Parte II – Requisitos antes de empezar"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/hacking-wifi-parte-ii-requisitos-antes-de-empezar/hacking-wifi-parte-ii-requisitos-antes-de-empezar_banner.jpg](/images/hacking-wifi-parte-ii-requisitos-antes-de-empezar/hacking-wifi-parte-ii-requisitos-antes-de-empezar_banner.jpg)](/images/hacking-wifi-parte-ii-requisitos-antes-de-empezar/hacking-wifi-parte-ii-requisitos-antes-de-empezar_banner.jpg)

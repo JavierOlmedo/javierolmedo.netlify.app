@@ -1,6 +1,8 @@
 +++
 date = '2021-11-25'
 title = 'HTB Machine BountyHunter'
+author = 'Javier Olmedo'
+toc = false
 +++
 
 [![Hack The Box - Machine - BountyHunter](images/htb-machine-bountyhunter/htb-machine-bountyhunter_banner.png)](images/htb-machine-bountyhunter/htb-machine-bountyhunter_banner.png)

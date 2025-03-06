@@ -2,6 +2,7 @@
 date = "2015-04-09"
 title = "Hacking Wifi - Parte V - Modificando la dirección MAC con macchanger"
 author = "Javier Olmedo"
+toc = false
 +++
 
 **La dirección MAC** de la tarjeta de red o dirección física, es un identificador de 48 [bits](https://es.wikipedia.org/wiki/Bit) (6 bloques [hexadecimales](https://es.wikipedia.org/wiki/Sistema_hexadecimal)) que identifica de manera inequívoca a un dispositivo de red, **es una de las maneras más fáciles de** rastrear e **identificar un equipo** al **no existir dos direcciones MAC iguales** en el mundo.

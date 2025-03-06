@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/es/</loc>
-    <lastmod>2025-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/es/posts/</loc>
-    <lastmod>2025-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -26,6 +26,45 @@
                 rel="alternate"
                 hreflang="es-es"
                 href="http://localhost:1313/es/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/posts/snyk_fetch_the_flag_science_100/</loc>
+    <lastmod>2025-03-06T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/posts/snyk_fetch_the_flag_science_100/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/posts/snyk_fetch_the_flag_science_100/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/posts/snyk_fetch_the_flag_ctf_101/</loc>
+    <lastmod>2025-03-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/posts/snyk_fetch_the_flag_ctf_101/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/posts/snyk_fetch_the_flag_ctf_101/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/es/posts/snyk_fetch_the_flag_screaming_crying_throwing_up/</loc>
+    <lastmod>2025-03-04T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/posts/snyk_fetch_the_flag_screaming_crying_throwing_up/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/posts/snyk_fetch_the_flag_screaming_crying_throwing_up/"
                 />
   </url><url>
     <loc>http://localhost:1313/es/posts/snyk_fetch_the_flag_unfurl/</loc>
@@ -42,7 +81,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/es/posts/snyk_fetch_the_flag_zero_ex_six_one/</loc>
-    <lastmod>2025-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -53,6 +92,18 @@
                 hreflang="es-es"
                 href="http://localhost:1313/es/posts/snyk_fetch_the_flag_zero_ex_six_one/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/es/posts/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4/</loc>
+    <lastmod>2016-10-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/instalacion-de-virtualbox-guest-additions-en-kali-linux-2016-2/</loc>
+    <lastmod>2016-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/hacking-camaras-ip-montandome-propio-gran-hermano/</loc>
+    <lastmod>2016-09-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/preparando-sublime-text-3-programar-python/</loc>
+    <lastmod>2016-06-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/es/posts/navega-la-deep-web-tails-usb/</loc>
     <lastmod>2016-05-29T00:00:00+00:00</lastmod>

@@ -2,6 +2,7 @@
 date = "2015-05-24"
 title = "Hacking Wifi - Parte VII - Seleccionar el Objetivo y capturar los paquetes"
 author = "Javier Olmedo"
+toc = false
 +++
 
 Lo que intentaremos en esta entrada, será **conseguir paquetes de la red objetivo** (evidentemente sin estar asociados a ella) y **guardarlos** en un archivo con extension **.PCAP** (Packet Capture Data), para que cuando tengamos suficientes **IVs** crackearlo para obtener la clave.

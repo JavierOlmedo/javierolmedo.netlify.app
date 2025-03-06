@@ -3,12 +3,12 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt | Javier Olmedo Blog</title>
-<meta property="og:title" content="Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt | Javier Olmedo Blog" />
-<meta name="twitter:title" content="Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt | Javier Olmedo Blog" />
-<meta itemprop="name" content="Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt | Javier Olmedo Blog" />
-<meta name="application-name" content="Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt | Javier Olmedo Blog" />
-<meta property="og:site_name" content="Awesome hugo blog" />
+<title itemprop="name">Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt | Hackpuntes</title>
+<meta property="og:title" content="Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt | Hackpuntes" />
+<meta name="twitter:title" content="Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt | Hackpuntes" />
+<meta itemprop="name" content="Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt | Hackpuntes" />
+<meta name="application-name" content="Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt | Hackpuntes" />
+<meta property="og:site_name" content="Hackpuntes" />
 
 <meta name="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
 <meta itemprop="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale" />
@@ -62,7 +62,7 @@
         },
         "publisher": {
         "@type": "Organization",
-        "name": "Javier Olmedo Blog"
+        "name": "Hackpuntes"
         }
     }
     </script>
@@ -72,7 +72,7 @@
 
     
     <meta property="og:url" content="http://localhost:1313/es/posts/herramienta-para-recuperar-los-archivos-cifrados-por-el-ransomware-teslacrypt/">
-  <meta property="og:site_name" content="Javier Olmedo Blog">
+  <meta property="og:site_name" content="Hackpuntes">
   <meta property="og:title" content="Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt">
   <meta property="og:description" content="Cifrar los archivos de la víctima y luego pedir bitcoins para descifrarlos es un negocio muy lucrativo: las campañas de ramsonware se están convirtiendo en una amenaza cada vez mayor. Después de la caída de CryptoLocker surgió Cryptowall, con técnicas anti-depuración avanzadas, y después numerosas variantes que se incluyen en campañas dirigidas cada vez más numerosas.
 Una de las últimas variantes se llama TeslaCrypt y parece ser un derivado del ransomware CryptoLocker original. Este ransomware está dirigido específicamente a gamers y, aunque dice estar usando RSA-2048 asimétrico para cifrar archivos, realmente está usando AES simétrico, lo que ha permitido a Talos Group (Talos Security Intelligence &amp; Research Group) desarrollar una herramienta que descifra los archivos…">
@@ -203,29 +203,6 @@ stroke-linejoin="round" class="feather feather-home">
                 
             </header>
             
-    
-    <details class="toc" ZgotmplZ>
-        <summary><b>Table of Contents</b></summary>
-        <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#vector-de-infección-y-función-de-instalación">Vector de infección y función de instalación</a></li>
-        <li><a href="#cifrado-de-archivos--introducción">Cifrado de archivos – introducción</a></li>
-        <li><a href="#el-fichero-de-claves">El fichero de claves</a></li>
-        <li><a href="#el-algoritmo-de-cifrado-de-archivos">El algoritmo de cifrado de archivos</a></li>
-        <li><a href="#la-herramienta-de-descifrado-de-teslacrypt-de-talos">La herramienta de descifrado de TeslaCrypt de Talos</a>
-          <ul>
-            <li><a href="#binario-windows">Binario Windows:</a></li>
-            <li><a href="#código-fuente-del-binario-de-windows">Código fuente del binario de Windows:</a></li>
-            <li><a href="#script-en-python">Script en Python:</a></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </details>
             <div class="page-content">
                 <p>Cifrar los archivos de la víctima y luego pedir bitcoins para descifrarlos es un negocio muy lucrativo: <strong>las campañas de ramsonware se están convirtiendo en una amenaza cada vez mayor</strong>. Después de la caída de CryptoLocker surgió <a href="https://es.wikipedia.org/wiki/CryptoLocker">Cryptowall</a>, con técnicas anti-depuración avanzadas, y después <strong>numerosas variantes que se incluyen en campañas dirigidas cada vez más numerosas</strong>.</p>
 <p>Una de las últimas variantes se llama <strong>TeslaCrypt y parece ser un derivado del ransomware CryptoLocker original</strong>. Este ransomware está <strong>dirigido específicamente a gamers</strong> y, aunque dice estar usando RSA-2048 asimétrico para cifrar archivos, <strong>realmente está usando AES simétrico</strong>, lo que ha permitido a <a href="http://blogs.cisco.com/author/talos">Talos Group</a> (Talos Security Intelligence &amp; Research Group) desarrollar una herramienta que descifra los archivos…</p>

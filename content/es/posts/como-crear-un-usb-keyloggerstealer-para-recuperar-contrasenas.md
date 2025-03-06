@@ -2,6 +2,7 @@
 date = "2015-05-02"
 title = "Cómo crear un USB Keylogger/Stealer para recuperar contraseñas"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas_banner.jpg](/images/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas_banner.jpg)](/images/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas_banner.jpg)

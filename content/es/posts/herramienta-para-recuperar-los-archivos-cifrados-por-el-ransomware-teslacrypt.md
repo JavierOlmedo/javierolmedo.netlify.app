@@ -2,6 +2,7 @@
 date = "2015-05-02"
 title = "Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt"
 author = "Javier Olmedo"
+toc = false
 +++
 
 Cifrar los archivos de la víctima y luego pedir bitcoins para descifrarlos es un negocio muy lucrativo: **las campañas de ramsonware se están convirtiendo en una amenaza cada vez mayor**. Después de la caída de CryptoLocker surgió [Cryptowall](https://es.wikipedia.org/wiki/CryptoLocker), con técnicas anti-depuración avanzadas, y después **numerosas variantes que se incluyen en campañas dirigidas cada vez más numerosas**. 

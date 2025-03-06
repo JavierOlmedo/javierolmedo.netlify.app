@@ -2,6 +2,7 @@
 date = "2015-04-12"
 title = "Desarrollo de un Stealer sencillo para Twitter en Visual Studio"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio_banner.png](/images/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio_banner.png)](/images/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio_banner.png)

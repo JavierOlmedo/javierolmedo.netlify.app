@@ -3,12 +3,12 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Snyk Fetch The Flag - Zero Ex Six One | Javier Olmedo Blog</title>
-<meta property="og:title" content="Snyk Fetch The Flag - Zero Ex Six One | Javier Olmedo Blog" />
-<meta name="twitter:title" content="Snyk Fetch The Flag - Zero Ex Six One | Javier Olmedo Blog" />
-<meta itemprop="name" content="Snyk Fetch The Flag - Zero Ex Six One | Javier Olmedo Blog" />
-<meta name="application-name" content="Snyk Fetch The Flag - Zero Ex Six One | Javier Olmedo Blog" />
-<meta property="og:site_name" content="Awesome hugo blog" />
+<title itemprop="name">Snyk Fetch The Flag - Zero Ex Six One | Hackpuntes</title>
+<meta property="og:title" content="Snyk Fetch The Flag - Zero Ex Six One | Hackpuntes" />
+<meta name="twitter:title" content="Snyk Fetch The Flag - Zero Ex Six One | Hackpuntes" />
+<meta itemprop="name" content="Snyk Fetch The Flag - Zero Ex Six One | Hackpuntes" />
+<meta name="application-name" content="Snyk Fetch The Flag - Zero Ex Six One | Hackpuntes" />
+<meta property="og:site_name" content="Hackpuntes" />
 
 <meta name="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
 <meta itemprop="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale" />
@@ -31,8 +31,8 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2025-03-03T00:00:00Z />
-    <meta property="article:published_time" content=2025-03-03T00:00:00Z />
+    <meta property="og:article:published_time" content=2025-03-02T00:00:00Z />
+    <meta property="article:published_time" content=2025-03-02T00:00:00Z />
     <meta property="og:url" content="http://localhost:1313/es/posts/snyk_fetch_the_flag_zero_ex_six_one/" />
 
     
@@ -53,18 +53,18 @@
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2025-03-03",
+        "datePublished": "2025-03-02",
         "description": "",
-        "wordCount":  340 ,
+        "wordCount":  349 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2025-03-03",
+        "dateModified": "2025-03-02",
         "image": {
         "@type": "imageObject",
         "url": ""
         },
         "publisher": {
         "@type": "Organization",
-        "name": "Javier Olmedo Blog"
+        "name": "Hackpuntes"
         }
     }
     </script>
@@ -74,7 +74,7 @@
 
     
     <meta property="og:url" content="http://localhost:1313/es/posts/snyk_fetch_the_flag_zero_ex_six_one/">
-  <meta property="og:site_name" content="Javier Olmedo Blog">
+  <meta property="og:site_name" content="Hackpuntes">
   <meta property="og:title" content="Snyk Fetch The Flag - Zero Ex Six One">
   <meta property="og:description" content="En este desafío obtenemos un archivo llamado flag.txt.encry, el cual contiene una cadena en formato hexadecimal.
 $ cat flag.txt.encry 0x070x0d0x000x060x1a0x020x540x510x050x590x530x020x510x000x530x540x070x520x040x570x550x550x050x510x560x510x530x030x550x500x050x030x050x510x590x540x000x1c La 💡 pista en la descripción del reto sugiere que se ha utilizado un cifrado XOR, y el título del desafío, Zero Ex Six One, podría indicar que la clave de cifrado es 0x61
@@ -82,8 +82,8 @@ I&#39;m XORta out of ideas for how to get the flag. Does this look like anything
   <meta property="og:locale" content="es_es">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-03-03T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-03-03T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-03-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-03-02T00:00:00+00:00">
 
 
     
@@ -238,7 +238,7 @@ stroke-linejoin="round" class="feather feather-home">
                 
                 
                 <div class="post-meta">
-                    <time datetime="2025-03-03T00:00:00&#43;00:00" itemprop="datePublished"> 3 marzo 2025 </time>
+                    <time datetime="2025-03-02T00:00:00&#43;00:00" itemprop="datePublished"> 2 marzo 2025 </time>
                 </div>
                 
             </header>
@@ -271,7 +271,9 @@ stroke-linejoin="round" class="feather feather-home">
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">decrypted</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;utf-8&#39;</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">))</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ python zero_ex_six_one.py 
 </span></span><span class="line"><span class="cl">flag<span class="o">{</span>not_really_tho<span class="o">}</span>
-</span></span></code></pre></div><h2 id="solución-2---sin-conocer-la-clave-de-cifrado">Solución 2 - Sin conocer la clave de cifrado</h2>
+</span></span></code></pre></div><p>También se puede hacer uso de la herramienta <a href="https://gchq.github.io/CyberChef/">Cyberchef</a></p>
+<p><a href="/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_001.png"><img src="/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_001.png" alt="/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_001.png"></a></p>
+<h2 id="solución-2---sin-conocer-la-clave-de-cifrado">Solución 2 - Sin conocer la clave de cifrado</h2>
 <p>En esta segunda solución, <strong>no utilizamos una clave de cifrado predefinida</strong>. En su lugar, deducimos la clave basándonos en el hecho de que las primeras letras del texto descifrado deben ser <code>flag</code> 🤔.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># Cadena cifrada en hexadecimal proporcionada</span>
 </span></span><span class="line"><span class="cl"><span class="n">hex_data</span> <span class="o">=</span> <span class="s2">&#34;0x070x0d0x000x060x1a0x020x540x510x050x590x530x020x510x000x530x540x070x520x040x570x550x550x050x510x560x510x530x030x550x500x050x030x050x510x590x540x000x1c&#34;</span>

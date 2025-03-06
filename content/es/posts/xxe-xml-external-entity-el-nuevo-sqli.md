@@ -2,6 +2,7 @@
 date = "2015-05-30"
 title = "XXE - XML External Entity - El Nuevo SQLi"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/xxe-xml-external-entity-el-nuevo-sqli/xxe-xml-external-entity-el-nuevo-sqli_banner.png](/images/xxe-xml-external-entity-el-nuevo-sqli/xxe-xml-external-entity-el-nuevo-sqli_banner.png)](/images/xxe-xml-external-entity-el-nuevo-sqli/xxe-xml-external-entity-el-nuevo-sqli_banner.png)

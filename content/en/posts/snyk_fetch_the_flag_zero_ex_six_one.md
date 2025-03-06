@@ -1,5 +1,5 @@
 +++
-date = "2025-03-03"
+date = "2025-03-02"
 title = "Snyk Fetch The Flag - Zero Ex Six One"
 author = "Javier Olmedo"
 toc = false
@@ -48,6 +48,10 @@ print(decrypted.decode('utf-8', errors='ignore'))
 $ python zero_ex_six_one.py 
 flag{not_really_tho}
 ```
+
+You can also use [Cyberchef](https://gchq.github.io/CyberChef/)
+
+[![/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_001.png](/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_001.png)](/images/snyk_fetch_the_flag_zero_ex_six_one/snyk_fetch_the_flag_zero_ex_six_one_001.png)
 
 ## Solution 2 - Without Knowing the Encryption Key
 

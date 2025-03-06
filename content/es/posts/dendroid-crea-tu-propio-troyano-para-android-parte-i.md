@@ -2,6 +2,7 @@
 date = "2015-06-13"
 title = "Dendroid - Crea tu propio Troyano para Android - Parte I"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/dendroid-crea-tu-propio-troyano-para-android-parte-i/dendroid-crea-tu-propio-troyano-para-android-parte-i_banner.png](/images/dendroid-crea-tu-propio-troyano-para-android-parte-i/dendroid-crea-tu-propio-troyano-para-android-parte-i_banner.png)](/images/dendroid-crea-tu-propio-troyano-para-android-parte-i/dendroid-crea-tu-propio-troyano-para-android-parte-i_banner.png)

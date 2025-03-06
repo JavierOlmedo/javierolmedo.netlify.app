@@ -2,6 +2,7 @@
 date = "2015-03-20"
 title = "Examen Programación Hilos - HinchaGlobos y PinchaGlobos"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/examen-programacion-hilos-hinchaglobos-y-pinchaglobos_banner.png](/images/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/examen-programacion-hilos-hinchaglobos-y-pinchaglobos_banner.png)](/images/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/examen-programacion-hilos-hinchaglobos-y-pinchaglobos_banner.png)

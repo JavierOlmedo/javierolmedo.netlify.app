@@ -2,6 +2,7 @@
 date = "2015-09-13"
 title = "Dendroid - Crea tu propio Troyano para Android - Parte III"
 author = "Javier Olmedo"
+toc = false
 +++
 
 Esta será la **última parte de configuración** de nuestro troyano para Android, en la cual bindearemos (fusionaremos o uniremos) la APK maliciosa generada en el [anterior tutorial](https://hackpuntes.com/dendroid-crea-tu-propio-troyano-para-android-parte-ii/) por nosotros con otra APK legítima de Google Play para camuflarla.

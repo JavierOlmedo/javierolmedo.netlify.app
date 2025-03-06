@@ -2,6 +2,7 @@
 date = "2015-04-28"
 title = "Hacking Wifi - Parte VI - Seguridad en redes Wi-Fi"
 author = "Javier Olmedo"
+toc = false
 +++
 
 Antes de empezar a atacar una red Wi-Fi, **tenemos que saber que tipo de seguridad tiene**, para posteriormente auditarla de la forma más eficiente y correcta posible.

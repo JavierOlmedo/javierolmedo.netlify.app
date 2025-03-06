@@ -1,4 +1,4 @@
-title = "Javier Olmedo Blog"
+title = "Hackpuntes"
 baseURL = "https://javierolmedo.netlify.app/"
 languageCode = 'en-us'
 defaultContentLanguage = "en-us"
@@ -73,7 +73,7 @@ theme = "hugo-blog-awesome"
     weight = 40
 
 [Languages.en-us.params]
-  sitename = "Javier Olmedo´s Blog"
+  sitename = "Hackpuntes"
   defaultColor = "auto" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
@@ -142,7 +142,7 @@ theme = "hugo-blog-awesome"
     weight = 40
 
 [Languages.es.params]
-  sitename = "Awesome hugo blog"
+  sitename = "Hackpuntes"
   defaultColor = "dark" # set color mode: dark, light, auto
   # Setting it to 'auto' applies the color scheme based on the visitor's device color preference.If you don't specify anything, ignore this parameter, or leave it blank,
   # the default value is set to 'auto'.
@@ -238,4 +238,4 @@ url = "https://0day.today/author/33736"
 name = "rss"
 url = "/index.xml"
 
-# Falta Exploit-DB, 0day today y Tryhackme
+# Falta Exploit-DB y 0day today

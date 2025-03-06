@@ -2,6 +2,7 @@
 date = "2020-11-24"
 title = "Create your own log-free VPN"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![Create your own log-free VPN](/images/create-your-own-log-free-vpn/create-your-own-log-free-vpn_banner.png)](/images/create-your-own-log-free-vpn/create-your-own-log-free-vpn_banner.png)

@@ -2,6 +2,7 @@
 date = "2015-04-14"
 title = "Nueva vulnerabilidad SMB afecta a todas las versiones de Windows"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows_banner.jpeg](/images/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows_banner.jpeg)](/images/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows_banner.jpeg)

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Usb on Hackpuntes</title>
+    <link>http://localhost:1313/es/tags/usb/</link>
+    <description>Recent content in Usb on Hackpuntes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/tags/usb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snyk Fetch The Flag - ClickityClack</title>
+      <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_clickityclack/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/snyk_fetch_the_flag_clickityclack/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En este reto, partimos de un fichero &lt;code&gt;pcapng&lt;/code&gt; que contiene la flag oculta en su interior. Inicialmente, intenté analizarlo con &lt;strong&gt;Wireshark&lt;/strong&gt;, pero no encontraba nada relevante. Fue entonces cuando una simple búsqueda en Google me dio la pista clave:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pcapng usb ctf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_001.png&#34; alt=&#34;/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Esta búsqueda me llevó a descubrir una herramienta llamada &lt;a href=&#34;https://raw.githubusercontent.com/5h4rrk/CTF-Usb_Keyboard_Parser/refs/heads/main/Usb_Keyboard_Parser.py&#34;&gt;Usb_Keyboard_Parser.py&lt;/a&gt; que parsea los paquetes de tráfico USB, como las pulsaciones de teclas.&lt;/p&gt;
+&lt;p&gt;Basta con pasar el fichero al script para obtener la bandera al final de las pulsaciones.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

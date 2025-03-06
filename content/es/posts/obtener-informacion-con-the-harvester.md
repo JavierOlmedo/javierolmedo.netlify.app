@@ -2,6 +2,7 @@
 date = "2015-03-09"
 title = "Obtener información con The Harvester"
 author = "Javier Olmedo"
+toc = false
 +++
 
 Antes de realizar cualquier intento de penetrar en un sistema informático, es necesario la **recolección de información** sobre la empresa u organismo que se quiere penetrar o auditar, intentar cualquier ataque sin tener información sería **«ir dando palos de ciego»** sin sentido, aunque parezca que es una pérdida de tiempo en un principio, durante la fase de explotación echaremos de menos no haber recolectado los suficientes datos.

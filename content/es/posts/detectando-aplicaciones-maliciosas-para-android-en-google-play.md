@@ -2,6 +2,7 @@
 date = "2015-03-11"
 title = "Detectando aplicaciones maliciosas para Android en Google Play"
 author = "Javier Olmedo"
+toc = false
 +++
 
 [![/images/detectando-aplicaciones-maliciosas-para-android-en-google-play/detectando-aplicaciones-maliciosas-para-android-en-google-play_banner.jpg](/images/detectando-aplicaciones-maliciosas-para-android-en-google-play/detectando-aplicaciones-maliciosas-para-android-en-google-play_banner.jpg)](/images/detectando-aplicaciones-maliciosas-para-android-en-google-play/detectando-aplicaciones-maliciosas-para-android-en-google-play_banner.jpg)

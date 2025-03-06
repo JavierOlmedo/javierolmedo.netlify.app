@@ -3,12 +3,12 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">XXE - XML External Entity - El Nuevo SQLi | Javier Olmedo Blog</title>
-<meta property="og:title" content="XXE - XML External Entity - El Nuevo SQLi | Javier Olmedo Blog" />
-<meta name="twitter:title" content="XXE - XML External Entity - El Nuevo SQLi | Javier Olmedo Blog" />
-<meta itemprop="name" content="XXE - XML External Entity - El Nuevo SQLi | Javier Olmedo Blog" />
-<meta name="application-name" content="XXE - XML External Entity - El Nuevo SQLi | Javier Olmedo Blog" />
-<meta property="og:site_name" content="Awesome hugo blog" />
+<title itemprop="name">XXE - XML External Entity - El Nuevo SQLi | Hackpuntes</title>
+<meta property="og:title" content="XXE - XML External Entity - El Nuevo SQLi | Hackpuntes" />
+<meta name="twitter:title" content="XXE - XML External Entity - El Nuevo SQLi | Hackpuntes" />
+<meta itemprop="name" content="XXE - XML External Entity - El Nuevo SQLi | Hackpuntes" />
+<meta name="application-name" content="XXE - XML External Entity - El Nuevo SQLi | Hackpuntes" />
+<meta property="og:site_name" content="Hackpuntes" />
 
 <meta name="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
 <meta itemprop="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale" />
@@ -62,7 +62,7 @@
         },
         "publisher": {
         "@type": "Organization",
-        "name": "Javier Olmedo Blog"
+        "name": "Hackpuntes"
         }
     }
     </script>
@@ -72,7 +72,7 @@
 
     
     <meta property="og:url" content="http://localhost:1313/es/posts/xxe-xml-external-entity-el-nuevo-sqli/">
-  <meta property="og:site_name" content="Javier Olmedo Blog">
+  <meta property="og:site_name" content="Hackpuntes">
   <meta property="og:title" content="XXE - XML External Entity - El Nuevo SQLi">
   <meta property="og:description" content="XXE (Xml eXternal Entity) es un tipo de vulnerabilidad que se produce en aplicaciones que hacen uso de «parsers» XML. Es decir aplicaciones que reciben como entrada un documento XML y para procesarlo hacen uso de alguna librería de parseo como LibXML, Xerces, MiniDOM, SAX etc. El atacante entonces puede aprovechar esta vulnerabilidad y enviar un documento XML especialmente manipulado para conseguir que el parser XML divulgue información del sistema, consuma recursos en exceso, ejecute comandos u otras formas de explotación.">
   <meta property="og:locale" content="es_es">
@@ -201,22 +201,6 @@ stroke-linejoin="round" class="feather feather-home">
                 
             </header>
             
-    
-    <details class="toc" ZgotmplZ>
-        <summary><b>Table of Contents</b></summary>
-        <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#que-es-un-dtd">¿Que es un DTD?</a></li>
-        <li><a href="#donde-puede-encontrarse-esta-vulnerabilidad">¿Donde puede encontrarse esta vulnerabilidad?</a></li>
-        <li><a href="#cómo-se-explota-xxe">¿Cómo se explota XXE?</a></li>
-        <li><a href="#explotación-práctica-demo">Explotación práctica (demo)</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-    </details>
             <div class="page-content">
                 <p><a href="/images/xxe-xml-external-entity-el-nuevo-sqli/xxe-xml-external-entity-el-nuevo-sqli_banner.png"><img src="/images/xxe-xml-external-entity-el-nuevo-sqli/xxe-xml-external-entity-el-nuevo-sqli_banner.png" alt="/images/xxe-xml-external-entity-el-nuevo-sqli/xxe-xml-external-entity-el-nuevo-sqli_banner.png"></a></p>
 <p><strong>XXE (Xml eXternal Entity)</strong> es un tipo de vulnerabilidad que se produce en aplicaciones que hacen uso de <strong>«parsers»</strong> XML. Es decir aplicaciones que reciben como entrada un documento XML y para procesarlo hacen uso de alguna librería de parseo como LibXML, Xerces, MiniDOM, SAX etc. El atacante entonces puede aprovechar esta vulnerabilidad y enviar un documento XML especialmente manipulado para conseguir que el parser XML divulgue información del sistema, consuma recursos en exceso, ejecute comandos u otras formas de explotación.</p>

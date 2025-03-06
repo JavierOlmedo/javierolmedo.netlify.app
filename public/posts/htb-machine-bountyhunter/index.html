@@ -3,12 +3,12 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">HTB Machine BountyHunter | Javier Olmedo Blog</title>
-<meta property="og:title" content="HTB Machine BountyHunter | Javier Olmedo Blog" />
-<meta name="twitter:title" content="HTB Machine BountyHunter | Javier Olmedo Blog" />
-<meta itemprop="name" content="HTB Machine BountyHunter | Javier Olmedo Blog" />
-<meta name="application-name" content="HTB Machine BountyHunter | Javier Olmedo Blog" />
-<meta property="og:site_name" content="Javier Olmedo´s Blog" />
+<title itemprop="name">HTB Machine BountyHunter | Hackpuntes</title>
+<meta property="og:title" content="HTB Machine BountyHunter | Hackpuntes" />
+<meta name="twitter:title" content="HTB Machine BountyHunter | Hackpuntes" />
+<meta itemprop="name" content="HTB Machine BountyHunter | Hackpuntes" />
+<meta name="application-name" content="HTB Machine BountyHunter | Hackpuntes" />
+<meta property="og:site_name" content="Hackpuntes" />
 
 <meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
 <meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
@@ -62,7 +62,7 @@
         },
         "publisher": {
         "@type": "Organization",
-        "name": "Javier Olmedo Blog"
+        "name": "Hackpuntes"
         }
     }
     </script>
@@ -72,7 +72,7 @@
 
     
     <meta property="og:url" content="http://localhost:1313/posts/htb-machine-bountyhunter/">
-  <meta property="og:site_name" content="Javier Olmedo Blog">
+  <meta property="og:site_name" content="Hackpuntes">
   <meta property="og:title" content="HTB Machine BountyHunter">
   <meta property="og:description" content="Overview Welcome to the writeup of the bountyhunter machine of the Hack The Box platform. BountyHunter is a Linux based machine that was active since July 24th to November 20th, on this machine we will find a XXE vulnerability and use it with a php wrapper to read internal files and get sensitive information, with the information gotten we will be able to connect to the machine through SSH, once inside the machine we will analyze a python script to find how we can abuse it to get code execution as root user and finish with the machine.">
   <meta property="og:locale" content="en_us">
@@ -201,30 +201,6 @@ stroke-linejoin="round" class="feather feather-home">
                 
             </header>
             
-    
-    <details class="toc" ZgotmplZ>
-        <summary><b>Table of Contents</b></summary>
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#overview">Overview</a></li>
-    <li><a href="#before-starting">Before starting</a>
-      <ul>
-        <li><a href="#tmux-for-vpn-connection">Tmux for VPN connection</a></li>
-        <li><a href="#add-to-hosts-file">Add to hosts file</a></li>
-      </ul>
-    </li>
-    <li><a href="#recon">Recon</a>
-      <ul>
-        <li><a href="#scan-with-nmap">Scan with nmap</a></li>
-        <li><a href="#check-website">Check website</a></li>
-        <li><a href="#fuzzing-with-gobuster">Fuzzing with gobuster</a></li>
-      </ul>
-    </li>
-    <li><a href="#gain-access">Gain Access</a></li>
-    <li><a href="#privilege-escalation">Privilege Escalation</a></li>
-  </ul>
-</nav>
-    </details>
             <div class="page-content">
                 <p><a href="/images/htb-machine-bountyhunter/htb-machine-bountyhunter_banner.png"><img src="/images/htb-machine-bountyhunter/htb-machine-bountyhunter_banner.png" alt="Hack The Box - Machine - BountyHunter"></a></p>
 <h1 id="overview">Overview</h1>

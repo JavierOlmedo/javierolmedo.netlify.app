@@ -2,6 +2,7 @@
 date = "2015-04-05"
 title = "Hacking Wifi - Parte IV - Comandos Básicos"
 author = "Javier Olmedo"
+toc = false
 +++
 
 En esta parte de entradas sobre hacking wifi, vamos a empezar a trabajar con nuestra tarjeta de red inalámbrica y a conocer los **comandos básicos**.

@@ -1,12 +1,90 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Javier Olmedo Blog</title>
+    <title>Posts on Hackpuntes</title>
     <link>http://localhost:1313/es/posts/</link>
-    <description>Recent content in Posts on Javier Olmedo Blog</description>
+    <description>Recent content in Posts on Hackpuntes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Mon, 03 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snyk Fetch The Flag - Science 100</title>
+      <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_science_100/</link>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/snyk_fetch_the_flag_science_100/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_science_100/snyk_fetch_the_flag_science_100_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_science_100/snyk_fetch_the_flag_science_100_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_science_100/snyk_fetch_the_flag_science_100_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En este desafío de CTF, nos encontramos con un &lt;strong&gt;terminal de Robco Industries&lt;/strong&gt; similar al que aparece en la saga del videojuego &lt;strong&gt;Fallout&lt;/strong&gt;. Nuestra misión es descifrar la contraseña correcta utilizando la mecánica de &lt;code&gt;Likeness (similitud)&lt;/code&gt;, que nos indica cuántas letras coinciden en la posición exacta con la palabra clave.&lt;/p&gt;
+&lt;h2 id=&#34;-conectando-al-reto&#34;&gt;🖥️ Conectando al reto&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ nc challenge.ctf.games &lt;span class=&#34;m&#34;&gt;32377&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Al conectarnos, el sistema nos da la bienvenida y nos presenta una lista de &lt;strong&gt;posibles contraseñas&lt;/strong&gt; camufladas entre símbolos aleatorios.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Snyk Fetch The Flag - CTF 101</title>
+      <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_ctf_101/</link>
+      <pubDate>Wed, 05 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/snyk_fetch_the_flag_ctf_101/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_ctf_101/snyk_fetch_the_flag_ctf_101_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_ctf_101/snyk_fetch_the_flag_ctf_101_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_ctf_101/snyk_fetch_the_flag_ctf_101_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Este reto está diseñado como una &lt;strong&gt;introducción a los CTFs&lt;/strong&gt; (Capture The Flag). Es un desafío sencillo que permite familiarizarse con la explotación de vulnerabilidades en aplicaciones web.&lt;/p&gt;
+&lt;p&gt;Al analizar el código fuente proporcionado, observamos que se trata de una aplicación web desarrollada con &lt;strong&gt;Flask (Python)&lt;/strong&gt;, cuyo código es el siguiente:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;flask&lt;/span&gt; &lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Flask&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;render_template&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;redirect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;flash&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;subprocess&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Flask&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;secret_key&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;supersecretkey&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nd&#34;&gt;@app.route&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;methods&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;GET&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;POST&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;method&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;POST&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;name&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;request&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;form&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;get&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;ow&#34;&gt;not&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;flash&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Error: Name cannot be empty.&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;error&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;redirect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;try&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;c1&#34;&gt;# I sure hope no one tries to run any commands by injecting here...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;output&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;subprocess&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;check_output&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;echo &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;shell&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;text&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;stderr&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;subprocess&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;STDOUT&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;flash&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;output&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;! Good luck!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;success&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;c1&#34;&gt;# ...alright, the challenges won&amp;#39;t be this obvious on game day, but I hope it gives you a good idea of how the game is played!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;except&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;subprocess&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;CalledProcessError&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;flash&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;sa&#34;&gt;f&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Error: &lt;/span&gt;&lt;span class=&#34;si&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;output&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;strip&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;span class=&#34;si&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;error&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;redirect&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;render_template&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;index.html&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;__name__&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;__main__&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;app&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;run&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;host&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;0.0.0.0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;port&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;-dónde-está-la-vulnerabilidad&#34;&gt;🔍 ¿Dónde está la vulnerabilidad?&lt;/h2&gt;
+&lt;p&gt;El problema principal radica en el siguiente fragmento de código:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Snyk Fetch The Flag - Screaming Crying Throwing up</title>
+      <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_screaming_crying_throwing_up/</link>
+      <pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/snyk_fetch_the_flag_screaming_crying_throwing_up/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_screaming_crying_throwing_up/snyk_fetch_the_flag_screaming_crying_throwing_up_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_screaming_crying_throwing_up/snyk_fetch_the_flag_screaming_crying_throwing_up_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_screaming_crying_throwing_up/snyk_fetch_the_flag_screaming_crying_throwing_up_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Este reto consiste en descifrar un binario cifrado con &lt;a href=&#34;https://en.wikipedia.org/wiki/Scream_%28cipher%29&#34;&gt;scream&lt;/a&gt;. Para ello, podemos utilizar la herramienta &lt;a href=&#34;https://scream-cipher.netlify.app/&#34;&gt;Scream Cipher Translator&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Si abrimos el archivo &lt;code&gt;screaming.bin&lt;/code&gt; en &lt;strong&gt;VSCode&lt;/strong&gt;, veremos el siguiente contenido:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;a̮ăaa̋{áa̲aȧa̮ȧaa̮áa̲a̧ȧȧa̮ȧaa̲a̧aa̮ȧa̲aáa̮a̲aa̲a̮aaa̧}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Sin embargo, si usamos &lt;code&gt;cat&lt;/code&gt; en la terminal (CMD, PowerShell o Bash), obtenemos un resultado diferente:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ cat screaming.bin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;aăaa{áaaȧaȧaaáaaȧȧaȧaaaaaȧaaáaaaaaaaa}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;⚠️ ¡Atención! ⚠️&lt;/p&gt;
+&lt;p&gt;El contenido del archivo puede verse distinto dependiendo del visor utilizado. Esto es clave al momento de analizar el cifrado y evitar confusiones. 🧐&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Snyk Fetch The Flag - Unfurl</title>
       <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_unfurl/</link>
@@ -59,7 +137,7 @@
     <item>
       <title>Snyk Fetch The Flag - Zero Ex Six One</title>
       <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_zero_ex_six_one/</link>
-      <pubDate>Mon, 03 Mar 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/es/posts/snyk_fetch_the_flag_zero_ex_six_one/</guid>
       
@@ -75,13 +153,67 @@
     </item>
     
     <item>
+      <title>Explotación de vulnerabilidad CVE-2011-0762 con Metasploit en VSFTPD v2.3.4</title>
+      <link>http://localhost:1313/es/posts/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4/</link>
+      <pubDate>Thu, 20 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4_banner.png&#34; alt=&#34;/images/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En esta ocasión, os muestro como podemos &lt;strong&gt;explotar una vulnerabilidad con el Framework de seguridad Metasploit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;En concreto explotaremos la vulnerabilidad &lt;strong&gt;CVE-2011-0762&lt;/strong&gt; en el servicio &lt;strong&gt;VSFTPD v2.3.4&lt;/strong&gt; para conseguir una shell e interactuar con el servidor vulnerado.&lt;/p&gt;
+&lt;p&gt;Está vulnerabilidad &lt;strong&gt;tiene ya 5 años y es muy antigua&lt;/strong&gt;, aunque nos podemos seguir encontrando algún servidor que nos permita &lt;strong&gt;«jugar»&lt;/strong&gt;, la finalidad de esta entrada es aprender como usar los principales comandos de Metasploit.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Instalación de VirtualBox Guest Additions en Kali Linux 2016.2</title>
+      <link>http://localhost:1313/es/posts/instalacion-de-virtualbox-guest-additions-en-kali-linux-2016-2/</link>
+      <pubDate>Sat, 08 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/instalacion-de-virtualbox-guest-additions-en-kali-linux-2016-2/</guid>
+      
+      <description>&lt;p&gt;Si eres de los que eliges &lt;strong&gt;VirtualBox&lt;/strong&gt; para trabajar con tus &lt;strong&gt;máquinas virtuales&lt;/strong&gt;, después de la instalación, habrás notado que el &lt;strong&gt;tamaño de la pantalla es muy reducido&lt;/strong&gt; e impide que podamos trabajar con ella cómodamente, otras veces, echamos de menos el poder &lt;strong&gt;integrar la máquina anfitrión con la virtual&lt;/strong&gt;, por ejemplo, algo tan simple como &lt;strong&gt;copiar un enlace o URL&lt;/strong&gt; con el atajo de tecla &lt;strong&gt;Ctrl + C&lt;/strong&gt; o &lt;strong&gt;arrastrar un archivo para usarlo en la máquina virtual&lt;/strong&gt;, para ello, VirtualBox tiene las llamadas &lt;strong&gt;Guest Additions&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hacking Cámaras IP - Montándome mi propio Gran Hermano</title>
+      <link>http://localhost:1313/es/posts/hacking-camaras-ip-montandome-propio-gran-hermano/</link>
+      <pubDate>Sun, 11 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/hacking-camaras-ip-montandome-propio-gran-hermano/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/hacking-camaras-ip-montandome-propio-gran-hermano/hacking-camaras-ip-montandome-propio-gran-hermano_banner.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/hacking-camaras-ip-montandome-propio-gran-hermano/hacking-camaras-ip-montandome-propio-gran-hermano_banner.jpg&#34; alt=&#34;/images/hacking-camaras-ip-montandome-propio-gran-hermano/hacking-camaras-ip-montandome-propio-gran-hermano_banner.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para los que no os hayáis enterado, la &lt;strong&gt;edición 17 de Gran Hermano está a punto de comenzar&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;-y-si-me-monto-mi-propio-gran-hermano&#34;&gt;¿ Y si me monto mi propio Gran Hermano?&lt;/h2&gt;
+&lt;p&gt;Pues si, esa fue la pregunta que mi hice, y si &lt;strong&gt;tu también quieres montarte el tuyo&lt;/strong&gt;, te invito a que leas este tutorial sobre &lt;strong&gt;Hacking de cámaras IP&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;En esta entrada, os mostraré como podemos buscar Camarás IP accesibles desde Internet y cómo acceder a ellas.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Preparando Sublime Text 3 para programar en Python</title>
+      <link>http://localhost:1313/es/posts/preparando-sublime-text-3-programar-python/</link>
+      <pubDate>Tue, 28 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/preparando-sublime-text-3-programar-python/</guid>
+      
+      <description>&lt;p&gt;Uno de los &lt;strong&gt;lenguajes de programación que más interés&lt;/strong&gt; ha despertado en el mundo de la &lt;strong&gt;Seguridad Informática y Hacking&lt;/strong&gt;, es sin duda &lt;strong&gt;Python&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Python es un &lt;strong&gt;lenguaje de programación interpretado y orientado a objetos&lt;/strong&gt;, muy &lt;strong&gt;fácil de aprender y potente&lt;/strong&gt;, desde mi punto de vista, recomendado para cualquier persona que desee &lt;strong&gt;aprender a programar&lt;/strong&gt;, y mucho más, si desea orientar sus conocimiento a la seguridad de la información, muchas de las herramientas de hacking que se usan hoy en día, están escritas en este lenguaje.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Navega por la Deep Web con Tails y un USB</title>
       <link>http://localhost:1313/es/posts/navega-la-deep-web-tails-usb/</link>
       <pubDate>Sun, 29 May 2016 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/es/posts/navega-la-deep-web-tails-usb/</guid>
       
-      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/navega-la-deep-web-tails-usb/navega-la-deep-web-tails-usb_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/navega-la-deep-web-tails-usb/navega-la-deep-web-tails-usb_banner.png&#34; alt=&#34;/images/navega-la-deep-web-tails-usb/navega-la-deep-web-tails-usb_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Todo el mundo ha oído alguna vez hablar sobre la Deep Web, en la entrada de hoy, os mostraré como podemos &lt;strong&gt;crear un USB&lt;/strong&gt; para &lt;strong&gt;acceder a la Deep Web de manera segura, gratuita y anónima&lt;/strong&gt; con una distribución llamada &lt;strong&gt;Tails&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;que-es-la-deep-web&#34;&gt;¿Que es la Deep Web?&lt;/h2&gt;
+&lt;p&gt;La Deep Web, o &lt;strong&gt;también conocida como Internet profunda o invisible&lt;/strong&gt;, es la parte de Internet que &lt;strong&gt;no ha podido ser indexada por los motores de búsqueda&lt;/strong&gt;, ya sea por páginas privadas o material que ha sido ocultado, &lt;strong&gt;quedando así en mayor parte de manera inaccesible&lt;/strong&gt;.&lt;/p&gt;</description>
       
     </item>
     
