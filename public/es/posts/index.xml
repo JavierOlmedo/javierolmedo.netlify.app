@@ -8,6 +8,22 @@
     <language>es-es</language>
     <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Snyk Fetch The Flag - ClickityClack</title>
+      <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_clickityclack/</link>
+      <pubDate>Fri, 07 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/snyk_fetch_the_flag_clickityclack/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En este reto, partimos de un fichero &lt;code&gt;pcapng&lt;/code&gt; que contiene la flag oculta en su interior. Inicialmente, intenté analizarlo con &lt;strong&gt;Wireshark&lt;/strong&gt;, pero no encontraba nada relevante. Fue entonces cuando una simple búsqueda en Google me dio la pista clave:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;pcapng usb ctf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_001.png&#34; alt=&#34;/images/snyk_fetch_the_flag_clickityclack/snyk_fetch_the_flag_clickityclack_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Esta búsqueda me llevó a descubrir una herramienta llamada &lt;a href=&#34;https://raw.githubusercontent.com/5h4rrk/CTF-Usb_Keyboard_Parser/refs/heads/main/Usb_Keyboard_Parser.py&#34;&gt;Usb_Keyboard_Parser.py&lt;/a&gt; que parsea los paquetes de tráfico USB, como las pulsaciones de teclas.&lt;/p&gt;
+&lt;p&gt;Basta con pasar el fichero al script para obtener la bandera al final de las pulsaciones.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Snyk Fetch The Flag - Science 100</title>
       <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_science_100/</link>
       <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
@@ -149,6 +165,19 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;I&amp;#39;m XORta out of ideas for how to get the flag. Does this look like anything to you?
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;solución-1---usando-la-clave-de-cifrado&#34;&gt;Solución 1 - Usando la clave de cifrado&lt;/h2&gt;
 &lt;p&gt;En esta primera solución, &lt;strong&gt;convertimos la cadena hexadecimal en bytes&lt;/strong&gt; y aplicamos un &lt;strong&gt;cifrado XOR&lt;/strong&gt; con la clave 🔑 &lt;code&gt;0x61&lt;/code&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Obtener credenciales HTTPS con Bettercap y SSLstrip</title>
+      <link>http://localhost:1313/es/posts/obtener-credenciales-https-con-bettercap-y-sslstrip/</link>
+      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/obtener-credenciales-https-con-bettercap-y-sslstrip/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/obtener-credenciales-https-con-bettercap-y-sslstrip/obtener-credenciales-https-con-bettercap-y-sslstrip_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/obtener-credenciales-https-con-bettercap-y-sslstrip/obtener-credenciales-https-con-bettercap-y-sslstrip_banner.png&#34; alt=&#34;/images/obtener-credenciales-https-con-bettercap-y-sslstrip/obtener-credenciales-https-con-bettercap-y-sslstrip_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para empezar este 2017, os traigo un tutorial sobre &lt;strong&gt;cómo obtener las credenciales de sitios web que tengan cifrado SSL/TLS (HTTPS)&lt;/strong&gt; mediante una técnica llamada &lt;strong&gt;SSLstrip&lt;/strong&gt; y el uso de un &lt;strong&gt;framework para realizar ataques MITM&lt;/strong&gt; (ataque de hombre en el medio) llamado Bettercap, en Internet, existen multitud de tutoriales para realizar este ataque pero aquí os enseñaré como realizarlo de una manera muy simple.&lt;/p&gt;
+&lt;p&gt;Este tutorial lo hago con &lt;strong&gt;fines educativos y sobre todo éticos, no me hago responsable del mal uso que podáis dar con lo aprendido aquí&lt;/strong&gt;.&lt;/p&gt;</description>
       
     </item>
     
