@@ -125,6 +125,18 @@
                 href="http://localhost:1313/es/posts/snyk_fetch_the_flag_zero_ex_six_one/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/posts/wsus-windows-server-update-services-instalacion-y-configuracion-parte-i/</loc>
+    <lastmod>2017-10-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi/</loc>
+    <lastmod>2017-10-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques/</loc>
+    <lastmod>2017-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/script-powershell-para-comprobar-vulnerabilidad-ms17-010/</loc>
+    <lastmod>2017-05-16T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/es/posts/obtener-credenciales-https-con-bettercap-y-sslstrip/</loc>
     <lastmod>2017-01-08T00:00:00+00:00</lastmod>
   </url><url>

@@ -169,6 +169,105 @@
     </item>
     
     <item>
+      <title>WSUS (Windows Server Update Services): Instalación y configuración - Parte I</title>
+      <link>http://localhost:1313/es/posts/wsus-windows-server-update-services-instalacion-y-configuracion-parte-i/</link>
+      <pubDate>Tue, 24 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/wsus-windows-server-update-services-instalacion-y-configuracion-parte-i/</guid>
+      
+      <description>&lt;p&gt;Buenas a todos, voy a comenzar una &lt;strong&gt;serie de entradas en el blog&lt;/strong&gt; dónde explicaré como &lt;strong&gt;implementar WSUS&lt;/strong&gt; (Windows Server Update Services) en un dominio con Windows Server 2016 para mantener nuestros equipos de la empresa actualizados y más seguros, en un principio, creo que con &lt;strong&gt;3 entradas podré explicar lo necesario&lt;/strong&gt; para tener este rol completamente funcional.&lt;/p&gt;
+&lt;p&gt;En esta entrada os explicaré un poco en qué consiste WSUS, su &lt;strong&gt;instalación y configuración&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>KRACK (Key Reinstallation Attacks): El ataque que vulnera el protocolo WPA2 de las redes WiFi</title>
+      <link>http://localhost:1313/es/posts/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi/</link>
+      <pubDate>Wed, 18 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi_banner.png&#34; alt=&#34;/images/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ayer se hacía pública una de las noticias que más relevancia ha tenido en los últimos meses en el mundo de la ciberseguridad, el &lt;strong&gt;protocolo de seguridad WPA2&lt;/strong&gt;, usado en la mayoría de redes WiFi de todo el mundo &lt;strong&gt;ha sido roto (vulnerado)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;El investigador Mathy Vanhoef (&lt;a href=&#34;https://x.com/vanhoefm&#34;&gt;@vanhoefm&lt;/a&gt;) de la Universidad KU de Leuven ha descubierto esta vulnerabilidad y lo ha puesto en conocimiento de la comunidad para que los fabricantes saquen parches para solucionarlo, algunas empresas como Microsoft se han dado prisa y &lt;a href=&#34;https://msrc.microsoft.com/update-guide/en-US/advisory/CVE-2017-13080&#34;&gt;ya han puesto una solución a sus productos&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Metasploitable3: Crea una máquina vulnerable para probar tus ataques</title>
+      <link>http://localhost:1313/es/posts/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques/</link>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques_banner.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques_banner.jpg&#34; alt=&#34;/images/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques_banner.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;qué-es-metasploitable3-y-porqué-usarlo&#34;&gt;¿Qué es Metasploitable3 y porqué usarlo?&lt;/h2&gt;
+&lt;p&gt;Metasploitable3 es una &lt;strong&gt;máquina virtual gratuita de Windows Server 2008 que cuenta con varias vulnerabilidades&lt;/strong&gt; listas para ser explotadas y practicar nuestras técnicas de hacking o simular ataques, Metasploitable3 ha sido &lt;strong&gt;desarrollado por Rapid7&lt;/strong&gt;, los mismos &lt;strong&gt;desarrolladores&lt;/strong&gt; del conocido &lt;strong&gt;Framework MetaSploit&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Es &lt;strong&gt;usado por gran parte de la industria de la ciberseguridad&lt;/strong&gt; por varios motivos, cómo por ejemplo, la &lt;strong&gt;formación de personal&lt;/strong&gt; para la explotación de redes, &lt;strong&gt;pruebas de software&lt;/strong&gt; o demostración y &lt;strong&gt;viabilidad de ataques&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Script PowerShell para comprobar vulnerabilidad MS17-010</title>
+      <link>http://localhost:1313/es/posts/script-powershell-para-comprobar-vulnerabilidad-ms17-010/</link>
+      <pubDate>Tue, 16 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/script-powershell-para-comprobar-vulnerabilidad-ms17-010/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/script-powershell-para-comprobar-vulnerabilidad-ms17-010/script-powershell-para-comprobar-vulnerabilidad-ms17-010_banner.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/script-powershell-para-comprobar-vulnerabilidad-ms17-010/script-powershell-para-comprobar-vulnerabilidad-ms17-010_banner.jpg&#34; alt=&#34;/images/script-powershell-para-comprobar-vulnerabilidad-ms17-010/script-powershell-para-comprobar-vulnerabilidad-ms17-010_banner.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Buenas a todos, después de estar mucho tiempo sin escribir en el blog, me gustaría compartir con vosotros un &lt;strong&gt;script&lt;/strong&gt; que he creado en PowerShell para &lt;strong&gt;comprobar la vulnerabilidad MS17-010&lt;/strong&gt; explotada por el ransomware WannaCry.&lt;/p&gt;
+&lt;p&gt;Este script &lt;strong&gt;debe de ser ejecutado desde el controlador de dominio&lt;/strong&gt; para comprobar que equipos aún no cuentan con las actualizaciones publicadas por Microsoft para solucionar esta vulnerabilidad.&lt;/p&gt;
+&lt;h1 id=&#34;checkwannacryms17-010ps1&#34;&gt;CheckWannaCryMS17-010.ps1&lt;/h1&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#Script para comprobar vulnerabilidad MS17-010&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#Autor: Javier Olmedo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#Twitter: @JJavierOlmedo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#https://hackpuntes.com&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#16/05/2017&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#ID de actualizaciones que deben de estar instaladas en el sistema para evitar la propagación de WannaCry&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$actualizaciones&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4012212&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4012217&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4015551&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4019216&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4012216&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4015550&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4019215&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4013429&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4019472&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4015217&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4015438&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;KB4016635&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#Obtenemos los equipos que estén habilitados en el dominio y los ordenamos alfabéticamente&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;$equipos&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Get-ADComputer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Filter&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;enabled&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-eq&lt;/span&gt; &lt;span class=&#34;vm&#34;&gt;$true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-Property&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;sort
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c&#34;&gt;#Bucle para recorrer los equipos&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;foreach&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$equipo&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$equipos&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;c&#34;&gt;#Hacemos un ping al equipo para comprobar si está encendido antes de comprobarlo&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;nv&#34;&gt;$nombreequipo&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$equipo&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;Name&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;nv&#34;&gt;$ping&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;gwmi &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;win32_pingstatus&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-f&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Address = &amp;#39;&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$nombreequipo&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#39;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;c&#34;&gt;#Si el equipo hace ping&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$ping&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;py&#34;&gt;statuscode&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-eq&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;c&#34;&gt;#Intentamos comprobar las actualizaciones&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;k&#34;&gt;try&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;nv&#34;&gt;$comprobaractualizaciones&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Get-HotFix&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-ComputerName&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$nombreequipo&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Where-Object&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$actualizaciones&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-contains&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;HotfixID&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;Select-Object&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-property&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;HotFixID&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$comprobaractualizaciones&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             &lt;span class=&#34;nb&#34;&gt;Write-Host&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-foregroundcolor&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Green&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;El equipo &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$nombreequipo&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; no es vulnerable&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             &lt;span class=&#34;nb&#34;&gt;Write-Host&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-foregroundcolor&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Red&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;El equipo &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$nombreequipo&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; es vulnerable&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;c&#34;&gt;#Si nos da error al comprobar las actualizaciones &lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;catch&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;nb&#34;&gt;Write-Host&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-foregroundcolor&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Red&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;El equipo &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$nombreequipo&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; está encendido, pero no se puede comprobar las actualizaciones&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;c&#34;&gt;#Si el equipo no responde a ping&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nb&#34;&gt;Write-Host&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;-foregroundcolor&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Red&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;El equipo &lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$nombreequipo&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt; está apagado o no responde a ping&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Enlace a GitHub:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Obtener credenciales HTTPS con Bettercap y SSLstrip</title>
       <link>http://localhost:1313/es/posts/obtener-credenciales-https-con-bettercap-y-sslstrip/</link>
       <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>

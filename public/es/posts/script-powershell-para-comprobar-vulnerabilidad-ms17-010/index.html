@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Posts | Hackpuntes</title>
-<meta property="og:title" content="Posts | Hackpuntes" />
-<meta name="twitter:title" content="Posts | Hackpuntes" />
-<meta itemprop="name" content="Posts | Hackpuntes" />
-<meta name="application-name" content="Posts | Hackpuntes" />
+<title itemprop="name">Script PowerShell para comprobar vulnerabilidad MS17-010 | Hackpuntes</title>
+<meta property="og:title" content="Script PowerShell para comprobar vulnerabilidad MS17-010 | Hackpuntes" />
+<meta name="twitter:title" content="Script PowerShell para comprobar vulnerabilidad MS17-010 | Hackpuntes" />
+<meta itemprop="name" content="Script PowerShell para comprobar vulnerabilidad MS17-010 | Hackpuntes" />
+<meta name="application-name" content="Script PowerShell para comprobar vulnerabilidad MS17-010 | Hackpuntes" />
 <meta property="og:site_name" content="Hackpuntes" />
 
 <meta name="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
@@ -18,30 +18,20 @@
 <meta property="og:locale" content="es-es" />
 <meta name="language" content="es-es" />
 
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/posts/" title="English" />
-
-  <link rel="alternate" hreflang="es" href="http://localhost:1313/es/posts/" title="Spanish" />
+  <link rel="alternate" hreflang="es" href="http://localhost:1313/es/posts/script-powershell-para-comprobar-vulnerabilidad-ms17-010/" title="Spanish" />
 
 
 
 
 
-    
-    
-    
-    
-    
-    <link rel="first" href="/es/posts/" />
-    <link rel="last" href="/es/posts/" />
-    
     
     
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2025-03-07T00:00:00Z />
-    <meta property="article:published_time" content=2025-03-07T00:00:00Z />
-    <meta property="og:url" content="http://localhost:1313/es/posts/" />
+    <meta property="og:article:published_time" content=2017-05-16T00:00:00Z />
+    <meta property="article:published_time" content=2017-05-16T00:00:00Z />
+    <meta property="og:url" content="http://localhost:1313/es/posts/script-powershell-para-comprobar-vulnerabilidad-ms17-010/" />
 
     
     <meta property="og:article:author" content="Javier Olmedo" />
@@ -56,16 +46,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Posts",
+        "headline": "Script PowerShell para comprobar vulnerabilidad MS17-010",
         "author": {
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2025-03-07",
+        "datePublished": "2017-05-16",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  281 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2025-03-07",
+        "dateModified": "2017-05-16",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -81,26 +71,31 @@
 <meta name="generator" content="Hugo 0.143.1">
 
     
-    <meta property="og:url" content="http://localhost:1313/es/posts/">
+    <meta property="og:url" content="http://localhost:1313/es/posts/script-powershell-para-comprobar-vulnerabilidad-ms17-010/">
   <meta property="og:site_name" content="Hackpuntes">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
+  <meta property="og:title" content="Script PowerShell para comprobar vulnerabilidad MS17-010">
+  <meta property="og:description" content="Buenas a todos, después de estar mucho tiempo sin escribir en el blog, me gustaría compartir con vosotros un script que he creado en PowerShell para comprobar la vulnerabilidad MS17-010 explotada por el ransomware WannaCry.
+Este script debe de ser ejecutado desde el controlador de dominio para comprobar que equipos aún no cuentan con las actualizaciones publicadas por Microsoft para solucionar esta vulnerabilidad.
+CheckWannaCryMS17-010.ps1 #Script para comprobar vulnerabilidad MS17-010 #Autor: Javier Olmedo #Twitter: @JJavierOlmedo #https://hackpuntes.com #16/05/2017 #ID de actualizaciones que deben de estar instaladas en el sistema para evitar la propagación de WannaCry $actualizaciones = (&#34;KB4012212&#34;, &#34;KB4012217&#34;, &#34;KB4015551&#34;, &#34;KB4019216&#34;, &#34;KB4012216&#34;, &#34;KB4015550&#34;, &#34;KB4019215&#34;, &#34;KB4013429&#34;, &#34;KB4019472&#34;, &#34;KB4015217&#34;, &#34;KB4015438&#34;, &#34;KB4016635&#34;) #Obtenemos los equipos que estén habilitados en el dominio y los ordenamos alfabéticamente $equipos = Get-ADComputer -Filter {enabled -eq $true} -Property * | sort #Bucle para recorrer los equipos foreach ($equipo in $equipos){ #Hacemos un ping al equipo para comprobar si está encendido antes de comprobarlo $nombreequipo = $equipo.Name $ping = gwmi win32_pingstatus -f &#34;Address = &#39;$nombreequipo&#39;&#34; #Si el equipo hace ping if($ping.statuscode -eq 0) { #Intentamos comprobar las actualizaciones try { $comprobaractualizaciones = Get-HotFix -ComputerName $nombreequipo | Where-Object {$actualizaciones -contains $_.HotfixID} | Select-Object -property &#34;HotFixID&#34; if($comprobaractualizaciones) { Write-Host -foregroundcolor Green &#34;El equipo $nombreequipo no es vulnerable&#34; } else { Write-Host -foregroundcolor Red &#34;El equipo $nombreequipo es vulnerable&#34; } #Si nos da error al comprobar las actualizaciones } catch { Write-Host -foregroundcolor Red &#34;El equipo $nombreequipo está encendido, pero no se puede comprobar las actualizaciones&#34; } #Si el equipo no responde a ping } else { Write-Host -foregroundcolor Red &#34;El equipo $nombreequipo está apagado o no responde a ping&#34; } } Enlace a GitHub:">
   <meta property="og:locale" content="es_es">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-05-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2017-05-16T00:00:00+00:00">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
+  <meta name="twitter:title" content="Script PowerShell para comprobar vulnerabilidad MS17-010">
+  <meta name="twitter:description" content="Buenas a todos, después de estar mucho tiempo sin escribir en el blog, me gustaría compartir con vosotros un script que he creado en PowerShell para comprobar la vulnerabilidad MS17-010 explotada por el ransomware WannaCry.
+Este script debe de ser ejecutado desde el controlador de dominio para comprobar que equipos aún no cuentan con las actualizaciones publicadas por Microsoft para solucionar esta vulnerabilidad.
+CheckWannaCryMS17-010.ps1 #Script para comprobar vulnerabilidad MS17-010 #Autor: Javier Olmedo #Twitter: @JJavierOlmedo #https://hackpuntes.com #16/05/2017 #ID de actualizaciones que deben de estar instaladas en el sistema para evitar la propagación de WannaCry $actualizaciones = (&#34;KB4012212&#34;, &#34;KB4012217&#34;, &#34;KB4015551&#34;, &#34;KB4019216&#34;, &#34;KB4012216&#34;, &#34;KB4015550&#34;, &#34;KB4019215&#34;, &#34;KB4013429&#34;, &#34;KB4019472&#34;, &#34;KB4015217&#34;, &#34;KB4015438&#34;, &#34;KB4016635&#34;) #Obtenemos los equipos que estén habilitados en el dominio y los ordenamos alfabéticamente $equipos = Get-ADComputer -Filter {enabled -eq $true} -Property * | sort #Bucle para recorrer los equipos foreach ($equipo in $equipos){ #Hacemos un ping al equipo para comprobar si está encendido antes de comprobarlo $nombreequipo = $equipo.Name $ping = gwmi win32_pingstatus -f &#34;Address = &#39;$nombreequipo&#39;&#34; #Si el equipo hace ping if($ping.statuscode -eq 0) { #Intentamos comprobar las actualizaciones try { $comprobaractualizaciones = Get-HotFix -ComputerName $nombreequipo | Where-Object {$actualizaciones -contains $_.HotfixID} | Select-Object -property &#34;HotFixID&#34; if($comprobaractualizaciones) { Write-Host -foregroundcolor Green &#34;El equipo $nombreequipo no es vulnerable&#34; } else { Write-Host -foregroundcolor Red &#34;El equipo $nombreequipo es vulnerable&#34; } #Si nos da error al comprobar las actualizaciones } catch { Write-Host -foregroundcolor Red &#34;El equipo $nombreequipo está encendido, pero no se puede comprobar las actualizaciones&#34; } #Si el equipo no responde a ping } else { Write-Host -foregroundcolor Red &#34;El equipo $nombreequipo está apagado o no responde a ping&#34; } } Enlace a GitHub:">
 
 
     
 
-    <link rel="canonical" href="http://localhost:1313/es/posts/">
-    <link href="/es/posts/index.xml" rel="alternate" type="application/rss+xml" title="Hackpuntes">
-    <link href="/es/posts/index.xml" rel="feed" type="application/rss+xml" title="Hackpuntes">
+    <link rel="canonical" href="http://localhost:1313/es/posts/script-powershell-para-comprobar-vulnerabilidad-ms17-010/">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -185,42 +180,6 @@ stroke-linejoin="round" class="feather feather-home">
                 </li>
                 
                 
-                    <li>
-                        <select aria-label="Select Language" class="lang-list" id="select-language" onchange="location = this.value;">
-                            
-                            
-                            
-                                
-                                
-                                    
-                                        
-                                        
-                                            <option id="en-us" value="http://localhost:1313/posts/">EN-US</option>
-                                        
-                                    
-                                
-                                    
-                                
-                            
-                                
-                                
-                                    
-                                
-                                    
-                                        
-                                        
-                                            <option id="es" value="http://localhost:1313/es/posts/" selected>ES-ES
-                                            </option>
-                                        
-                                    
-                                
-                            
-                        </select>                
-                    </li>
-                    <li class="menu-separator">
-                        <span>|</span>
-                    </li>
-                
             </ul>
             <a id="mode" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
@@ -231,795 +190,80 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2025</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_clickityclack/">Snyk Fetch The Flag - ClickityClack</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-07T00:00:00Z">
-        7 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_science_100/">Snyk Fetch The Flag - Science 100</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-06T00:00:00Z">
-        6 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_ctf_101/">Snyk Fetch The Flag - CTF 101</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-05T00:00:00Z">
-        5 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_screaming_crying_throwing_up/">Snyk Fetch The Flag - Screaming Crying Throwing up</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-04T00:00:00Z">
-        4 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_unfurl/">Snyk Fetch The Flag - Unfurl</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-03T00:00:00Z">
-        3 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_zero_ex_six_one/">Snyk Fetch The Flag - Zero Ex Six One</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-02T00:00:00Z">
-        2 marzo 2025
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2017</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/wsus-windows-server-update-services-instalacion-y-configuracion-parte-i/">WSUS (Windows Server Update Services): Instalación y configuración - Parte I</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-10-24T00:00:00Z">
-        24 octubre 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi/">KRACK (Key Reinstallation Attacks): El ataque que vulnera el protocolo WPA2 de las redes WiFi</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-10-18T00:00:00Z">
-        18 octubre 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques/">Metasploitable3: Crea una máquina vulnerable para probar tus ataques</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-06-11T00:00:00Z">
-        11 junio 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/script-powershell-para-comprobar-vulnerabilidad-ms17-010/">Script PowerShell para comprobar vulnerabilidad MS17-010</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-05-16T00:00:00Z">
-        16 mayo 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/obtener-credenciales-https-con-bettercap-y-sslstrip/">Obtener credenciales HTTPS con Bettercap y SSLstrip</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-01-08T00:00:00Z">
-        8 enero 2017
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2016</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4/">Explotación de vulnerabilidad CVE-2011-0762 con Metasploit en VSFTPD v2.3.4</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-10-20T00:00:00Z">
-        20 octubre 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/instalacion-de-virtualbox-guest-additions-en-kali-linux-2016-2/">Instalación de VirtualBox Guest Additions en Kali Linux 2016.2</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-10-08T00:00:00Z">
-        8 octubre 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-camaras-ip-montandome-propio-gran-hermano/">Hacking Cámaras IP - Montándome mi propio Gran Hermano</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-09-11T00:00:00Z">
-        11 septiembre 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/preparando-sublime-text-3-programar-python/">Preparando Sublime Text 3 para programar en Python</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-06-28T00:00:00Z">
-        28 junio 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/navega-la-deep-web-tails-usb/">Navega por la Deep Web con Tails y un USB</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-05-29T00:00:00Z">
-        29 mayo 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/instalar-parrot-os-vmware/">Cómo instalar Parrot OS en VMware</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-04-17T00:00:00Z">
-        17 abril 2016
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2015</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-iii/">Dendroid - Crea tu propio Troyano para Android - Parte III</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-09-13T00:00:00Z">
-        13 septiembre 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-ii/">Dendroid - Crea tu propio Troyano para Android - Parte II</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-07-09T00:00:00Z">
-        9 julio 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-i/">Dendroid - Crea tu propio Troyano para Android - Parte I</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-06-13T00:00:00Z">
-        13 junio 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/xxe-xml-external-entity-el-nuevo-sqli/">XXE - XML External Entity - El Nuevo SQLi</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-30T00:00:00Z">
-        30 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes/">Hacking Wifi - Parte VII - Seleccionar el Objetivo y capturar los paquetes</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-24T00:00:00Z">
-        24 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/ataque-dns-spoofing-con-cainabel/">Ataque DNS Spoofing con Cain&amp;Abel</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-07T00:00:00Z">
-        7 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/herramienta-para-recuperar-los-archivos-cifrados-por-el-ransomware-teslacrypt/">Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-02T00:00:00Z">
-        2 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/">Cómo crear un USB Keylogger/Stealer para recuperar contraseñas</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-02T00:00:00Z">
-        2 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi/">Hacking Wifi - Parte VI - Seguridad en redes Wi-Fi</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-28T00:00:00Z">
-        28 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/como-usar-tu-pendrive-como-contrasena-en-windows-7/">Cómo usar tu pendrive como contraseña en Windows 7</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-23T00:00:00Z">
-        23 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/">Nueva vulnerabilidad SMB afecta a todas las versiones de Windows</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-14T00:00:00Z">
-        14 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/">Desarrollo de un Stealer sencillo para Twitter en Visual Studio</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-12T00:00:00Z">
-        12 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger/">Hacking Wifi - Parte V - Modificando la dirección MAC con macchanger</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-09T00:00:00Z">
-        9 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-iv-comandos-basicos/">Hacking Wifi - Parte IV - Comandos Básicos</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-05T00:00:00Z">
-        5 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web/">Miles de cuentas de Uber, supuestamente vendidas en la deep web</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-04T00:00:00Z">
-        4 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/sparta-la-caja-de-herramientas-del-pentester/">SPARTA - La Caja de Herramientas del Pentester</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-31T00:00:00Z">
-        31 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/accediendo-al-sistema-de-control-de-las-gasolineras/">Accediendo al sistema de control de las gasolineras</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-29T00:00:00Z">
-        29 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/china-ataca-github-intruduciendo-un-troyano-en-baidu/">China ataca GitHub introduciendo un troyano en Baidu</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-28T00:00:00Z">
-        28 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-iii-instalacion-de-aircrack-ng/">Hacking Wifi – Parte III – Instalación de Aircrack-ng</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-27T00:00:00Z">
-        27 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-ii-requisitos-antes-de-empezar/">Hacking Wifi – Parte II – Requisitos antes de empezar</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-25T00:00:00Z">
-        25 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-i-introduccion/">Hacking Wifi - Parte I - Introducción</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-20T00:00:00Z">
-        20 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/">Examen Programación Hilos - HinchaGlobos y PinchaGlobos</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-20T00:00:00Z">
-        20 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/ip-box-dispositivo-para-crackear-claves-de-iphone/">IP-Box: Dispositivo para crackear claves de iPhone</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-17T00:00:00Z">
-        17 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/detectando-aplicaciones-maliciosas-para-android-en-google-play/">Detectando aplicaciones maliciosas para Android en Google Play</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-11T00:00:00Z">
-        11 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap/">Ataques SQL injection contra Bases de Datos mediante SQLmap</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-11T00:00:00Z">
-        11 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/obtener-informacion-con-the-harvester/">Obtener información con The Harvester</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-09T00:00:00Z">
-        9 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/blog-seguridad-informatica-hacking/">Presentación de mi blog sobre Seguridad Informática y Hacking</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-05T00:00:00Z">
-        5 marzo 2015
-        
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Script PowerShell para comprobar vulnerabilidad MS17-010</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2017-05-16T00:00:00&#43;00:00" itemprop="datePublished"> 16 mayo 2017 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p><a href="/images/script-powershell-para-comprobar-vulnerabilidad-ms17-010/script-powershell-para-comprobar-vulnerabilidad-ms17-010_banner.jpg"><img src="/images/script-powershell-para-comprobar-vulnerabilidad-ms17-010/script-powershell-para-comprobar-vulnerabilidad-ms17-010_banner.jpg" alt="/images/script-powershell-para-comprobar-vulnerabilidad-ms17-010/script-powershell-para-comprobar-vulnerabilidad-ms17-010_banner.jpg"></a></p>
+<p>Buenas a todos, después de estar mucho tiempo sin escribir en el blog, me gustaría compartir con vosotros un <strong>script</strong> que he creado en PowerShell para <strong>comprobar la vulnerabilidad MS17-010</strong> explotada por el ransomware WannaCry.</p>
+<p>Este script <strong>debe de ser ejecutado desde el controlador de dominio</strong> para comprobar que equipos aún no cuentan con las actualizaciones publicadas por Microsoft para solucionar esta vulnerabilidad.</p>
+<h1 id="checkwannacryms17-010ps1">CheckWannaCryMS17-010.ps1</h1>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="c">#Script para comprobar vulnerabilidad MS17-010</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c">#Autor: Javier Olmedo</span>
+</span></span><span class="line"><span class="cl"><span class="c">#Twitter: @JJavierOlmedo</span>
+</span></span><span class="line"><span class="cl"><span class="c">#https://hackpuntes.com</span>
+</span></span><span class="line"><span class="cl"><span class="c">#16/05/2017</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c">#ID de actualizaciones que deben de estar instaladas en el sistema para evitar la propagación de WannaCry</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$actualizaciones</span> <span class="p">=</span> <span class="p">(</span><span class="s2">&#34;KB4012212&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4012217&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4015551&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4019216&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4012216&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4015550&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4019215&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4013429&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4019472&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4015217&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4015438&#34;</span><span class="p">,</span> <span class="s2">&#34;KB4016635&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl"><span class="c">#Obtenemos los equipos que estén habilitados en el dominio y los ordenamos alfabéticamente</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$equipos</span> <span class="p">=</span> <span class="nb">Get-ADComputer</span> <span class="n">-Filter</span> <span class="p">{</span><span class="n">enabled</span> <span class="o">-eq</span> <span class="vm">$true</span><span class="p">}</span> <span class="n">-Property</span> <span class="p">*</span> <span class="p">|</span> <span class="nb">sort
+</span></span></span><span class="line"><span class="cl"><span class="nb"></span> 
+</span></span><span class="line"><span class="cl"><span class="c">#Bucle para recorrer los equipos</span>
+</span></span><span class="line"><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="nv">$equipo</span> <span class="k">in</span> <span class="nv">$equipos</span><span class="p">){</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">     <span class="c">#Hacemos un ping al equipo para comprobar si está encendido antes de comprobarlo</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">$nombreequipo</span> <span class="p">=</span> <span class="nv">$equipo</span><span class="p">.</span><span class="py">Name</span>
+</span></span><span class="line"><span class="cl">     <span class="nv">$ping</span> <span class="p">=</span> <span class="nb">gwmi </span><span class="n">win32_pingstatus</span> <span class="o">-f</span> <span class="s2">&#34;Address = &#39;</span><span class="nv">$nombreequipo</span><span class="s2">&#39;&#34;</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">     <span class="c">#Si el equipo hace ping</span>
+</span></span><span class="line"><span class="cl">     <span class="k">if</span><span class="p">(</span><span class="nv">$ping</span><span class="p">.</span><span class="py">statuscode</span> <span class="o">-eq</span> <span class="mf">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">     <span class="c">#Intentamos comprobar las actualizaciones</span>
+</span></span><span class="line"><span class="cl">     <span class="k">try</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">         <span class="nv">$comprobaractualizaciones</span> <span class="p">=</span> <span class="nb">Get-HotFix</span> <span class="n">-ComputerName</span> <span class="nv">$nombreequipo</span> <span class="p">|</span> <span class="nb">Where-Object</span> <span class="p">{</span><span class="nv">$actualizaciones</span> <span class="o">-contains</span> <span class="nv">$_</span><span class="p">.</span><span class="n">HotfixID</span><span class="p">}</span> <span class="p">|</span> <span class="nb">Select-Object</span> <span class="n">-property</span> <span class="s2">&#34;HotFixID&#34;</span>
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">         <span class="k">if</span><span class="p">(</span><span class="nv">$comprobaractualizaciones</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="nb">Write-Host</span> <span class="n">-foregroundcolor</span> <span class="n">Green</span> <span class="s2">&#34;El equipo </span><span class="nv">$nombreequipo</span><span class="s2"> no es vulnerable&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">             <span class="nb">Write-Host</span> <span class="n">-foregroundcolor</span> <span class="n">Red</span> <span class="s2">&#34;El equipo </span><span class="nv">$nombreequipo</span><span class="s2"> es vulnerable&#34;</span>
+</span></span><span class="line"><span class="cl">         <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">     <span class="c">#Si nos da error al comprobar las actualizaciones </span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span> <span class="k">catch</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">         <span class="nb">Write-Host</span> <span class="n">-foregroundcolor</span> <span class="n">Red</span> <span class="s2">&#34;El equipo </span><span class="nv">$nombreequipo</span><span class="s2"> está encendido, pero no se puede comprobar las actualizaciones&#34;</span>
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">     <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">     <span class="c">#Si el equipo no responde a ping</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> 
+</span></span><span class="line"><span class="cl">        <span class="nb">Write-Host</span> <span class="n">-foregroundcolor</span> <span class="n">Red</span> <span class="s2">&#34;El equipo </span><span class="nv">$nombreequipo</span><span class="s2"> está apagado o no responde a ping&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="p">}</span> 
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Enlace a GitHub:</p>
+<p><a href="https://github.com/JavierOlmedo/check-ms17-010/blob/master/CheckWannaCryMS17-010.ps1">https://github.com/JavierOlmedo/check-ms17-010/blob/master/CheckWannaCryMS17-010.ps1</a></p>
+<p>Un Saludo.</p>
+<p>P.D Haced siempre copia de seguridad 🙂</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 
