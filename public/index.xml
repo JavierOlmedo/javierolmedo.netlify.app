@@ -6,7 +6,46 @@
     <description>Recent content on Hackpuntes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snyk Fetch The Flag - TimeOff</title>
+      <link>http://localhost:1313/posts/snyk_fetch_the_flag_timeoff/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/snyk_fetch_the_flag_timeoff/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_timeoff/snyk_fetch_the_flag_timeoff_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_timeoff/snyk_fetch_the_flag_timeoff_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_timeoff/snyk_fetch_the_flag_timeoff_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In this CTF challenge, we are tasked with performing a &lt;strong&gt;pentest&lt;/strong&gt; on a web application following the &lt;strong&gt;Model-View-Controller (MVC)&lt;/strong&gt; pattern, developed in &lt;code&gt;Ruby on Rails&lt;/code&gt;. The application allows employees to &lt;strong&gt;request time off&lt;/strong&gt;, and we are provided with the source code and two credentials (&lt;code&gt;admin&lt;/code&gt; and &lt;code&gt;user&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;While reviewing the application, we noticed that the time-off request form &lt;strong&gt;allows file uploads&lt;/strong&gt;, which is always an interesting point to investigate during a security audit.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Snyk Fetch The Flag - Coding Mountains</title>
+      <link>http://localhost:1313/posts/snyk_fetch_the_flag_coding_mountains/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/posts/snyk_fetch_the_flag_coding_mountains/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_coding_mountains/snyk_fetch_the_flag_coding_mountains_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_coding_mountains/snyk_fetch_the_flag_coding_mountains_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_coding_mountains/snyk_fetch_the_flag_coding_mountains_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Scripting challenges&lt;/strong&gt; are my favorite in CTFs, and this one has undoubtedly been my favorite from Snyk Fetch The Flag 2025. The challenge consists of &lt;strong&gt;answering 50 quick questions about the most famous mountains on Earth&lt;/strong&gt;. We need to answer with their height (in feet) and the year they were first climbed using the following format: &lt;code&gt;height,year&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A sample of the game start:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ nc challenge.ctf.games 32641
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Welcome! I&amp;#39;ve recently gotten into mountaineering, so I came up with this fun little quiz game.  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Just answer 50 questions for me!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Note: Height is measured in feet with no comma (e.g., 28129). 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;If the peak has not been summited, write none; otherwise, specify the year of the first ascent.
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Answer with comma-separated values, (e.g., `height,year`)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Do you want to give it a chance? (Y/n): y
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Awesome, good luck!
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;What is the height and first ascent year of Saraghrar: 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To solve this, we start with a file called &lt;code&gt;mountains.json&lt;/code&gt;, which contains the answers to the questions. The goal is straightforward: automate the process to quickly answer all &lt;strong&gt;50 questions&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Snyk Fetch The Flag - ClickityClack</title>
       <link>http://localhost:1313/posts/snyk_fetch_the_flag_clickityclack/</link>

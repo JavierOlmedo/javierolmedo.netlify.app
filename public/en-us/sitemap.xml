@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-07T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-03-07T00:00:00+00:00</lastmod>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es-es"
@@ -26,6 +26,32 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/snyk_fetch_the_flag_timeoff/</loc>
+    <lastmod>2025-03-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/posts/snyk_fetch_the_flag_timeoff/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/posts/snyk_fetch_the_flag_timeoff/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/posts/snyk_fetch_the_flag_coding_mountains/</loc>
+    <lastmod>2025-03-08T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/posts/snyk_fetch_the_flag_coding_mountains/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/posts/snyk_fetch_the_flag_coding_mountains/"
                 />
   </url><url>
     <loc>http://localhost:1313/posts/snyk_fetch_the_flag_clickityclack/</loc>

@@ -6,7 +6,33 @@
     <description>Recent content on Hackpuntes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 07 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snyk Fetch The Flag - TimeOff</title>
+      <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_timeoff/</link>
+      <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/snyk_fetch_the_flag_timeoff/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_timeoff/snyk_fetch_the_flag_timeoff_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_timeoff/snyk_fetch_the_flag_timeoff_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_timeoff/snyk_fetch_the_flag_timeoff_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En este desafío de CTF, se nos asigna la tarea de realizar un &lt;strong&gt;pentest&lt;/strong&gt; en una aplicación web basada en el patrón &lt;strong&gt;Modelo-Vista-Controlador (MVC)&lt;/strong&gt; y desarrollada en &lt;code&gt;Ruby on Rails&lt;/code&gt;. La aplicación permite a los empleados de una empresa &lt;strong&gt;solicitar tiempo de descanso&lt;/strong&gt;, y se nos proporciona el código fuente junto con dos credenciales (&lt;code&gt;admin&lt;/code&gt; y &lt;code&gt;user&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Al analizar la aplicación, notamos que el formulario para solicitar tiempo de descanso &lt;strong&gt;permite la subida de archivos&lt;/strong&gt;, lo cual es un punto de interés a revisar en cualquier auditoría web.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Snyk Fetch The Flag - Coding Mountains</title>
+      <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_coding_mountains/</link>
+      <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/snyk_fetch_the_flag_coding_mountains/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/snyk_fetch_the_flag_coding_mountains/snyk_fetch_the_flag_coding_mountains_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/snyk_fetch_the_flag_coding_mountains/snyk_fetch_the_flag_coding_mountains_banner.png&#34; alt=&#34;/images/snyk_fetch_the_flag_coding_mountains/snyk_fetch_the_flag_coding_mountains_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Los &lt;strong&gt;retos de scripting&lt;/strong&gt; son mis favoritos en los CTF, y este, sin duda, ha sido mi preferido en Snyk Fetch The Flag 2025. El desafío consiste en &lt;strong&gt;responder 50 preguntas rápidas sobre las montañas más famosas del mundo&lt;/strong&gt;. Debemos responder con su altura (en pies) y el año en el que fueron escaladas por primera vez, utilizando el siguiente formato: &lt;code&gt;height,year&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Un ejemplo del inicio del juego sería:&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Snyk Fetch The Flag - ClickityClack</title>
       <link>http://localhost:1313/es/posts/snyk_fetch_the_flag_clickityclack/</link>
@@ -165,6 +191,69 @@
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;I&amp;#39;m XORta out of ideas for how to get the flag. Does this look like anything to you?
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;solución-1---usando-la-clave-de-cifrado&#34;&gt;Solución 1 - Usando la clave de cifrado&lt;/h2&gt;
 &lt;p&gt;En esta primera solución, &lt;strong&gt;convertimos la cadena hexadecimal en bytes&lt;/strong&gt; y aplicamos un &lt;strong&gt;cifrado XOR&lt;/strong&gt; con la clave 🔑 &lt;code&gt;0x61&lt;/code&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ESET Remote Administrator (ERA) - Parte I: Instalación</title>
+      <link>http://localhost:1313/es/posts/eset-remote-administrator-era-parte-i-instalacion/</link>
+      <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/eset-remote-administrator-era-parte-i-instalacion/</guid>
+      
+      <description>&lt;p&gt;Ya hemos visto en &lt;a href=&#34;https://hackpuntes.com/wsus-windows-server-update-services-instalacion-y-configuracion-parte-i/&#34;&gt;entradas anteriores&lt;/a&gt; como mantener nuestros equipos del dominio con las últimas actualizaciones críticas y parches de seguridad para mantenerlos más seguros, otra de las tareas prioritarias que debemos de hacer, es &lt;strong&gt;proveer de una solución antivirus a los equipos&lt;/strong&gt;, en esta entrada, veremos cómo instalar &lt;strong&gt;ERA (ESET Remote Administrator)&lt;/strong&gt; en un controlador de dominio con Windows Server 2016.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/eset-remote-administrator-era-parte-i-instalacion/eset-remote-administrator-era-parte-i-instalacion_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/eset-remote-administrator-era-parte-i-instalacion/eset-remote-administrator-era-parte-i-instalacion_001.png&#34; alt=&#34;/images/eset-remote-administrator-era-parte-i-instalacion/eset-remote-administrator-era-parte-i-instalacion_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;qué-es-eset-remote-administrator-era&#34;&gt;¿Qué es ESET Remote Administrator (ERA)?&lt;/h2&gt;
+&lt;p&gt;Es una &lt;strong&gt;herramienta&lt;/strong&gt; que permite a los administradores de sistemas &lt;strong&gt;gestionar los equipos del dominio que ejecutan productos ESET&lt;/strong&gt;, con esto conseguimos tener centralizados todos los incidentes de seguridad que ocurren en los equipos y gestionarlos desde un único panel, lo que también se traduce en una mayor &lt;strong&gt;facilidad y agilidad&lt;/strong&gt; en la configuración de la seguridad de la empresa.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Crear una GPO para bloquear la sesión de usuario por inactividad</title>
+      <link>http://localhost:1313/es/posts/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad/</link>
+      <pubDate>Mon, 06 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad_banner.png&#34; alt=&#34;/images/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En algunas ocasiones, los usuarios, por olvido, &lt;strong&gt;pueden dejar su sesión abierta&lt;/strong&gt; mientras se ausentan de su puesto, esto puede implicar que un tercero acceda a información o a aplicaciones sin autorización.
+En esta entrada vamos a &lt;strong&gt;configurar una GPO&lt;/strong&gt; (Directiva de grupo) para que se bloquee su sesión pasados 5 minutos y sea necesario volver a introducir la contraseña de usuario.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Abrimos &lt;strong&gt;“Administración de directivas de grupo”&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad_001.png&#34; alt=&#34;/images/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>WSUS (Windows Server Update Services): Reportes y uso - Parte III</title>
+      <link>http://localhost:1313/es/posts/wsus-windows-server-update-services-reportes-y-uso-parte-iii/</link>
+      <pubDate>Thu, 02 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/wsus-windows-server-update-services-reportes-y-uso-parte-iii/</guid>
+      
+      <description>&lt;p&gt;Última entrada sobre WSUS, esta vez &lt;strong&gt;hablaremos sobre el uso de la consola y la generación de reportes&lt;/strong&gt;, si aún no has leído las entradas anteriores, te dejo por aquí la &lt;a href=&#34;https://hackpuntes.com/wsus-windows-server-update-services-instalacion-y-configuracion-parte-i/&#34;&gt;primera entrada&lt;/a&gt; dónde hablo sobre la instalación y la &lt;a href=&#34;https://hackpuntes.com/wsus-windows-server-update-services-configuracion-de-politica-parte-ii/&#34;&gt;segunda entrada&lt;/a&gt; sobre la creación de una política.&lt;/p&gt;
+&lt;p&gt;Lo primero que nos encontramos al intentar generar un reporte con la consola de WSUS, es un error de una característica no disponible, en concreto &lt;strong&gt;“Microsoft Report Viewer 2012 Redistributalbe”&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>WSUS (Windows Server Update Services): Configuración de política - Parte II</title>
+      <link>http://localhost:1313/es/posts/wsus-windows-server-update-services-configuracion-de-politica-parte-ii/</link>
+      <pubDate>Fri, 27 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/wsus-windows-server-update-services-configuracion-de-politica-parte-ii/</guid>
+      
+      <description>&lt;p&gt;Seguimos con la &lt;strong&gt;segunda parte sobre WSUS (Windows Server Update Services)&lt;/strong&gt;, en esta entrada vamos a ver como &lt;strong&gt;crear una política en el dominio para aplicar a los equipos&lt;/strong&gt; clientes, si no has empezado esta serie de entradas, &lt;a href=&#34;https://hackpuntes.com/wsus-windows-server-update-services-instalacion-y-configuracion-parte-i/&#34;&gt;puedes ver la primera parte&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;crear-política-para-equipos-clientes&#34;&gt;Crear política para equipos clientes&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Abrimos &lt;strong&gt;“Administración de directivas de grupo”&lt;/strong&gt;, en &lt;strong&gt;“Herramientas”&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/wsus-windows-server-update-services-configuracion-de-politica-parte-ii/wsus-windows-server-update-services-configuracion-de-politica-parte-ii_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/wsus-windows-server-update-services-configuracion-de-politica-parte-ii/wsus-windows-server-update-services-configuracion-de-politica-parte-ii_001.png&#34; alt=&#34;/images/wsus-windows-server-update-services-configuracion-de-politica-parte-ii/wsus-windows-server-update-services-configuracion-de-politica-parte-ii_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;En mi caso, &lt;strong&gt;tengo creada una unidad organizativa&lt;/strong&gt; dentro de &lt;strong&gt;«Usuarios y equipos del Active directory»&lt;/strong&gt; para ubicar todos los equipos clientes del dominio, &lt;strong&gt;«Click derecho»&lt;/strong&gt; y &lt;strong&gt;«Crear una GPO en este dominio y vincularlo aquí»&lt;/strong&gt;, ponemos un nombre y aceptamos.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/wsus-windows-server-update-services-configuracion-de-politica-parte-ii/wsus-windows-server-update-services-configuracion-de-politica-parte-ii_002.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/wsus-windows-server-update-services-configuracion-de-politica-parte-ii/wsus-windows-server-update-services-configuracion-de-politica-parte-ii_002.png&#34; alt=&#34;/images/wsus-windows-server-update-services-configuracion-de-politica-parte-ii/wsus-windows-server-update-services-configuracion-de-politica-parte-ii_002.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>
     
