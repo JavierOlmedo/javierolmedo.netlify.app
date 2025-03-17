@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Posts | Hackpuntes</title>
-<meta property="og:title" content="Posts | Hackpuntes" />
-<meta name="twitter:title" content="Posts | Hackpuntes" />
-<meta itemprop="name" content="Posts | Hackpuntes" />
-<meta name="application-name" content="Posts | Hackpuntes" />
+<title itemprop="name">Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite | Hackpuntes</title>
+<meta property="og:title" content="Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite | Hackpuntes" />
+<meta name="twitter:title" content="Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite | Hackpuntes" />
+<meta itemprop="name" content="Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite | Hackpuntes" />
+<meta name="application-name" content="Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite | Hackpuntes" />
 <meta property="og:site_name" content="Hackpuntes" />
 
 <meta name="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
@@ -18,30 +18,20 @@
 <meta property="og:locale" content="es-es" />
 <meta name="language" content="es-es" />
 
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/posts/" title="English" />
-
-  <link rel="alternate" hreflang="es" href="http://localhost:1313/es/posts/" title="Spanish" />
+  <link rel="alternate" hreflang="es" href="http://localhost:1313/es/posts/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/" title="Spanish" />
 
 
 
 
 
-    
-    
-    
-    
-    
-    <link rel="first" href="/es/posts/" />
-    <link rel="last" href="/es/posts/" />
-    
     
     
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2025-03-09T00:00:00Z />
-    <meta property="article:published_time" content=2025-03-09T00:00:00Z />
-    <meta property="og:url" content="http://localhost:1313/es/posts/" />
+    <meta property="og:article:published_time" content=2018-06-20T00:00:00Z />
+    <meta property="article:published_time" content=2018-06-20T00:00:00Z />
+    <meta property="og:url" content="http://localhost:1313/es/posts/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/" />
 
     
     <meta property="og:article:author" content="Javier Olmedo" />
@@ -56,16 +46,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Posts",
+        "headline": "Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite",
         "author": {
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2025-03-09",
+        "datePublished": "2018-06-20",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  958 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2025-03-09",
+        "dateModified": "2018-06-20",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -81,26 +71,29 @@
 <meta name="generator" content="Hugo 0.143.1">
 
     
-    <meta property="og:url" content="http://localhost:1313/es/posts/">
+    <meta property="og:url" content="http://localhost:1313/es/posts/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/">
   <meta property="og:site_name" content="Hackpuntes">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
+  <meta property="og:title" content="Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite">
+  <meta property="og:description" content="En esta entrada vamos a ver como 👤 enumerar usuarios y realizar ataques de fuerza bruta para intentar acceder al panel de administración de un sitio web desarrollado con el CMS (Gestor de contenido) WordPress, para realizar este ataque, haremos uso de la herramienta 🛠 Burp Suite.
+Existen varios scripts e incluso herramientas como 🛠 WPScan para realizar enumeración de usuarios y ataques por fuerza bruta, el inconveniente de estas herramientas, es que pueden realizar pruebas activas contra el sitio web que no deseamos realizar.">
   <meta property="og:locale" content="es_es">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2018-06-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2018-06-20T00:00:00+00:00">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
+  <meta name="twitter:title" content="Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite">
+  <meta name="twitter:description" content="En esta entrada vamos a ver como 👤 enumerar usuarios y realizar ataques de fuerza bruta para intentar acceder al panel de administración de un sitio web desarrollado con el CMS (Gestor de contenido) WordPress, para realizar este ataque, haremos uso de la herramienta 🛠 Burp Suite.
+Existen varios scripts e incluso herramientas como 🛠 WPScan para realizar enumeración de usuarios y ataques por fuerza bruta, el inconveniente de estas herramientas, es que pueden realizar pruebas activas contra el sitio web que no deseamos realizar.">
 
 
     
 
-    <link rel="canonical" href="http://localhost:1313/es/posts/">
-    <link href="/es/posts/index.xml" rel="alternate" type="application/rss+xml" title="Hackpuntes">
-    <link href="/es/posts/index.xml" rel="feed" type="application/rss+xml" title="Hackpuntes">
+    <link rel="canonical" href="http://localhost:1313/es/posts/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -185,42 +178,6 @@ stroke-linejoin="round" class="feather feather-home">
                 </li>
                 
                 
-                    <li>
-                        <select aria-label="Select Language" class="lang-list" id="select-language" onchange="location = this.value;">
-                            
-                            
-                            
-                                
-                                
-                                    
-                                        
-                                        
-                                            <option id="en-us" value="http://localhost:1313/posts/">EN-US</option>
-                                        
-                                    
-                                
-                                    
-                                
-                            
-                                
-                                
-                                    
-                                
-                                    
-                                        
-                                        
-                                            <option id="es" value="http://localhost:1313/es/posts/" selected>ES-ES
-                                            </option>
-                                        
-                                    
-                                
-                            
-                        </select>                
-                    </li>
-                    <li class="menu-separator">
-                        <span>|</span>
-                    </li>
-                
             </ul>
             <a id="mode" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
@@ -231,1058 +188,111 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2025</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_timeoff/">Snyk Fetch The Flag - TimeOff</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-09T00:00:00Z">
-        9 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_coding_mountains/">Snyk Fetch The Flag - Coding Mountains</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-08T00:00:00Z">
-        8 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_clickityclack/">Snyk Fetch The Flag - ClickityClack</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-07T00:00:00Z">
-        7 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_science_100/">Snyk Fetch The Flag - Science 100</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-06T00:00:00Z">
-        6 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_ctf_101/">Snyk Fetch The Flag - CTF 101</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-05T00:00:00Z">
-        5 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_screaming_crying_throwing_up/">Snyk Fetch The Flag - Screaming Crying Throwing up</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-04T00:00:00Z">
-        4 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_unfurl/">Snyk Fetch The Flag - Unfurl</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-03T00:00:00Z">
-        3 marzo 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/snyk_fetch_the_flag_zero_ex_six_one/">Snyk Fetch The Flag - Zero Ex Six One</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-02T00:00:00Z">
-        2 marzo 2025
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2018</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/">Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2018-06-20T00:00:00Z">
-        20 junio 2018
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/crea-tu-servicio-oculto-en-la-red-tor-con-direccion-onion-personalizada/">Crea tu servicio oculto en la red TOR con dirección onion personalizada</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2018-04-19T00:00:00Z">
-        19 abril 2018
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/torghost-reenvia-todo-el-trafico-a-la-red-tor/">TorGhost - Reenvía todo el tráfico a la red TOR</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2018-04-12T00:00:00Z">
-        12 abril 2018
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/desactivar-windows-defender-firewall-completamente-windows-10/">Desactivar Windows Defender y Firewall completamente en Windows 10</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2018-04-11T00:00:00Z">
-        11 abril 2018
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/exploit-cve-2018-6389-wordpress-core-denial-of-service/">Exploit CVE-2018-6389 - WordPress Core - Denial of Service</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2018-03-08T00:00:00Z">
-        8 marzo 2018
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/exploit-cve-2018-6396-joomla-google-map-landkarten-sql-injection/">Exploit CVE-2018-6396 - Joomla Google Map Landkarten SQL Injection</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2018-03-04T00:00:00Z">
-        4 marzo 2018
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion/">WordPress Exploit FrameWork (WPXF) - Instalación, comandos y uso con ejemplo de explotación</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2018-01-05T00:00:00Z">
-        5 enero 2018
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2017</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/instalacion-de-mozilla-firefox-quantum-en-kali-linux/">Instalación de Mozilla Firefox Quantum en Kali Linux</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-12-12T00:00:00Z">
-        12 diciembre 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/eset-remote-administrator-era-parte-ii-instalar-agente-era-mediante-tarea/">ESET Remote Administrator (ERA) - Parte II: Instalar Agente ERA mediante tarea</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-11-14T00:00:00Z">
-        14 noviembre 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/eset-remote-administrator-era-parte-i-instalacion/">ESET Remote Administrator (ERA) - Parte I: Instalación</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-11-08T00:00:00Z">
-        8 noviembre 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/crear-una-gpo-para-bloquear-la-sesion-de-usuario-por-inactividad/">Crear una GPO para bloquear la sesión de usuario por inactividad</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-11-06T00:00:00Z">
-        6 noviembre 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/wsus-windows-server-update-services-reportes-y-uso-parte-iii/">WSUS (Windows Server Update Services): Reportes y uso - Parte III</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-11-02T00:00:00Z">
-        2 noviembre 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/wsus-windows-server-update-services-configuracion-de-politica-parte-ii/">WSUS (Windows Server Update Services): Configuración de política - Parte II</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-10-27T00:00:00Z">
-        27 octubre 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/wsus-windows-server-update-services-instalacion-y-configuracion-parte-i/">WSUS (Windows Server Update Services): Instalación y configuración - Parte I</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-10-24T00:00:00Z">
-        24 octubre 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/krack-el-ataque-que-vulnera-el-protocolo-wpa2-de-las-redes-wifi/">KRACK (Key Reinstallation Attacks): El ataque que vulnera el protocolo WPA2 de las redes WiFi</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-10-18T00:00:00Z">
-        18 octubre 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/metasploitable3-crea-una-maquina-vulnerable-para-probar-tus-ataques/">Metasploitable3: Crea una máquina vulnerable para probar tus ataques</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-06-11T00:00:00Z">
-        11 junio 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/script-powershell-para-comprobar-vulnerabilidad-ms17-010/">Script PowerShell para comprobar vulnerabilidad MS17-010</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-05-16T00:00:00Z">
-        16 mayo 2017
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/obtener-credenciales-https-con-bettercap-y-sslstrip/">Obtener credenciales HTTPS con Bettercap y SSLstrip</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2017-01-08T00:00:00Z">
-        8 enero 2017
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2016</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/explotacion-de-vulnerabilidad-cve-2011-0762-con-metasploit-en-vsftpd-v2-3-4/">Explotación de vulnerabilidad CVE-2011-0762 con Metasploit en VSFTPD v2.3.4</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-10-20T00:00:00Z">
-        20 octubre 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/instalacion-de-virtualbox-guest-additions-en-kali-linux-2016-2/">Instalación de VirtualBox Guest Additions en Kali Linux 2016.2</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-10-08T00:00:00Z">
-        8 octubre 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-camaras-ip-montandome-propio-gran-hermano/">Hacking Cámaras IP - Montándome mi propio Gran Hermano</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-09-11T00:00:00Z">
-        11 septiembre 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/preparando-sublime-text-3-programar-python/">Preparando Sublime Text 3 para programar en Python</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-06-28T00:00:00Z">
-        28 junio 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/navega-la-deep-web-tails-usb/">Navega por la Deep Web con Tails y un USB</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-05-29T00:00:00Z">
-        29 mayo 2016
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/instalar-parrot-os-vmware/">Cómo instalar Parrot OS en VMware</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2016-04-17T00:00:00Z">
-        17 abril 2016
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2015</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-iii/">Dendroid - Crea tu propio Troyano para Android - Parte III</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-09-13T00:00:00Z">
-        13 septiembre 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-ii/">Dendroid - Crea tu propio Troyano para Android - Parte II</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-07-09T00:00:00Z">
-        9 julio 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/dendroid-crea-tu-propio-troyano-para-android-parte-i/">Dendroid - Crea tu propio Troyano para Android - Parte I</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-06-13T00:00:00Z">
-        13 junio 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/xxe-xml-external-entity-el-nuevo-sqli/">XXE - XML External Entity - El Nuevo SQLi</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-30T00:00:00Z">
-        30 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-vii-seleccionar-el-objetivo-y-capturar-los-paquetes/">Hacking Wifi - Parte VII - Seleccionar el Objetivo y capturar los paquetes</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-24T00:00:00Z">
-        24 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/ataque-dns-spoofing-con-cainabel/">Ataque DNS Spoofing con Cain&amp;Abel</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-07T00:00:00Z">
-        7 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/herramienta-para-recuperar-los-archivos-cifrados-por-el-ransomware-teslacrypt/">Herramienta para recuperar los archivos cifrados por el ransomware TeslaCrypt</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-02T00:00:00Z">
-        2 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/como-crear-un-usb-keyloggerstealer-para-recuperar-contrasenas/">Cómo crear un USB Keylogger/Stealer para recuperar contraseñas</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-05-02T00:00:00Z">
-        2 mayo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-vi-seguridad-en-redes-wi-fi/">Hacking Wifi - Parte VI - Seguridad en redes Wi-Fi</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-28T00:00:00Z">
-        28 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/como-usar-tu-pendrive-como-contrasena-en-windows-7/">Cómo usar tu pendrive como contraseña en Windows 7</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-23T00:00:00Z">
-        23 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/nueva-vulnerabilidad-smb-afecta-a-todas-las-versiones-de-windows/">Nueva vulnerabilidad SMB afecta a todas las versiones de Windows</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-14T00:00:00Z">
-        14 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/desarrollo-de-un-stealer-sencillo-para-twitter-en-visual-studio/">Desarrollo de un Stealer sencillo para Twitter en Visual Studio</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-12T00:00:00Z">
-        12 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-v-modificando-la-direccion-mac-con-macchanger/">Hacking Wifi - Parte V - Modificando la dirección MAC con macchanger</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-09T00:00:00Z">
-        9 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-iv-comandos-basicos/">Hacking Wifi - Parte IV - Comandos Básicos</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-05T00:00:00Z">
-        5 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/miles-de-cuentas-de-uber-supuestamente-vendidas-en-la-deep-web/">Miles de cuentas de Uber, supuestamente vendidas en la deep web</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-04-04T00:00:00Z">
-        4 abril 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/sparta-la-caja-de-herramientas-del-pentester/">SPARTA - La Caja de Herramientas del Pentester</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-31T00:00:00Z">
-        31 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/accediendo-al-sistema-de-control-de-las-gasolineras/">Accediendo al sistema de control de las gasolineras</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-29T00:00:00Z">
-        29 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/china-ataca-github-intruduciendo-un-troyano-en-baidu/">China ataca GitHub introduciendo un troyano en Baidu</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-28T00:00:00Z">
-        28 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-iii-instalacion-de-aircrack-ng/">Hacking Wifi – Parte III – Instalación de Aircrack-ng</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-27T00:00:00Z">
-        27 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-ii-requisitos-antes-de-empezar/">Hacking Wifi – Parte II – Requisitos antes de empezar</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-25T00:00:00Z">
-        25 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/hacking-wifi-parte-i-introduccion/">Hacking Wifi - Parte I - Introducción</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-20T00:00:00Z">
-        20 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/examen-programacion-hilos-hinchaglobos-y-pinchaglobos/">Examen Programación Hilos - HinchaGlobos y PinchaGlobos</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-20T00:00:00Z">
-        20 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/ip-box-dispositivo-para-crackear-claves-de-iphone/">IP-Box: Dispositivo para crackear claves de iPhone</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-17T00:00:00Z">
-        17 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/detectando-aplicaciones-maliciosas-para-android-en-google-play/">Detectando aplicaciones maliciosas para Android en Google Play</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-11T00:00:00Z">
-        11 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/ataques-sql-injection-contra-bases-de-datos-mediante-sqlmap/">Ataques SQL injection contra Bases de Datos mediante SQLmap</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-11T00:00:00Z">
-        11 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/obtener-informacion-con-the-harvester/">Obtener información con The Harvester</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-09T00:00:00Z">
-        9 marzo 2015
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/es/posts/blog-seguridad-informatica-hacking/">Presentación de mi blog sobre Seguridad Informática y Hacking</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2015-03-05T00:00:00Z">
-        5 marzo 2015
-        
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2018-06-20T00:00:00&#43;00:00" itemprop="datePublished"> 20 junio 2018 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>En esta entrada vamos a ver como 👤 <strong>enumerar usuarios y realizar ataques de fuerza bruta</strong> para intentar acceder al panel de administración de un sitio web desarrollado con el CMS (Gestor de contenido) WordPress, para realizar este ataque, haremos uso de la herramienta 🛠 <a href="https://portswigger.net/burp">Burp Suite.</a></p>
+<p>Existen varios scripts e incluso herramientas como 🛠 <a href="https://wpscan.org/">WPScan</a> para realizar enumeración de usuarios y ataques por fuerza bruta, el inconveniente de estas herramientas, es que pueden realizar pruebas activas contra el sitio web que no deseamos realizar.</p>
+<h2 id="aviso">⚠ AVISO ⚠</h2>
+<blockquote>
+<p><strong>No me hago responsable del mal uso que se pueda dar de lo explicado en este tutorial, estas pruebas siempre tienen que tener el consentimiento del propietario del sitio web o realizarlo sobre nuestras propias máquinas locales o aplicaciones web.</strong></p></blockquote>
+<h2 id="1-instalar-burp-suite-y-configurarlo-como-proxy-en-firefox">📥 1. Instalar Burp Suite y configurarlo como proxy en Firefox</h2>
+<p>1.1 Si usamos distribuciones orientadas a la seguridad como Kali Linux, ya tendremos la herramienta Burp Suite instalada por defecto, si no, podemos descargarla desde su <a href="https://portswigger.net/burp">web</a>, la instalación no tiene pérdida.</p>
+<p>1.2 Es aconsejable usar el <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">JDK de Java</a> en la versión 8.</p>
+<p>1.3 Arrancamos Burp Suite y configuramos el navegador Firefox para que lo use como proxy, esto podemos hacerlo desde ⚙ <strong>Opciones</strong>, <strong>General</strong>, bajamos hasta abajo del todo y pulsamos en el <strong>botón de configuración</strong> en el apartado <strong>Proxy de red</strong>.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_001.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_001.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_001.png"></a></p>
+<p>1.4 Desde aquí, añadimos la IP <code>127.0.0.1</code> (localhost) hacia el puerto <code>8080</code>, que es el puerto usado por defecto por Burp Suite, lo dejamos tal y como aparece en la imagen, eliminado las direcciones que aparecen en <strong>No usar proxy para</strong> y marcando la pestaña <strong>Usar el mismo proxy para todo.</strong></p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_002.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_002.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_002.png"></a></p>
+<p>1.5 Accedemos a la dirección <a href="http://localhost:8080/">http://localhost:8080</a> y descargamos el certificado.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_003.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_003.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_003.png"></a></p>
+<p>1.6 Instalamos el certificado en el <strong>equipo local</strong> y en el almacén <strong>Entidades de certificación raíz de confianza</strong>.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_004.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_004.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_004.png"></a></p>
+<p>1.7 Dentro de Firefox, vamos a ⚙ <strong>Opciones</strong>, 🔒 <strong>Privacidad &amp; Seguridad</strong>, bajamos hasta abajo del todo y pulsamos en el botón <strong>Ver certificados</strong> dentro del apartado <strong>Certificados</strong>.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_005.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_005.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_005.png"></a></p>
+<p>1.8 En la pestaña <strong>Autoridades</strong>, click en el botón <strong>Importar</strong> y seleccionamos el certificado que descargamos, también <strong>marcamos los dos check de confianza en PortSwigger CA</strong>.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_006.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_006.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_006.png"></a></p>
+<h2 id="2-enumeración-de-usuarios">👤 2. Enumeración de usuarios</h2>
+<p>2.1 En el paso anterior, hemos dejado todo configurado para que el tráfico pase por el Burp Suite cuando naveguemos, ahora, al sitio web le añadiremos <code>?author=1</code> en la URL y veremos que Burp Suite ha parado la petición, hacemos <strong>click derecho</strong> y lo enviamos al <strong>Intruder</strong> (Send to Intruder)</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_007.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_007.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_007.png"></a></p>
+<p>2.2 El número <strong>1</strong> que hemos añadido a author, <strong>por defecto es el ID del administrador</strong> del sitio web, ahora vamos a realizar peticiones cambiando el número, por ejemplo, desde el 1 al 10 para <strong>enumerar el resto de usuarios</strong>, nos hemos fijado que al navegar a esta URL aparece una página con las entradas asociadas a este ID (usuario está activo).</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_008.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_008.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_008.png"></a></p>
+<p>2.3 En este punto, <strong>estaréis pensado que no sería necesario Burp Suite</strong> para enumerar usuarios (si la enumeración es de pocos IDs), ya que cambiando manualmente el ID obtendríamos los usuarios, pero si lo intentamos con el ID 3 (he borrado el ID 2 para hacer esta entrada más real), veremos que no obtenemos respuesta, ¿O sí?</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_009.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_009.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_009.png"></a></p>
+<p>2.4 Hemos visto que accediendo al ID 3 no hemos obtenido resultado, pero si <strong>observamos el código fuente</strong>, veremos que tiene el nombre de usuario en el atributo 👁‍ <code>&lt;title&gt;</code> dentro del <code>&lt;head&gt;</code></p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_010.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_010.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_010.png"></a></p>
+<p>2.5 Ahora ya sabemos de dónde sacar el usuario, volvemos a Burp Suite, a la pestaña <strong>Intruder</strong> y marcamos la posición que queremos realizar la enumeración, haciendo click en el botón <strong>Add</strong>.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_011.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_011.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_011.png"></a></p>
+<p>2.6 Para extraer el contenido de <code>&lt;title&gt;</code>, vamos a la pestaña <strong>Options</strong>, <strong>Grep – Extract</strong> y añadimos una condición (dejamos marcado el check <strong>Extract the following items from responses</strong>).</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_012.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_012.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_012.png"></a></p>
+<p>2.7 Lo dejaremos tal y como aparece en la siguiente imagen, en <strong>Start after expression:</strong> y en <strong>End at delimiter –</strong></p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_013.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_013.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_013.png"></a></p>
+<p>2.8 En la pestaña <strong>Payloads</strong>, en <strong>Payload type:</strong> elegimos el tipo <strong>Numbers</strong>, de tipo <strong>secuencial del 2 al 10 con un salto.</strong></p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_014.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_014.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_014.png"></a></p>
+<p>2.9 <strong>Lanzamos el ataque</strong> y veremos los usuarios, el primero es el ID 1 con <strong>código de respuesta 301</strong>, y los demás usuarios válidos, devolverán un <strong>código 200</strong>.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_015.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_015.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_015.png"></a></p>
+<p>2.10 Hemos obtenido los siguientes usuarios:</p>
+<table>
+  <thead>
+      <tr>
+          <th>ID</th>
+          <th>Usuario</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>administrador</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>colaborador</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>editor</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>autor</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>suscriptor</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="3-realizar-ataque-por-fuerza-bruta-a-un-usuario">💢 3. Realizar ataque por fuerza bruta a un usuario</h2>
+<p>3.1 Una vez conocidos los usuarios, intentaremos logearnos en el sitio mediante el formulario de acceso por defecto de WordPress, en la ruta <code>/wp-admin</code>, intentaremos logearnos con el usuario administrador y realizando fuerza bruta a la contraseña.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_016.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_016.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_016.png"></a></p>
+<p>3.2 Al realizar la petición, Burp Suite la interceptará, volveremos a hacer uso del <strong>Intruder</strong> y nos fijaremos en el parámetro que contiene la contraseña.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_017.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_017.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_017.png"></a></p>
+<p>3.3 En la pestaña <strong>Positions</strong> del <strong>Intruder</strong>, limpiaremos los parámetros por defecto que marca Burp Suite con el botón <strong>Clear</strong> y añadimos el contenido del parámetro <code>pwd=</code> con el botón <strong>Add</strong> como en la siguiente imagen.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_018.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_018.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_018.png"></a></p>
+<p>3.4 En este paso, añadiremos un diccionario con posibles contraseñas para comprobar si alguna es utilizada por el administrador, por ejemplo, voy a usar un diccionario de las <a href="https://github.com/JavierOlmedo/MyWebHackingResources/tree/master/fuzzing/passwords">1000 contraseñas más utilizadas</a>, en el apartado <strong>Payload Options [Simple list]</strong>, click en el botón <strong>Load</strong> y lo añadimos.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_019.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_019.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_019.png"></a></p>
+<p>3.5 <strong>Lanzamos el ataque</strong> y una vez finalizado, ordenamos los códigos de respuesta del servidor para comprobar si tenemos un <strong>302</strong> (contraseña válida).</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_020.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_020.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_020.png"></a></p>
+<p>3.6 Vemos que tenemos un código 302 con el payload <strong>qwerty</strong>, esta sería la contraseña del administrador. Volvemos al panel de acceso en <code>/wp-config</code> para comprobar si es correcta y logearnos con las credenciales <code>administrador:qwerty</code>.</p>
+<p><a href="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_021.png"><img src="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_021.png" alt="/images/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite_021.png"></a></p>
+<p>Hasta aquí la entrada, hemos visto una alternativa al uso de las herramientas más utilizadas como WPScan para enumerar usuario en WordPress y realizar ataques de fuerza bruta, hasta la próxima!! 👋</p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 

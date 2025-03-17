@@ -195,6 +195,137 @@
     </item>
     
     <item>
+      <title>Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite</title>
+      <link>http://localhost:1313/es/posts/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/</link>
+      <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/</guid>
+      
+      <description>&lt;p&gt;En esta entrada vamos a ver como 👤 &lt;strong&gt;enumerar usuarios y realizar ataques de fuerza bruta&lt;/strong&gt; para intentar acceder al panel de administración de un sitio web desarrollado con el CMS (Gestor de contenido) WordPress, para realizar este ataque, haremos uso de la herramienta 🛠 &lt;a href=&#34;https://portswigger.net/burp&#34;&gt;Burp Suite.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Existen varios scripts e incluso herramientas como 🛠 &lt;a href=&#34;https://wpscan.org/&#34;&gt;WPScan&lt;/a&gt; para realizar enumeración de usuarios y ataques por fuerza bruta, el inconveniente de estas herramientas, es que pueden realizar pruebas activas contra el sitio web que no deseamos realizar.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Crea tu servicio oculto en la red TOR con dirección onion personalizada</title>
+      <link>http://localhost:1313/es/posts/crea-tu-servicio-oculto-en-la-red-tor-con-direccion-onion-personalizada/</link>
+      <pubDate>Thu, 19 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/crea-tu-servicio-oculto-en-la-red-tor-con-direccion-onion-personalizada/</guid>
+      
+      <description>&lt;p&gt;Cuando hablamos de la 🖧 &lt;strong&gt;red TOR&lt;/strong&gt;, solemos asociarla a todo tipo de actos delictivos (tráfico de drogas, cibercrimen organizado, venta de armas u otras actividades ilícitas), pero, al margen de esta mala imagen de la red TOR, es una &lt;strong&gt;excelente herramienta&lt;/strong&gt; que puede ayudarnos a mantener nuestra &lt;strong&gt;🕵️‍♂️ privacidad y anonimato&lt;/strong&gt; en la red, sobre todo si queremos ofrecer algún servicio sin revelar nuestra identidad.&lt;/p&gt;
+&lt;p&gt;En esta entrada veremos como &lt;strong&gt;crear un servicio oculto en nuestro equipo y hacerlo accesible a la red TOR mediante una dirección onion personalizada&lt;/strong&gt;, los pasos que seguiremos serán los siguientes:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>TorGhost - Reenvía todo el tráfico a la red TOR</title>
+      <link>http://localhost:1313/es/posts/torghost-reenvia-todo-el-trafico-a-la-red-tor/</link>
+      <pubDate>Thu, 12 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/torghost-reenvia-todo-el-trafico-a-la-red-tor/</guid>
+      
+      <description>&lt;p&gt;La red &lt;strong&gt;TOR&lt;/strong&gt; es una &lt;strong&gt;de las mejores opciones a la hora de proteger nuestra identidad&lt;/strong&gt; en la red, dado que sus métodos de transferencia de datos son &lt;strong&gt;altamente criptográficos&lt;/strong&gt; y cada petición a un mismo servicio &lt;strong&gt;se envía por rutas diferentes utilizando múltiples nodos,&lt;/strong&gt; algo que complica mucho trazar a un usuario dentro la red.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/torghost-reenvia-todo-el-trafico-a-la-red-tor/torghost-reenvia-todo-el-trafico-a-la-red-tor_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/torghost-reenvia-todo-el-trafico-a-la-red-tor/torghost-reenvia-todo-el-trafico-a-la-red-tor_001.png&#34; alt=&#34;/images/torghost-reenvia-todo-el-trafico-a-la-red-tor/torghost-reenvia-todo-el-trafico-a-la-red-tor_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para navegar por la red TOR, bastaría con 📦&lt;a href=&#34;https://www.torproject.org/download/download-easy.html.en&#34;&gt;descargar su bundle&lt;/a&gt;, pero, tenemos que tener en cuenta, que de esta manera &lt;strong&gt;solo protegeríamos nuestra privacidad usando su navegador, el resto de tráfico no se enviaría por TOR.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Desactivar Windows Defender y Firewall completamente en Windows 10</title>
+      <link>http://localhost:1313/es/posts/desactivar-windows-defender-firewall-completamente-windows-10/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/desactivar-windows-defender-firewall-completamente-windows-10/</guid>
+      
+      <description>&lt;p&gt;Muchos de vosotros os preguntaréis &lt;strong&gt;por qué un usuario querría desactivar los sistemas de seguridad&lt;/strong&gt;, como Windows Defender o el Firewall de un equipo, poniendo así en riesgo el equipo ante alguna amenaza 🐞, pero ¿y si lo que queremos es analizar esas amenazas? ¿Y si autoinfecto mi equipo para estudiar cómo se comporta un determinado malware?, en estos casos, quizás te interese desactivar cualquier medida de protección de tu equipo.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Exploit CVE-2018-6389 - WordPress Core - Denial of Service</title>
+      <link>http://localhost:1313/es/posts/exploit-cve-2018-6389-wordpress-core-denial-of-service/</link>
+      <pubDate>Thu, 08 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/exploit-cve-2018-6389-wordpress-core-denial-of-service/</guid>
+      
+      <description>&lt;p&gt;Últimamente estoy muy atento de las vulnerabilidades de los CMS y vengo a compartir con vosotros otro exploit que he desarrollado para la vulnerabilidad &lt;a href=&#34;https://www.certsi.es/alerta-temprana/vulnerabilidades/cve-2018-6389&#34;&gt;CVE-2018-6389&lt;/a&gt;. Esta vulnerabilidad descubierta por &lt;a href=&#34;http://baraktawily.blogspot.com.es/&#34;&gt;Barak Tawily&lt;/a&gt;, permite lanzar un &lt;a href=&#34;https://es.wikipedia.org/wiki/Ataque_de_denegaci%C3%B3n_de_servicio&#34;&gt;ataque de denegación de servicio (DOS)&lt;/a&gt; sobre las páginas webs desarrolladas con WordPress (se estima que &lt;strong&gt;aproximadamente el 29% de todas las webs que existen actualmente&lt;/strong&gt; en el mundo están desarrolladas con este framework).&lt;/p&gt;
+&lt;p&gt;La vulnerabilidad, existe en el archivo &lt;code&gt;load-scripts.php&lt;/code&gt; cuando recibe un parámetro llamado &lt;code&gt;load []&lt;/code&gt;, este parámetro, es un array que está &lt;strong&gt;destinado a proporcionar archivos JS a los usuarios&lt;/strong&gt;, por lo tanto, si lo solicitáramos muchas veces, generaríamos gran carga en el servidor de la aplicación, provocando así una caída del servicio.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Exploit CVE-2018-6396 - Joomla Google Map Landkarten SQL Injection</title>
+      <link>http://localhost:1313/es/posts/exploit-cve-2018-6396-joomla-google-map-landkarten-sql-injection/</link>
+      <pubDate>Sun, 04 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/exploit-cve-2018-6396-joomla-google-map-landkarten-sql-injection/</guid>
+      
+      <description>&lt;p&gt;Hoy quería compartir con vosotros un &lt;a href=&#34;https://es.wikipedia.org/wiki/Exploit&#34;&gt;exploit&lt;/a&gt; que he desarrollado en Python para explotar una vulnerabilidad SQLi descubierta por &lt;a href=&#34;https://twitter.com/ihsansencan&#34;&gt;Ihsan Sencan&lt;/a&gt; en el componente &lt;a href=&#34;https://extensions.joomla.org/extensions/extension/maps-a-weather/maps-a-locations/google-map-landkarten/&#34;&gt;Google Map Landkarten&lt;/a&gt;, esta vulnerabilidad tiene asociado el &lt;a href=&#34;https://www.certsi.es/en/early-warning/vulnerabilities/cve-2018-6396&#34;&gt;CVE-2018-6396.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;joomla-cve-2018-6396&#34;&gt;Joomla CVE-2018-6396&lt;/h2&gt;
+&lt;h3 id=&#34;joomla-component-google-map-landkarten--423--sql-injection&#34;&gt;Joomla! Component Google Map Landkarten &amp;lt;= 4.2.3 – SQL Injection&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Vulnerabilidad descubierta por &lt;a href=&#34;https://www.exploit-db.com/exploits/44113/&#34;&gt;Ihsan Sencan&lt;/a&gt; el &lt;strong&gt;16/02/2018&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;💣 Exploit desarrollado por &lt;a href=&#34;https://twitter.com/JJavierOlmedo&#34;&gt;Javier Olmedo&lt;/a&gt; el &lt;strong&gt;03/03/2018&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🐛 &lt;a href=&#34;https://www.certsi.es/en/early-warning/vulnerabilities/cve-2018-6396&#34;&gt;CVE-2018-6396&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔗 Link del software  &lt;a href=&#34;https://extensions.joomla.org/extensions/extension/maps-a-weather/maps-a-locations/google-map-landkarten/&#34;&gt;Google Map Landkarten&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐞 Versión vulnerable &amp;lt;= &lt;strong&gt;4.2.3&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cómo-usar-este-exploit&#34;&gt;¿Cómo usar este exploit?&lt;/h3&gt;
+&lt;p&gt;En primer lugar, &lt;strong&gt;usa este exploit únicamente sobre sitios web administrados por ti o en los cuales tengas consentimiento&lt;/strong&gt; para realizar está comprobación, en mi caso, me he creado una web con &lt;a href=&#34;https://downloads.joomla.org/es/&#34;&gt;Joomla 3.8.5&lt;/a&gt; en mi máquina local.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>WordPress Exploit FrameWork (WPXF) - Instalación, comandos y uso con ejemplo de explotación</title>
+      <link>http://localhost:1313/es/posts/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion/</link>
+      <pubDate>Fri, 05 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion_banner.png&#34; alt=&#34;/images/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;WordPress Exploit FrameWork es una herramienta que sirve de ayuda a los auditores de aplicaciones web a la hora realizar &lt;strong&gt;pruebas de seguridad sobre sitios webs basados en el conocido gestor de contenidos (CMS) WordPress&lt;/strong&gt;, está desarrollado en Ruby y está orientado al uso y desarrollo de módulos, exploits y payloads, algo similar al conocido Metasploit.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion_001.png&#34; alt=&#34;/images/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion/wpxf-instalacion-comandos-y-uso-con-ejemplo-de-explotacion_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;pasos-a-seguir-para-su-instalación&#34;&gt;Pasos a seguir para su instalación&lt;/h2&gt;
+&lt;p&gt;Antes de proceder con la instalación, debemos de &lt;strong&gt;asegurarnos que tenemos Ruby 2.2.x&lt;/strong&gt; instalado en el sistema, en mi caso, voy a realizar el tutorial sobre Kali Linux, que ya lo trae por defecto instalado, pero en caso que no lo tuvieramos, podríamos instalarlo con el comando:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Instalación de Mozilla Firefox Quantum en Kali Linux</title>
+      <link>http://localhost:1313/es/posts/instalacion-de-mozilla-firefox-quantum-en-kali-linux/</link>
+      <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/instalacion-de-mozilla-firefox-quantum-en-kali-linux/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/instalacion-de-mozilla-firefox-quantum-en-kali-linux/instalacion-de-mozilla-firefox-quantum-en-kali-linux_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/instalacion-de-mozilla-firefox-quantum-en-kali-linux/instalacion-de-mozilla-firefox-quantum-en-kali-linux_banner.png&#34; alt=&#34;/images/instalacion-de-mozilla-firefox-quantum-en-kali-linux/instalacion-de-mozilla-firefox-quantum-en-kali-linux_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;En esta entrada, veremos &lt;strong&gt;como instalar Firefox Quantum en Kali Linux&lt;/strong&gt; y otras distribuciones basadas en Debian.&lt;/p&gt;
+&lt;p&gt;Firefox Quantum es el nuevo navegador de Mozilla, &lt;strong&gt;mucho más rápido&lt;/strong&gt; que su antecesor y con un &lt;strong&gt;nuevo motor&lt;/strong&gt; con lo último en tecnología para navegadores.&lt;/p&gt;
+&lt;h2 id=&#34;pasos-a-seguir-para-su-instalación&#34;&gt;Pasos a seguir para su instalación&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Descargamos&lt;/strong&gt; Firefox Quantum desde su web oficial &lt;a href=&#34;https://www.mozilla.org/es-ES/firefox/&#34;&gt;https://www.mozilla.org/es-ES/firefox/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Una vez descargado, &lt;strong&gt;botón derecho&lt;/strong&gt; y extraemos los archivos, también podemos descomprimir con el comando &lt;strong&gt;tar&lt;/strong&gt;, de la siguiente manera:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>ESET Remote Administrator (ERA) - Parte II: Instalar Agente ERA mediante tarea</title>
+      <link>http://localhost:1313/es/posts/eset-remote-administrator-era-parte-ii-instalar-agente-era-mediante-tarea/</link>
+      <pubDate>Tue, 14 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/eset-remote-administrator-era-parte-ii-instalar-agente-era-mediante-tarea/</guid>
+      
+      <description>&lt;p&gt;Buenas a todos, en esta entrada sobre ESET Remote Administrator (ERA) vamos a ver como &lt;strong&gt;instalar el Agente ERA en los equipos mediante una tarea&lt;/strong&gt;, a través del agente, podremos administrar los equipos, por ejemplo, después de tenerlo configurado en los equipos comenzaremos a instalar la solución antivirus ESET EndPoint Security &lt;strong&gt;mediante otra tarea y de manera desatendida&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;En mi caso tengo instalado ERA en la siguiente dirección &lt;a href=&#34;https://192.168.100.10/era&#34;&gt;https://192.168.100.10/era&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/eset-remote-administrator-era-parte-ii-instalar-agente-era-mediante-tarea/eset-remote-administrator-era-parte-ii-instalar-agente-era-mediante-tarea_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/eset-remote-administrator-era-parte-ii-instalar-agente-era-mediante-tarea/eset-remote-administrator-era-parte-ii-instalar-agente-era-mediante-tarea_001.png&#34; alt=&#34;/images/eset-remote-administrator-era-parte-ii-instalar-agente-era-mediante-tarea/eset-remote-administrator-era-parte-ii-instalar-agente-era-mediante-tarea_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Si vamos a la pestaña &lt;strong&gt;“Ordenadores” &amp;raquo; “Equipos”&lt;/strong&gt; podemos ver como su estado aparece como &lt;strong&gt;“No administrado”&lt;/strong&gt;, aparecen de esta manera porque ERA ha cogido los nombres de los equipos que pertenecen al dominio, pero aún no puede administrarlo porque no tienen el agente ERA instalado.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>ESET Remote Administrator (ERA) - Parte I: Instalación</title>
       <link>http://localhost:1313/es/posts/eset-remote-administrator-era-parte-i-instalacion/</link>
       <pubDate>Wed, 08 Nov 2017 00:00:00 +0000</pubDate>
