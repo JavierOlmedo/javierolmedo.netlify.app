@@ -195,6 +195,224 @@
     </item>
     
     <item>
+      <title>Mocking the UAC - Bypasseando las nuevas versiones en Windows</title>
+      <link>http://localhost:1313/es/posts/mocking-the-uac-bypasseando-las-nuevas-versiones-en-windows/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/mocking-the-uac-bypasseando-las-nuevas-versiones-en-windows/</guid>
+      
+      <description>&lt;p&gt;Hace unos días, una nueva técnica llamada &lt;strong&gt;mocking&lt;/strong&gt; vio la luz en el amplio abanico de métodos para bypassear el UAC (&lt;strong&gt;User Account Control&lt;/strong&gt;) en las versiones más recientes de Windows, incluido Windows 10. Como es sabido, el UAC nos da una capa de seguridad ante posibles ataques de malware, evitando que se generen cambios en el registro, se creen ficheros, servicios, etc.&lt;/p&gt;
+&lt;p&gt;Siguiendo el trabajo de @zc00l y @Oddvar, compilando mediante la consola de powershell un pequeño script en C# que explota el servicio &lt;code&gt;cmstp.exe&lt;/code&gt;, generamos una DLL que mediante &lt;strong&gt;Reflection.Assembly&lt;/strong&gt; cargamos en el sistema, para luego ejecutarla.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>TOP 10 herramientas de seguridad para aplicaciones web</title>
+      <link>http://localhost:1313/es/posts/top-10-herramientas-de-seguridad-para-aplicaciones-web/</link>
+      <pubDate>Tue, 20 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/top-10-herramientas-de-seguridad-para-aplicaciones-web/</guid>
+      
+      <description>&lt;p&gt;En esta entrada, os mostraré un listado de las que son (para mí), &lt;strong&gt;las 10 mejores herramientas de seguridad para aplicaciones web.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;No soy un experto en hacking web y puede que no estés del todo de acuerdo con mi lista TOP, por lo tanto, siéntete libre de comentar y añadir la tuya 😉&lt;/p&gt;
+&lt;h2 id=&#34;top-10-herramientas-de-seguridad-web&#34;&gt;TOP 10 Herramientas de seguridad web&lt;/h2&gt;
+&lt;h3 id=&#34;1-burp-suite&#34;&gt;#1 Burp Suite&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/top-10-herramientas-de-seguridad-para-aplicaciones-web/top-10-herramientas-de-seguridad-para-aplicaciones-web_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/top-10-herramientas-de-seguridad-para-aplicaciones-web/top-10-herramientas-de-seguridad-para-aplicaciones-web_001.png&#34; alt=&#34;/images/top-10-herramientas-de-seguridad-para-aplicaciones-web/top-10-herramientas-de-seguridad-para-aplicaciones-web_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Es un &lt;strong&gt;conjunto de herramientas&lt;/strong&gt; orientadas a la auditoria de aplicaciones web, el gran marco de pruebas que puede abarcar la ha convertido en una herramienta imprescindible para los profesionales de la seguridad web. Dentro de la suite podemos encontrar las siguientes herramientas:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-18922 Ticketly 1.0 - Escalación de Privilegios (Crear cuenta administrador)</title>
+      <link>http://localhost:1313/es/posts/cve-2018-18922-ticketly-escalacion-de-privilegios-crear-cuenta-administrador/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-18922-ticketly-escalacion-de-privilegios-crear-cuenta-administrador/</guid>
+      
+      <description>&lt;p&gt;Hoy, publico otra entrada relacionada con vulnerabilidades en aplicaciones web, esta vez, sobre un software de ticketing llamado &lt;a href=&#34;https://abisoftgt.net/software/6/sistema-de-tickets-y-soporte-con-php-y-mysql&#34;&gt;Ticketly 1.0&lt;/a&gt; desarrollado por AbiSoft. La vulnerabilidad encontrada, permite a un atacante &lt;strong&gt;crearse una cuenta de administrador&lt;/strong&gt; en el sistema mediante una vulnerabilidad de &lt;a href=&#34;https://www.owasp.org/index.php/Testing_for_Privilege_escalation_%5C%28OTG-AUTHZ-003%5C%29&#34;&gt;Escalación de Privilegios&lt;/a&gt;, la vulnerabilidad ha sido asociada al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2018-18922&#34;&gt;CVE-2018-18922&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ticketly--cve-2018-18922&#34;&gt;Ticketly - CVE-2018-18922&lt;/h2&gt;
+&lt;h3 id=&#34;ticketly-10---privilege-escalation-add-admin-account&#34;&gt;Ticketly 1.0 - Privilege Escalation (Add Admin Account)&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-18922-ticketly-escalacion-de-privilegios-crear-cuenta-administrador/cve-2018-18922-ticketly-escalacion-de-privilegios-crear-cuenta-administrador_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-18922-ticketly-escalacion-de-privilegios-crear-cuenta-administrador/cve-2018-18922-ticketly-escalacion-de-privilegios-crear-cuenta-administrador_001.png&#34; alt=&#34;/images/cve-2018-18922-ticketly-escalacion-de-privilegios-crear-cuenta-administrador/cve-2018-18922-ticketly-escalacion-de-privilegios-crear-cuenta-administrador_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ticketly 1.0, es un software de ticketing desarrollado por AbiSoft para ofrecer soporte a los usuarios sobre incidencias en los sistemas, está basado en PHP y MySQL.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-18923 Ticketly 1.0 - Múltiples SQL Injections</title>
+      <link>http://localhost:1313/es/posts/cve-2018-18923-ticketly-multiples-sql-injections/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-18923-ticketly-multiples-sql-injections/</guid>
+      
+      <description>&lt;p&gt;En la &lt;a href=&#34;https://hackpuntes.com/cve-2018-18922-ticketly-escalacion-de-privilegios-crear-cuenta-administrador/&#34;&gt;entrada anterior&lt;/a&gt;, hemos visto una vulnerabilidad de &lt;a href=&#34;https://www.owasp.org/index.php/Testing_for_Privilege_escalation_%5C%28OTG-AUTHZ-003%5C%29&#34;&gt;Escalación de Privilegios&lt;/a&gt; en &lt;a href=&#34;https://abisoftgt.net/software/6/sistema-de-tickets-y-soporte-con-php-y-mysql&#34;&gt;Ticketly 1.0&lt;/a&gt;, en esta entrada, vamos a ver otras vulnerabilidades que he encontrado en este software, en concreto, múltiples SQL Injections, estas vulnerabilidades han sido asociadas al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2018-18923&#34;&gt;CVE-2018-18923&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;ticketly--cve-2018-18923&#34;&gt;Ticketly - CVE-2018-18923&lt;/h2&gt;
+&lt;h3 id=&#34;ticketly-10---multiple-sql-injections&#34;&gt;Ticketly 1.0 - Multiple SQL Injections&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-18923-ticketly-multiples-sql-injections/cve-2018-18923-ticketly-multiples-sql-injections_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-18923-ticketly-multiples-sql-injections/cve-2018-18923-ticketly-multiples-sql-injections_001.png&#34; alt=&#34;/images/cve-2018-18923-ticketly-multiples-sql-injections/cve-2018-18923-ticketly-multiples-sql-injections_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ticketly 1.0, es un software de ticketing desarrollado por AbiSoft para ofrecer soporte a los usuarios sobre incidencias en los sistemas, está basado en PHP y MySQL.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-18478 Libre NMS 1.43 - Cross-Site Scripting Persistente</title>
+      <link>http://localhost:1313/es/posts/cve-2018-18478-libre-nms-1-43-cross-site-scripting-persistente/</link>
+      <pubDate>Fri, 19 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-18478-libre-nms-1-43-cross-site-scripting-persistente/</guid>
+      
+      <description>&lt;p&gt;Esta entrada tiene como objetivo hacer pública la vulnerabilidad &lt;a href=&#34;https://www.owasp.org/index.php/Cross-site_Scripting_%5C%28XSS%5C%29&#34;&gt;Cross-Site Scripting Persistente&lt;/a&gt; descubierta en el software &lt;a href=&#34;https://github.com/librenms/librenms/releases/tag/1.43&#34;&gt;Libre NMS 1.43&lt;/a&gt;, la vulnerabilidad ha sido asociada al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2018-18478&#34;&gt;CVE-2018-18478&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;libre-nms--cve-2018-18478&#34;&gt;Libre NMS - CVE-2018-18478&lt;/h2&gt;
+&lt;h3 id=&#34;libre-nms-143--cross-site-scripting-persistente&#34;&gt;Libre NMS 1.43 – Cross-Site Scripting Persistente&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-18478-libre-nms-1-43-cross-site-scripting-persistente/cve-2018-18478-libre-nms-1-43-cross-site-scripting-persistente_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-18478-libre-nms-1-43-cross-site-scripting-persistente/cve-2018-18478-libre-nms-1-43-cross-site-scripting-persistente_001.png&#34; alt=&#34;/images/cve-2018-18478-libre-nms-1-43-cross-site-scripting-persistente/cve-2018-18478-libre-nms-1-43-cross-site-scripting-persistente_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Libre Network Monitoring System, es un software utilizado para monitoreo de red basado en PHP / MySQL / SNMP que incluye el soporte para una amplia gama de hardware de red y sistemas operativos que incluyen Cisco, Linux, FreeBSD, Juniper, Brocade, Foundry, HP y muchos más.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>OWASP Juice Shop Project - Laboratorio para practicar las 10 vulnerabilidades más comunes en aplicaciones web</title>
+      <link>http://localhost:1313/es/posts/owasp-juice-shop-practicar-10-vulnerabilidades-mas-comunes-en-aplicaciones-web/</link>
+      <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/owasp-juice-shop-practicar-10-vulnerabilidades-mas-comunes-en-aplicaciones-web/</guid>
+      
+      <description>&lt;p&gt;OWASP Juice Shop es una aplicación web desarrollada completamente en JavaScript con el objetivo de reproducir de manera intencionada las &lt;a href=&#34;https://www.owasp.org/index.php/Top_10-2017_Top_10&#34;&gt;10 vulnerabilidades más comunes&lt;/a&gt; en aplicaciones web (Top Ten de OWASP) para que el usuario pueda explotarlas y aprender sobre la seguridad en aplicaciones web.&lt;/p&gt;
+&lt;h2 id=&#34;top-ten-de-owasp-2017&#34;&gt;TOP Ten de OWASP (2017)&lt;/h2&gt;
+&lt;p&gt;Estas son las vulnerabilidades más comunes en aplicaciones web en el 2017&lt;/p&gt;
+&lt;h3 id=&#34;1-inyección&#34;&gt;1) Inyección&lt;/h3&gt;
+&lt;p&gt;Las fallas de inyección, como SQL, NoSQL, OS o LDAP ocurren cuando se envían datos no confiables a un intérprete, como parte de un comando o consulta. Los datos dañinos del atacante pueden engañar al intérprete para que ejecute comandos involuntarios o acceda a los datos sin la debida autorización.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-15918 Jorani Leave Management System 0.6.5 - SQL Injection</title>
+      <link>http://localhost:1313/es/posts/cve-2018-15918-jorani-leave-management-system-0-6-5-sql-injection/</link>
+      <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-15918-jorani-leave-management-system-0-6-5-sql-injection/</guid>
+      
+      <description>&lt;p&gt;Esta entrada tiene como finalidad hacer pública la vulnerabilidad &lt;a href=&#34;https://www.owasp.org/index.php/SQL_Injection&#34;&gt;SQL Injection&lt;/a&gt; descubierta en el software &lt;a href=&#34;https://jorani.org/download.html&#34;&gt;Jorani Leave Management System 0.6.5&lt;/a&gt;, la vulnerabilidad ha sido asociada al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2018-15918&#34;&gt;CVE-2018-159178&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;joranicve-2018-15918&#34;&gt;Jorani CVE-2018-15918&lt;/h2&gt;
+&lt;h3 id=&#34;jorani-leave-management-system-065--sql-injection&#34;&gt;Jorani Leave Management System 0.6.5 – SQL Injection&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-15918-jorani-leave-management-system-0-6-5-sql-injection/cve-2018-15918-jorani-leave-management-system-0-6-5-sql-injection_001.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-15918-jorani-leave-management-system-0-6-5-sql-injection/cve-2018-15918-jorani-leave-management-system-0-6-5-sql-injection_001.jpg&#34; alt=&#34;/images/cve-2018-15918-jorani-leave-management-system-0-6-5-sql-injection/cve-2018-15918-jorani-leave-management-system-0-6-5-sql-injection_001.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jorani es un sistema de administración de licencias desarrollado en PHP / MySQL bajo una licencia AGPL v3, está diseñado para proporcionar solicitud de flujos de trabajo simples y tiempo extra para organizaciones pequeñas.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Vulnerabilidad descubierta por &lt;a href=&#34;https://twitter.com/JJavierOlmedo&#34;&gt;Javier Olmedo&lt;/a&gt; el &lt;strong&gt;02/08/2018&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;💣 Publicada el &lt;strong&gt;03/09/2018&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🐛 &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15918&#34;&gt;CVE-2018-15918&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔗 Link del software &lt;a href=&#34;https://jorani.org/download.html&#34;&gt;Jorani Leave Management System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐞 Versión vulnerable = &lt;strong&gt;0.6.5 y posiblemente anteriores&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;vector-de-ataque--criticidad-de-la-explotación&#34;&gt;Vector de ataque / Criticidad de la explotación&lt;/h2&gt;
+&lt;h3 id=&#34;criticidad---crítica-&#34;&gt;CRITICIDAD - 🟣 CRÍTICA 🟣&lt;/h3&gt;
+&lt;p&gt;A través de las vulnerabilidades &lt;a href=&#34;https://www.owasp.org/index.php/SQL_Injection&#34;&gt;SQL Injection&lt;/a&gt;, un usuario malintencionado podría &lt;strong&gt;leer, modificar o borrar&lt;/strong&gt; información de la base de datos que utiliza la aplicación, lanzar comandos al sistema operativo o causar una &lt;a href=&#34;https://es.wikipedia.org/wiki/Ataque_de_denegaci%C3%B3n_de_servicio&#34;&gt;denegación de servicio&lt;/a&gt; con el objetivo de &lt;strong&gt;obtener información confidencial, escalar privilegios o dejar inoperativa la aplicación.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-15917 Jorani Leave Management System 0.6.5 - Cross-Site Scripting Persistente</title>
+      <link>http://localhost:1313/es/posts/cve-2018-15917-jorani-leave-management-system-0-6-5-cross-site-scripting-persistente/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-15917-jorani-leave-management-system-0-6-5-cross-site-scripting-persistente/</guid>
+      
+      <description>&lt;p&gt;Esta entrada tiene como objetivo hacer pública la vulnerabilidad &lt;a href=&#34;https://www.owasp.org/index.php/Cross-site_Scripting_%5C%28XSS%5C%29&#34;&gt;Cross-Site Scripting Persistente&lt;/a&gt; descubierta en el software &lt;a href=&#34;https://jorani.org/download.html&#34;&gt;Jorani Leave Management System 0.6.5&lt;/a&gt;, la vulnerabilidad ha sido asociada al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2018-15917&#34;&gt;CVE-2018-15917&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;joranicve-2018-15917&#34;&gt;Jorani CVE-2018-15917&lt;/h2&gt;
+&lt;h3 id=&#34;jorani-leave-management-system-065---cross-site-scripting-persistente&#34;&gt;Jorani Leave Management System 0.6.5 - Cross-Site Scripting Persistente&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-15917-jorani-leave-management-system-0-6-5-cross-site-scripting-persistente/cve-2018-15917-jorani-leave-management-system-0-6-5-cross-site-scripting-persistente_001.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-15917-jorani-leave-management-system-0-6-5-cross-site-scripting-persistente/cve-2018-15917-jorani-leave-management-system-0-6-5-cross-site-scripting-persistente_001.jpg&#34; alt=&#34;/images/cve-2018-15917-jorani-leave-management-system-0-6-5-cross-site-scripting-persistente/cve-2018-15917-jorani-leave-management-system-0-6-5-cross-site-scripting-persistente_001.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Jorani es un sistema de administración de licencias desarrollado en PHP / MySQL bajo una licencia AGPL v3, está diseñado para proporcionar solicitud de flujos de trabajo simples y tiempo extra para organizaciones pequeñas.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-15873 Sentrifugo HRMS 3.2 - Blind SQL Injection</title>
+      <link>http://localhost:1313/es/posts/cve-2018-15873-sentrifugo-hrms-3-2-blind-sql-injection/</link>
+      <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-15873-sentrifugo-hrms-3-2-blind-sql-injection/</guid>
+      
+      <description>&lt;p&gt;Esta entrada tiene como objetivo hacer pública la vulnerabilidad &lt;a href=&#34;https://www.owasp.org/index.php/Blind_SQL_Injection&#34;&gt;Blind SQL Injection&lt;/a&gt; descubierta en el software &lt;a href=&#34;http://www.sentrifugo.com/download&#34;&gt;Sentrifugo HRMS 3.2&lt;/a&gt;, la vulnerabilidad ha sido asociada al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2018-15873&#34;&gt;CVE-2018-15873&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;sentrifugo-hrms-32---cve-2018-15873&#34;&gt;Sentrifugo HRMS 3.2 - CVE-2018-15873&lt;/h2&gt;
+&lt;h3 id=&#34;blind-sql-injection&#34;&gt;Blind SQL Injection&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-15873-sentrifugo-hrms-3-2-blind-sql-injection/cve-2018-15873-sentrifugo-hrms-3-2-blind-sql-injection_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-15873-sentrifugo-hrms-3-2-blind-sql-injection/cve-2018-15873-sentrifugo-hrms-3-2-blind-sql-injection_001.png&#34; alt=&#34;/images/cve-2018-15873-sentrifugo-hrms-3-2-blind-sql-injection/cve-2018-15873-sentrifugo-hrms-3-2-blind-sql-injection_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sentrifugo es un software open source que facilita la &lt;strong&gt;administración de recursos humanos&lt;/strong&gt; en las organizaciones. Está &lt;strong&gt;repleto de módulos&lt;/strong&gt; esenciales como evaluación, gestión del tiempo, gestión de licencias, gestión de empleados, análisis, contratación, verificación de antecedentes, servicio técnico y mucho más. Permite a los empleados &lt;strong&gt;contribuir de manera efectiva y productiva&lt;/strong&gt; a los objetivos de la organización.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-15571 WordPress Plugin Export Users to CSV 1.1.1 - CSV Injection</title>
+      <link>http://localhost:1313/es/posts/cve-2018-15571-wordpress-plugin-export-users-to-csv-1-1-1-csv-injection/</link>
+      <pubDate>Fri, 24 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-15571-wordpress-plugin-export-users-to-csv-1-1-1-csv-injection/</guid>
+      
+      <description>&lt;p&gt;Buenas a todos de nuevo, volviendo de las vacaciones 🏖️, &lt;a href=&#34;https://cve.mitre.org/&#34;&gt;MITRE&lt;/a&gt; me ha asignado otro CVE para plugins &lt;a href=&#34;https://es.wordpress.org/&#34;&gt;WordPress&lt;/a&gt;, esta vez, he descubierto una vulnerabilidad de ejecución remota de código a través de &lt;a href=&#34;https://www.owasp.org/index.php/CSV_Injection&#34;&gt;inyección CSV&lt;/a&gt; en el plugin &lt;a href=&#34;https://wordpress.org/plugins/export-users-to-csv/&#34;&gt;Export Users to CSV - 1.1.1&lt;/a&gt;, desarrollado por &lt;a href=&#34;https://www.mattcromwell.com/products/export-users-to-csv&#34;&gt;Matt Cromwell&lt;/a&gt;. Esta vulnerabilidad ya fue reportada, no ha sido reconocida por el autor y ha sido asociada al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2018-15571&#34;&gt;CVE-2018-15571&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;wordpress-plugin-cve-2018-15571&#34;&gt;WordPress Plugin CVE-2018-15571&lt;/h2&gt;
+&lt;h3 id=&#34;export-users-to-csv---111---inyección-csv&#34;&gt;Export Users to CSV - 1.1.1 - Inyección CSV&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-15571-wordpress-plugin-export-users-to-csv-1-1-1-csv-injection/cve-2018-15571-wordpress-plugin-export-users-to-csv-1-1-1-csv-injection_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-15571-wordpress-plugin-export-users-to-csv-1-1-1-csv-injection/cve-2018-15571-wordpress-plugin-export-users-to-csv-1-1-1-csv-injection_001.png&#34; alt=&#34;/images/cve-2018-15571-wordpress-plugin-export-users-to-csv-1-1-1-csv-injection/cve-2018-15571-wordpress-plugin-export-users-to-csv-1-1-1-csv-injection_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>RouterSploit - Comprueba si tu router es vulnerable</title>
+      <link>http://localhost:1313/es/posts/routersploit-comprueba-si-tu-router-es-vulnerable/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/routersploit-comprueba-si-tu-router-es-vulnerable/</guid>
+      
+      <description>&lt;p&gt;El &lt;strong&gt;router&lt;/strong&gt; es, posiblemente, el &lt;strong&gt;dispositivo más propenso a ataques de nuestro hogar&lt;/strong&gt;, ya que es el encargado de dirigir todo el tráfico de nuestra red hacía Internet, lo que &lt;strong&gt;expone a que cualquier atacante externo intente vulnerarlo&lt;/strong&gt;. Desafortunadamente, la mayoría de las personas no dedican mucho tiempo a configurar este dispositivo crítico, por ejemplo, &lt;strong&gt;no actualizamos el firmware o dejamos las contraseñas por defecto&lt;/strong&gt;. En esta entrada, vamos a ver como podemos auditar de manera muy sencilla nuestro router mediante el framework &lt;strong&gt;RouterSploit.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-14430 WordPress Plugin Multi Step Form &lt;= 1.2.5 - Múltiples Cross Site Scripting Reflejados</title>
+      <link>http://localhost:1313/es/posts/cve-2018-14430-wordpress-plugin-multi-step-form-125-multiples-xss-reflejados/</link>
+      <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-14430-wordpress-plugin-multi-step-form-125-multiples-xss-reflejados/</guid>
+      
+      <description>&lt;p&gt;Durante otra de mis auditorias a plugins para &lt;a href=&#34;https://es.wordpress.org/&#34;&gt;WordPress&lt;/a&gt;, he descubierto varias vulnerabilidades del tipo &lt;a href=&#34;https://www.owasp.org/index.php/Cross-site_Scripting_%5C%28XSS%5C%29&#34;&gt;Cross Site Scripting Reflejado (XSS)&lt;/a&gt; en el plugin &lt;a href=&#34;https://es.wordpress.org/plugins/multi-step-form/&#34;&gt;Multi Step Form &amp;lt;= 1.2.5&lt;/a&gt;, desarrollado por &lt;a href=&#34;https://mondula.com/&#34;&gt;Mondula GmbH&lt;/a&gt;. Esta vulnerabilidad ya fue reportada y ha sido asociada al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-14430&#34;&gt;CVE-2018-14430&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;wordpress-plugin-cve-2018-14430&#34;&gt;WordPress Plugin CVE-2018-14430&lt;/h2&gt;
+&lt;h3 id=&#34;multi-step-form--125--múltiples-cross-site-scripting-reflejados&#34;&gt;Multi Step Form &amp;lt;= 1.2.5 – Múltiples Cross Site Scripting Reflejados&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-14430-wordpress-plugin-multi-step-form-125-multiples-xss-reflejados/cve-2018-14430-wordpress-plugin-multi-step-form-125-multiples-xss-reflejados_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-14430-wordpress-plugin-multi-step-form-125-multiples-xss-reflejados/cve-2018-14430-wordpress-plugin-multi-step-form-125-multiples-xss-reflejados_001.png&#34; alt=&#34;/images/cve-2018-14430-wordpress-plugin-multi-step-form-125-multiples-xss-reflejados/cve-2018-14430-wordpress-plugin-multi-step-form-125-multiples-xss-reflejados_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Multi Step Form es un plugin para WordPress que nos permite crear formularios del tipo Drag &amp;amp; Drop (arrastrar y soltar) de forma rápida e intuitiva con aspecto agradable. Los formularios se pueden incrustar en cualquier página o publicación con códigos abreviados.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Como crear un hack para obtener monedas ilimitadas en videojuegos con Visual Studio y Cheat Engine</title>
+      <link>http://localhost:1313/es/posts/como-crear-un-hack-para-obtener-monedas-ilimitadas-en-videojuegos-con-vs-y-ce/</link>
+      <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/como-crear-un-hack-para-obtener-monedas-ilimitadas-en-videojuegos-con-vs-y-ce/</guid>
+      
+      <description>&lt;p&gt;En esta entrada, vamos a aprender como &lt;strong&gt;crearnos nuestro propio hack&lt;/strong&gt; para videojuegos con el objetivo de obtener 💰 monedas ilimitadas, para el ejemplo, voy a crear un hack para el videojuego  &lt;strong&gt;«El Señor del Olimpo Zeus»&lt;/strong&gt;, uno de mis juegos favoritos. El hack, lo desarrollaremos en &lt;strong&gt;Visual Basic&lt;/strong&gt; con &lt;strong&gt;Visual Studio&lt;/strong&gt; y &lt;strong&gt;Cheat Engine&lt;/strong&gt; para encontrar la dirección de memoria dónde el videojuego almacena las monedas. Comentaros, que he elegido este videojuego por lo simple que resulta buscar las direcciones de memoria (son estáticas), en otros videojuegos, podemos encontrarnos direcciones de memoria dinámicas (cambian cada vez que se ejecuta el videojuego), las cuales se precisa &lt;strong&gt;encontrar los punteros&lt;/strong&gt; previamente para que el hack funcione, aunque los pasos son exactamente los mismos para encontrarlas, demora demasiado tiempo, quizás, en otra ocasión me anime a hacer un vídeo cuando tenga más tiempo. Os dejo este &lt;a href=&#34;https://es.wikipedia.org/wiki/Asignaci%C3%B3n_de_memoria&#34;&gt;enlace&lt;/a&gt; por si queréis mirar más a fondo.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-13832 WordPress Plugin All In One Favicon &lt;= 4.6 - Autenticado Múltiples Cross Site Scripting Persistentes</title>
+      <link>http://localhost:1313/es/posts/cve-2018-13832-wp-plugin-all-in-one-favicon-4-6-autenticado-multiples-xss/</link>
+      <pubDate>Tue, 10 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-13832-wp-plugin-all-in-one-favicon-4-6-autenticado-multiples-xss/</guid>
+      
+      <description>&lt;p&gt;Durante una de mis auditorias a plugins para &lt;a href=&#34;https://es.wordpress.org/&#34;&gt;WordPress&lt;/a&gt;, he descubierto varias vulnerabilidades del tipo &lt;a href=&#34;https://www.owasp.org/index.php/Cross-site_Scripting_%5C%28XSS%5C%29&#34;&gt;Cross Site Scripting Persintente (XSS)&lt;/a&gt; en el plugin &lt;a href=&#34;https://wordpress.org/plugins/all-in-one-favicon/&#34;&gt;All In One Favicon &amp;lt;= 4.6&lt;/a&gt;, desarrollado por &lt;a href=&#34;http://www.techotronic.de/&#34;&gt;Arne Franken de Techotronic&lt;/a&gt;. Esta vulnerabilidad ya fue reportada y ha sido asociada al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-13832&#34;&gt;CVE-2018-13832&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;wordpress-plugin-cve-2018-13832&#34;&gt;WordPress Plugin CVE-2018-13832&lt;/h2&gt;
+&lt;h3 id=&#34;all-in-one-favicon--46--autenticado-múltiples-cross-site-scripting-persistentes&#34;&gt;All In One Favicon &amp;lt;= 4.6 – Autenticado Múltiples Cross Site Scripting Persistentes&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-13832-wp-plugin-all-in-one-favicon-4-6-autenticado-multiples-xss/cve-2018-13832-wp-plugin-all-in-one-favicon-4-6-autenticado-multiples-xss_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-13832-wp-plugin-all-in-one-favicon-4-6-autenticado-multiples-xss/cve-2018-13832-wp-plugin-all-in-one-favicon-4-6-autenticado-multiples-xss_001.png&#34; alt=&#34;/images/cve-2018-13832-wp-plugin-all-in-one-favicon-4-6-autenticado-multiples-xss/cve-2018-13832-wp-plugin-all-in-one-favicon-4-6-autenticado-multiples-xss_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Vulnerabilidad descubierta por &lt;a href=&#34;https://twitter.com/JJavierOlmedo&#34;&gt;Javier Olmedo&lt;/a&gt; el &lt;strong&gt;15/03/2018&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;💣 Publicada el &lt;strong&gt;10/07/2018&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🐛 &lt;strong&gt;CVE-2018-13832&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🔗 Link del software &lt;a href=&#34;https://wordpress.org/plugins/all-in-one-favicon/&#34;&gt;All In One Favicon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐞 Versión vulnerable &amp;lt;= &lt;strong&gt;4.6&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;📥 Instalaciones activas &lt;strong&gt;+100,000&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cómo-explotar-la-vulnerabilidad&#34;&gt;¿Cómo explotar la vulnerabilidad?&lt;/h2&gt;
+&lt;p&gt;Para explotar esta vulnerabilidad, necesitamos un &lt;strong&gt;usuario con permisos de administración&lt;/strong&gt;, los parámetros vulnerables (8) son los siguientes:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Enumerar usuarios y realizar ataques de fuerza bruta en WordPress con Burp Suite</title>
       <link>http://localhost:1313/es/posts/enumerar-usuarios-y-realizar-ataques-de-fuerza-bruta-en-wordpress-con-burp-suite/</link>
       <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
@@ -972,6 +1190,17 @@ Se deberá tener en cuenta que aquellos dormidos deberán ser despertados conven
       <description>&lt;p&gt;Bienvenido a mi blog sobre &lt;strong&gt;Hacking, Seguridad Informática y Programación&lt;/strong&gt;, antes de nada, me presentaré, mi nombre es &lt;strong&gt;Javier Olmedo&lt;/strong&gt; y soy Técnico en Sistemas Informáticos y Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, desde hace unos años aprendo seguridad informática de manera autodidacta.&lt;/p&gt;
 &lt;h2 id=&#34;a-quién-va-dirigido-este-blog&#34;&gt;¿A quién va dirigido este blog?&lt;/h2&gt;
 &lt;p&gt;Este blog va dirigido a &lt;strong&gt;personas que deseen empezar&lt;/strong&gt; en el mundo del hacking y seguridad de sistemas informáticos, no pretendo hacer un blog demasiado técnico.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Z</title>
+      <link>http://localhost:1313/es/posts/z/</link>
+      <pubDate>Sat, 05 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/z/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/xxx/xxx_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/xxx/xxx_001.png&#34; alt=&#34;/images/xxx/xxx_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>
     
