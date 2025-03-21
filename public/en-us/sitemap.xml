@@ -132,6 +132,32 @@
                 href="http://localhost:1313/posts/snyk_fetch_the_flag_zero_ex_six_one/"
                 />
   </url><url>
+    <loc>http://localhost:1313/cheatsheets/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/cheatsheets/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/cheatsheets/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/cheatsheets/crto/</loc>
+    <lastmod>2025-01-27T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-es"
+                href="http://localhost:1313/es/cheatsheets/crto/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/cheatsheets/crto/"
+                />
+  </url><url>
     <loc>http://localhost:1313/posts/htb-machine-bountyhunter/</loc>
     <lastmod>2021-11-25T00:00:00+00:00</lastmod>
   </url><url>

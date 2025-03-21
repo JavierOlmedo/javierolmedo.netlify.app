@@ -195,6 +195,175 @@
     </item>
     
     <item>
+      <title>CRTO Cheatsheet</title>
+      <link>http://localhost:1313/es/cheatsheets/crto/</link>
+      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/cheatsheets/crto/</guid>
+      
+      <description>&lt;h1 id=&#34;top-commands-&#34;&gt;Top commands 🥇&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;cobaltstrike-&#34;&gt;CobaltStrike 🥷&lt;/h2&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Basics&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sleep &amp;lt;seconds&amp;gt; &amp;lt;jitter&amp;gt; &lt;span class=&#34;c1&#34;&gt;# sleep 5 50 -&amp;gt; slee time between 2.5 y 7.5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;execute-assembly &amp;lt;path_tool&amp;gt; &amp;lt;params_tool&amp;gt; &lt;span class=&#34;c1&#34;&gt;# Execute binary on remote Beacon -&amp;gt; execute-assembly /var/www/html/Seatbelt.exe -group=system&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Recon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;net logons
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;clipboard
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;keylogger 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;printscreen
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;screenshot
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;screenwatch
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# DNS Beacon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;checkin &lt;span class=&#34;c1&#34;&gt;# Get metadata/info Beacon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;how-to-run-teamserver-&#34;&gt;How to run TeamServer 🏃‍♂️&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h4 id=&#34;manual-&#34;&gt;Manual ✍️&lt;/h4&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo ./teamserver &amp;lt;ip&amp;gt; &amp;lt;password&amp;gt; &amp;lt;c2_profile&amp;gt; &amp;lt;kill_date&amp;gt; &lt;span class=&#34;c1&#34;&gt;# 192.100.1.1 MyPassword! /opt/c2.profile 2025-12-31&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;running-as-a-service-&#34;&gt;Running as a service ⚙️&lt;/h4&gt;
+&lt;hr&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo nano /etc/systemd/system/teamserver.service
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[Unit]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Description=Cobalt Strike Team Server
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;After=network.target
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;StartLimitIntervalSec=0
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[Service]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Type=simple
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Restart=always
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RestartSec=1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;User=root
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;WorkingDirectory=/opt/cobaltstrike/Server
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ExecStart=/opt/cobaltstrike/Server/teamserver &amp;lt;ip&amp;gt; &amp;lt;password&amp;gt; &amp;lt;c2_profile&amp;gt; &amp;lt;kill_date&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[Install]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;WantedBy=multi-user.target
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/0xBeacon/Cobalt-Strike-as-a-Service/blob/main/setup.sh&#34;&gt;https://github.com/0xBeacon/Cobalt-Strike-as-a-Service/blob/main/setup.sh&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Suplantación de cuentas de Gmail con 2FA</title>
+      <link>http://localhost:1313/es/posts/suplantacion-de-cuentas-de-gmail-con-2fa/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/suplantacion-de-cuentas-de-gmail-con-2fa/</guid>
+      
+      <description>&lt;p&gt;En este caso, vamos a aprender como los atacantes consiguen obtener acceso a cuentas protegidas mediante el doble factor de autenticación en &lt;strong&gt;Gmail&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;El doble factor de autenticación (&lt;strong&gt;2FA&lt;/strong&gt;) es una medida de seguridad empleada por los sistemas de autenticación que proporciona una capa de seguridad adicional al sistema. Consiste en que el usuario que quiere autenticarse presente al menos dos pruebas que demuestren que es quien dice ser.&lt;/p&gt;
+&lt;p&gt;En la mayoría de los casos basados en este esquema se suele usar como factores de autenticación:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Análisis estático de código fuente con SonarQube</title>
+      <link>http://localhost:1313/es/posts/analisis-estatico-de-codigo-fuente-con-sonarqube/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/analisis-estatico-de-codigo-fuente-con-sonarqube/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/analisis-estatico-de-codigo-fuente-con-sonarqube/analisis-estatico-de-codigo-fuente-con-sonarqube_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/analisis-estatico-de-codigo-fuente-con-sonarqube/analisis-estatico-de-codigo-fuente-con-sonarqube_banner.png&#34; alt=&#34;/images/analisis-estatico-de-codigo-fuente-con-sonarqube/analisis-estatico-de-codigo-fuente-con-sonarqube_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;SonarQube es un conjunto de herramientas de código abierto con interfaz web que nos ayudará a realizar &lt;strong&gt;análisis estáticos&lt;/strong&gt; a nuestro código fuente con el objetivo de mejorar la calidad, solucionar errores y buscar vulnerabilidades.&lt;/p&gt;
+&lt;p&gt;Actualmente, la &lt;a href=&#34;https://www.sonarqube.org/sonarqube-7-5/&#34;&gt;última versión es la 7.5&lt;/a&gt;, y soporta más de 25 lenguajes de programación.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/analisis-estatico-de-codigo-fuente-con-sonarqube/analisis-estatico-de-codigo-fuente-con-sonarqube_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/analisis-estatico-de-codigo-fuente-con-sonarqube/analisis-estatico-de-codigo-fuente-con-sonarqube_001.png&#34; alt=&#34;/images/analisis-estatico-de-codigo-fuente-con-sonarqube/analisis-estatico-de-codigo-fuente-con-sonarqube_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;1-instalación&#34;&gt;🖥 1. Instalación&lt;/h2&gt;
+&lt;p&gt;1.1 Descargar &lt;a href=&#34;https://www.sonarqube.org/downloads/&#34;&gt;SonarQube Community Edition 7.5&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;1.2 Crea una carpeta en &lt;code&gt;C:/sonarqube&lt;/code&gt; y copia aquí los archivos descomprimidos.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-19829 Integria IMS 5.0.83 - Cross-Site Request Forgery</title>
+      <link>http://localhost:1313/es/posts/cve-2018-19829-integria-ims-5-0-83-cross-site-request-forgery/</link>
+      <pubDate>Mon, 17 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-19829-integria-ims-5-0-83-cross-site-request-forgery/</guid>
+      
+      <description>&lt;p&gt;Las vulnerabilidades &lt;a href=&#34;https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%5C%28CSRF%5C%29&#34;&gt;Cross-Site Request Forgery (CSRF)&lt;/a&gt; encontradas en el software &lt;a href=&#34;https://sourceforge.net/projects/integria/files/5.0.83/&#34;&gt;Integria IMS 5.0.83&lt;/a&gt; han quedado solucionadas. Estas, &lt;strong&gt;permitían a un usuario malintencionado borrar usuarios de la aplicación&lt;/strong&gt; a través de este ataque. La vulnerabilidad, ha sido asociada al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2018-19829&#34;&gt;CVE-2018-19829&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;cve-2018-19829&#34;&gt;CVE-2018-19829&lt;/h2&gt;
+&lt;h3 id=&#34;integria-ims-5083---cross-site-request-forgery-csrf&#34;&gt;Integria IMS 5.0.83 - Cross-Site Request Forgery (CSRF)&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-19829-integria-ims-5-0-83-cross-site-request-forgery/cve-2018-19829-integria-ims-5-0-83-cross-site-request-forgery_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-19829-integria-ims-5-0-83-cross-site-request-forgery/cve-2018-19829-integria-ims-5-0-83-cross-site-request-forgery_001.png&#34; alt=&#34;/images/cve-2018-19829-integria-ims-5-0-83-cross-site-request-forgery/cve-2018-19829-integria-ims-5-0-83-cross-site-request-forgery_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Integria IMS es un &lt;strong&gt;software de help desk&lt;/strong&gt; sencillo, potente y fácil de usar. Dispone de inventario automatizado y controlado desde un solo interfaz. Agiliza los procesos reduciendo los tiempos y costes de gestión en sus proyectos. Gracias a sus informes personalizados estará informado y podrá ver fácilmente la gestión y calidad del servicio dado en tiempo real.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-19828 Integria IMS 5.0.83 - Cross-Site Scripting Reflejado</title>
+      <link>http://localhost:1313/es/posts/cve-2018-19828-integria-ims-5-0-83-cross-site-scripting-reflejado/</link>
+      <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-19828-integria-ims-5-0-83-cross-site-scripting-reflejado/</guid>
+      
+      <description>&lt;h2 id=&#34;cve-2018-19828&#34;&gt;CVE-2018-19828&lt;/h2&gt;
+&lt;h3 id=&#34;integria-ims-5083---cross-site-scripting-reflejado&#34;&gt;Integria IMS 5.0.83 - Cross-Site Scripting Reflejado&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-19828-integria-ims-5-0-83-cross-site-scripting-reflejado/cve-2018-19828-integria-ims-5-0-83-cross-site-scripting-reflejado_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-19828-integria-ims-5-0-83-cross-site-scripting-reflejado/cve-2018-19828-integria-ims-5-0-83-cross-site-scripting-reflejado_001.png&#34; alt=&#34;/images/cve-2018-19828-integria-ims-5-0-83-cross-site-scripting-reflejado/cve-2018-19828-integria-ims-5-0-83-cross-site-scripting-reflejado_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Integria IMS es un &lt;strong&gt;software de help desk&lt;/strong&gt; sencillo, potente y fácil de usar. Dispone de inventario automatizado y controlado desde un solo interfaz. Agiliza los procesos reduciendo los tiempos y costes de gestión en sus proyectos. Gracias a sus informes personalizados estará informado y podrá ver fácilmente la gestión y calidad del servicio dado en tiempo real.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Vulnerabilidad descubierta por &lt;a href=&#34;https://twitter.com/JJavierOlmedo&#34;&gt;Javier Olmedo&lt;/a&gt; el &lt;strong&gt;08/11/2018&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;💣 Publicada el &lt;strong&gt;14/12/2018&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🐛 &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-19828&#34;&gt;CVE-2018-19828&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔗 Link del software &lt;a href=&#34;https://sourceforge.net/projects/integria/files/5.0.83/&#34;&gt;Integria IMS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐞 Versión vulnerable = &lt;strong&gt;5.0.83 y anteriores&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;✔️ Solución: &lt;strong&gt;actualizar&lt;/strong&gt; a la versión &lt;a href=&#34;https://sourceforge.net/projects/integria/files/5.0.84/&#34;&gt;5.0.84&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;vector-de-ataque--criticidad-de-la-explotación&#34;&gt;Vector de ataque / Criticidad de la explotación&lt;/h2&gt;
+&lt;h3 id=&#34;criticidad---alta-&#34;&gt;CRITICIDAD - 🔴 ALTA 🔴&lt;/h3&gt;
+&lt;p&gt;A través de las vulnerabilidades Cross Site Scripting Reflejadas (XSS), un atacante podría &lt;strong&gt;inyectar código javascript malicioso&lt;/strong&gt; en el navegador de la víctima con el objetivo de &lt;strong&gt;robar información sensible, realizar acciones sin el consentimiento del usuario legítimo, secuestrar sesiones de usuario&lt;/strong&gt; o, incluso, llegar a &lt;strong&gt;comprometer todo el sistema&lt;/strong&gt; si la versión del navegador tiene otras vulnerabilidades críticas asociadas.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Obtención de contraseña de usuario en Windows 10 décimo aniversario</title>
+      <link>http://localhost:1313/es/posts/obtencion-de-contrasena-de-usuario-en-windows-10-decimo-aniversario/</link>
+      <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/obtencion-de-contrasena-de-usuario-en-windows-10-decimo-aniversario/</guid>
+      
+      <description>&lt;p&gt;En esta entrada aprenderemos a recuperar la contraseña de un usuario en un Windows 10 con la actualización del décimo aniversario.&lt;/p&gt;
+&lt;p&gt;En primer lugar, vamos a definir los ficheros y herramientas que vamos a emplear para llevar a cabo este ejercicio:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SAM:&lt;/strong&gt; son las siglas de Security Account Manager, este fichero se encarga de almacenar credenciales de los usuarios del sistema en Windows. Dentro de la SAM las contraseñas se almacenan en formato hash.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SYSKEY:&lt;/strong&gt; este fichero se creó, a partir de Windows 2000, para proteger la SAM frente a ataques offline. Si se habilita el uso de este fichero, las hashes almacenadas en la SAM se cifrarán con una clave conocida como syskey.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mimikatz:&lt;/strong&gt; es una herramienta desarrollada en C para realizar diferentes pruebas de seguridad en sistemas Windows. Se suele usar habitualmente para obtener contraseñas y hashes de contraseñas, aunque también permite realizar ataques de tipo Pass-The-Hash.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Pwdump:&lt;/strong&gt; esta herramienta nos permite volcar el contenido de la SAM.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hashcat:&lt;/strong&gt; poderosa herramienta para la recuperación de contraseñas. Nos permite diferentes tipos de ataques sobre las contraseñas y admite multitud de tipos de hash.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;El escenario que tenemos el siguiente, un usuario ha olvidado la contraseña de acceso de su portátil, en el cual tiene Windows 10 como sistema operativo.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2018-18921 PHP Server Monitor 3.3.1 - Cross-Site Request Forgery</title>
+      <link>http://localhost:1313/es/posts/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery/</link>
+      <pubDate>Mon, 03 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery/</guid>
+      
+      <description>&lt;p&gt;Las vulnerabilidades &lt;a href=&#34;https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%5C%28CSRF%5C%29&#34;&gt;Cross-Site Request Forgery (CSRF)&lt;/a&gt; encontradas en el software &lt;a href=&#34;https://github.com/phpservermon/phpservermon/releases/tag/v3.3.1&#34;&gt;PHP Server Monitor 3.3.1&lt;/a&gt; han quedado solucionadas. Estas, &lt;strong&gt;permitían a un usuario malintencionado borrar servidores, logs y usuarios de la aplicación&lt;/strong&gt; a través de este ataque. La vulnerabilidad, ha sido asociada al &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=cve-2018-18921&#34;&gt;CVE-2018-18921&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;cve-2018-18921&#34;&gt;CVE-2018-18921&lt;/h2&gt;
+&lt;h3 id=&#34;php-server-monitor-331---cross-site-request-forgery-csrf&#34;&gt;PHP Server Monitor 3.3.1 - Cross-Site Request Forgery (CSRF)&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery_001.png&#34; alt=&#34;/images/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery/cve-2018-18921-php-server-monitor-3-3-1-cross-site-request-forgery_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;PHP Server Monitor es una &lt;strong&gt;aplicación web orientada a monitorizar la disponibilidad de servidores PHP&lt;/strong&gt;, comprueba si están correctamente funcionando, monitoriza los servicios, genera gráficos e historial de actividad además de almacenar logs de errores y permitir notificaciones a través de email y Telegram, está desarrollada en PHP y MySQL.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>365 retos de Ciberseguridad junto a SIDERTIA</title>
+      <link>http://localhost:1313/es/posts/365-retos-de-ciberseguridad-junto-a-sidertia/</link>
+      <pubDate>Thu, 29 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/365-retos-de-ciberseguridad-junto-a-sidertia/</guid>
+      
+      <description>&lt;p&gt;Normalmente, suelo escribir entradas técnicas relacionadas con la Ciberseguridad, pero hoy, me vais a permitir hacer un paréntesis en las entradas del blog para hablaros sobre &lt;strong&gt;mi primer año dedicándome profesionalmente a la Ciberseguridad&lt;/strong&gt;, ya que hoy, 29 de noviembre de 2018, se cumple exactamente un año que empecé este reto junto a &lt;a href=&#34;https://www.sidertia.com/Home&#34;&gt;SIDERTIA&lt;/a&gt;, empresa dedicada a la Ciberseguridad con sede en Madrid. Por este motivo, quería compartir con todos vosotros un &lt;strong&gt;pequeño resumen de lo que ha sido este maravilloso año&lt;/strong&gt;, de mi experiencia laboral en este campo y de cómo decidí dedicarme a la Ciberseguridad.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Mocking the UAC - Bypasseando las nuevas versiones en Windows</title>
       <link>http://localhost:1313/es/posts/mocking-the-uac-bypasseando-las-nuevas-versiones-en-windows/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>

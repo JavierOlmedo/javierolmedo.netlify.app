@@ -62,15 +62,20 @@ theme = "hugo-blog-awesome"
     url = '/posts/'
     weight = 20
   [[Languages.en-us.menu.main]]
+    pageRef="cheatsheets"
+    name = 'Cheatsheets'
+    url = '/cheatsheets/'
+    weight = 30
+  [[Languages.en-us.menu.main]]
     pageRef="projects"
     name = 'Projects'
     url = '/projects/'
-    weight = 30
+    weight = 40
   [[Languages.en-us.menu.main]]
     pageRef="about"
     name = 'About'
     url = '/about/'
-    weight = 40
+    weight = 50
 
 [Languages.en-us.params]
   sitename = "Hackpuntes"
@@ -131,15 +136,20 @@ theme = "hugo-blog-awesome"
     url = '/posts/'
     weight = 20
   [[Languages.es.menu.main]]
+    pageRef="cheatsheets"
+    name = 'Cheatsheets'
+    url = '/cheatsheets/'
+    weight = 30
+  [[Languages.es.menu.main]]
     pageRef="projects"
     name = 'Proyectos'
     url = '/projects/'
-    weight = 30
+    weight = 40
   [[Languages.es.menu.main]]
     pageRef="about"
     name = 'Sobre mí'
     url = '/about/'
-    weight = 40
+    weight = 50
 
 [Languages.es.params]
   sitename = "Hackpuntes"
