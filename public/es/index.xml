@@ -248,6 +248,32 @@
     </item>
     
     <item>
+      <title>CVE-2019-7400 Rukovoditel ERP &amp; CRM 2.4.1 - Cross-Site Scripting Reflejado</title>
+      <link>http://localhost:1313/es/posts/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado/</link>
+      <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado/</guid>
+      
+      <description>&lt;h2 id=&#34;cve-2019-7400&#34;&gt;CVE-2019-7400&lt;/h2&gt;
+&lt;h3 id=&#34;rukovoditel-erp--crm-241--cross-site-scripting-reflejado&#34;&gt;Rukovoditel ERP &amp;amp; CRM 2.4.1 – Cross-Site Scripting Reflejado&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado_001.jpg&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado_001.jpg&#34; alt=&#34;/images/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado_001.jpg&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Rukovoditel es una aplicación gratuita de &lt;strong&gt;gestión de proyectos de código abierto&lt;/strong&gt; basada en web. Muy lejos de las aplicaciones tradicionales, Rukovoditel ofrece a los usuarios un enfoque más amplio y extenso de la gestión de proyectos. Sus opciones de personalización permiten a los usuarios crear entidades adicionales, modificar y especificar la relación entre ellas y generar los informes necesarios. La plataforma permite a los usuarios crear su propia aplicación que está específicamente diseñada para su actividad (CRM, ERP, HRM, WMS, etc.)&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Configurando Burp Suite para versiones superiores a Android Nougat</title>
+      <link>http://localhost:1313/es/posts/configurando-burp-suite-para-versiones-superiores-a-android-nougat/</link>
+      <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/configurando-burp-suite-para-versiones-superiores-a-android-nougat/</guid>
+      
+      <description>&lt;p&gt;En las últimas semanas, estoy auditando varias aplicaciones de Android con Burp Suite, después de unos días de trabajo con mi vieja versión de Android 5.0 pensé que ya era hora de actualizar a una superior, y quizás, utilizar nuevas herramientas, aquí me tope con &lt;a href=&#34;https://www.genymotion.com/&#34;&gt;Genymotion&lt;/a&gt; gracias a un compañero de trabajo.&lt;/p&gt;
+&lt;p&gt;Una vez instalado y configurado Burp Suite con Android tal y como nos recomiendan en la web de &lt;a href=&#34;https://support.portswigger.net/customer/portal/articles/1841102-installing-burp-s-ca-certificate-in-an-android-device&#34;&gt;Portswigger&lt;/a&gt;, me encontré con el siguiente problema:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Suplantación de cuentas de Gmail con 2FA</title>
       <link>http://localhost:1313/es/posts/suplantacion-de-cuentas-de-gmail-con-2fa/</link>
       <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
