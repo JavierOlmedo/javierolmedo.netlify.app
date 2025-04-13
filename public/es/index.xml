@@ -248,6 +248,137 @@
     </item>
     
     <item>
+      <title>Guía sobre análisis estático de código JavaScript</title>
+      <link>http://localhost:1313/es/posts/guia-sobre-analisis-estatico-de-codigo-javascript/</link>
+      <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/guia-sobre-analisis-estatico-de-codigo-javascript/</guid>
+      
+      <description>&lt;p&gt;&lt;strong&gt;JavaScript&lt;/strong&gt; se ha convertido en una de las tecnologías &lt;strong&gt;más utilizadas&lt;/strong&gt; de los navegadores modernos gracias a frameworks como AngularJS, ReactJS o Vue.js. Esta entrada pretende ser una guía sobre cómo encontrar y analizar todos los archivos JavaScript que contiene una aplicación web con el objetivo de detectar posibles vulnerabilidades, como en la entrada sobre &lt;a href=&#34;https://hackpuntes.com/guia-sobre-toma-de-control-de-subdominios/&#34;&gt;toma de control de subdominios&lt;/a&gt;, esta guía intentaré tenerla actualizada.&lt;/p&gt;
+&lt;p&gt;Es esencial que entendamos la superficie de ataque de las aplicaciones y saber &lt;strong&gt;qué debemos buscar y dónde&lt;/strong&gt;. El análisis de código JavaScript es uno de ellos, por eso a continuación, se detallan una serie de puntos a seguir para detectar fallos de seguridad en el lado del cliente.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Smalisca: Parsing, análisis y gráficos de código Smali</title>
+      <link>http://localhost:1313/es/posts/smalisca-parsing-analisis-y-graficos-de-codigo-smali/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/smalisca-parsing-analisis-y-graficos-de-codigo-smali/</guid>
+      
+      <description>&lt;p&gt;En la entrada de hoy, vamos a mostrar la herramienta &lt;a href=&#34;https://github.com/dorneanu/smalisca&#34;&gt;Smalisca&lt;/a&gt;. Esta herramienta es de gran utilidad para el análisis de aplicaciones Android (y otro tipo de aplicaciones), ya que nos permitirá &lt;strong&gt;obtener los datos&lt;/strong&gt; de las distintas clases de la aplicación y exportarlos a formato SQLite. También permite realizar una serie de &lt;strong&gt;operaciones de búsqueda&lt;/strong&gt; sobre dichos datos atendiendo a los siguientes criterios:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Clases&lt;/li&gt;
+&lt;li&gt;Propiedades&lt;/li&gt;
+&lt;li&gt;Métodos&lt;/li&gt;
+&lt;li&gt;Cadenas&lt;/li&gt;
+&lt;li&gt;Llamadas (tanto origen como destino de una llamada)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Finalmente, se pueden &lt;strong&gt;generar distintos diagramas&lt;/strong&gt; en los que se puede ver la relación entre clases.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Que es Smali y como parchear una aplicación Android</title>
+      <link>http://localhost:1313/es/posts/que-es-smali-y-como-parchear-una-aplicacion-android/</link>
+      <pubDate>Mon, 13 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/que-es-smali-y-como-parchear-una-aplicacion-android/</guid>
+      
+      <description>&lt;h2 id=&#34;qué-es-smali&#34;&gt;¿Qué es Smali?&lt;/h2&gt;
+&lt;p&gt;Las aplicaciones Android contienen ficheros .dex (Dalvik EXecutable). Estos ficheros se pueden decompilar para obtener un código de bajo nivel llamado Dalvik Bytecode. Utilizando &lt;a href=&#34;https://github.com/JesusFreke/smali&#34;&gt;smali/baksmali&lt;/a&gt; (ensamblador/desensamblador) se puede obtener una representación en un lenguaje de bajo nivel con el que se puede trabajar más fácilmente, al cual llamaremos código Smali. Hoy en día, apktool ya incorpora smali/baksmali, por lo que será suficiente con desempaquetar el fichero .apk con apktool para obtener el código Smali.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Instalación de Docker en Kali Linux</title>
+      <link>http://localhost:1313/es/posts/instalacion-de-docker-en-kali-linux/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/instalacion-de-docker-en-kali-linux/</guid>
+      
+      <description>&lt;p&gt;En esta entrada veremos como instalar &lt;a href=&#34;https://www.docker.com/&#34;&gt;Docker Community Edition&lt;/a&gt; en nuestra máquina Kali Linux 2019.&lt;/p&gt;
+&lt;h2 id=&#34;1-añadir-la-clave-pgp-de-docker&#34;&gt;1. Añadir la clave PGP de Docker&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -fsSL https://download.docker.com/linux/debian/gpg &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo apt-key add -
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2-configurar-el-repositorio-de-docker&#34;&gt;2. Configurar el repositorio de Docker&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;deb https://download.docker.com/linux/debian stretch stable&amp;#39;&lt;/span&gt; &amp;gt; /etc/apt/sources.list.d/docker.list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;3-actualizar&#34;&gt;3. Actualizar&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;4-eliminar-versiones-obsoletas-de-docker-en-caso-que-las-tuviéramos&#34;&gt;4. Eliminar versiones obsoletas de Docker (en caso que las tuviéramos)&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt-get remove docker docker-engine docker.io
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;5-instalar-docker&#34;&gt;5. Instalar Docker&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt-get install docker-ce
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;6-comprobar-si-docker-se-instaló-correctamente&#34;&gt;6. Comprobar si Docker se instaló correctamente&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run hello-world
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;7-comprobar-la-versión-de-docker-instalada&#34;&gt;7. Comprobar la versión de Docker instalada&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;extras&#34;&gt;Extras&lt;/h2&gt;
+&lt;h3 id=&#34;añadir-usuario-al-grupo-de-docker&#34;&gt;Añadir usuario al grupo de docker&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;usermod -aG docker &lt;span class=&#34;nv&#34;&gt;$USER&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;arrancar-docker&#34;&gt;Arrancar Docker&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl start docker
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;arrancar-docker-al-inicio&#34;&gt;Arrancar Docker al inicio&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl &lt;span class=&#34;nb&#34;&gt;enable&lt;/span&gt; docker
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;instalar-dockstation-gestor-de-dockers&#34;&gt;Instalar DockStation (Gestor de dockers)&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wget https://github.com/DockStation/dockstation/releases/download/v1.5.1/dockstation_1.5.1_amd64.deb
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dpkg -i dockstation_1.5.1_amd64.deb
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/instalacion-de-docker-en-kali-linux/instalacion-de-docker-en-kali-linux_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/instalacion-de-docker-en-kali-linux/instalacion-de-docker-en-kali-linux_001.png&#34; alt=&#34;/images/instalacion-de-docker-en-kali-linux/instalacion-de-docker-en-kali-linux_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Listado de comandos ADB más utilizados</title>
+      <link>http://localhost:1313/es/posts/listado-de-comandos-adb-mas-utilizados/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/listado-de-comandos-adb-mas-utilizados/</guid>
+      
+      <description>&lt;p&gt;Android Debug Bridge (ADB) es una &lt;strong&gt;herramienta de línea de comandos&lt;/strong&gt; que viene incluida con el SDK de Android, permite a los desarrolladores &lt;strong&gt;comunicarse con un emulador o un dispositivo Android&lt;/strong&gt; conectado directamente desde la línea de comandos. Esta herramienta podemos encontrarla en el directorio &lt;code&gt;[SDK-PATH]/platform-tools&lt;/code&gt;, en Windows por defecto será en &lt;code&gt;C:\Users\[USUARIO]\AppData\Local\Android\Sdk\platform-tools&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;En esta entrada, vamos a repasar los &lt;strong&gt;comandos más utilizados de ADB&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;listado-de-dispositivos&#34;&gt;Listado de dispositivos&lt;/h2&gt;
+&lt;p&gt;Lo primero que debemos hacer, enumerar los dispositivos conectados.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Persistencia en sistemas Linux a través de XScreenSaver</title>
+      <link>http://localhost:1313/es/posts/persistencia-en-sistemas-linux-a-traves-de-xscreensaver/</link>
+      <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/persistencia-en-sistemas-linux-a-traves-de-xscreensaver/</guid>
+      
+      <description>&lt;p&gt;Después de la explotación con éxito de un sistema, debemos de &lt;strong&gt;obtener persistencia&lt;/strong&gt; en el mismo, este es uno de los pasos más importantes de las fases del pentesting y que, generalmente, ocasiona más inconvenientes, ya que, &lt;strong&gt;podemos perder el acceso al sistema&lt;/strong&gt; si este se reinicia, existen problemas de red o se edita el archivo utilizado como puerta trasera (backdoor).&lt;/p&gt;
+&lt;p&gt;Esta manera de obtener persistencia, la descubrí leyendo write-ups de CTFs, en concreto, de uno realizado por &lt;a href=&#34;https://twitter.com/iamrastating&#34;&gt;iamrastating&lt;/a&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Guía sobre toma de control de subdominios</title>
+      <link>http://localhost:1313/es/posts/guia-sobre-toma-de-control-de-subdominios/</link>
+      <pubDate>Thu, 11 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/guia-sobre-toma-de-control-de-subdominios/</guid>
+      
+      <description>&lt;p&gt;En esta publicación, voy a hablaros sobre una vulnerabilidad conocida como &lt;strong&gt;Toma de control de subdominios&lt;/strong&gt; (subdomain takeover), explicaré en qué consiste y como podemos detectarla. Es posible que pueda ir &lt;strong&gt;actualizando esta entrada&lt;/strong&gt; con nuevas herramientas o técnicas de descubrimiento, así que, te sugiero que la guardes en tus favoritos. 😉&lt;/p&gt;
+&lt;h2 id=&#34;en-qué-consiste-la-vulnerabilidad&#34;&gt;¿En qué consiste la vulnerabilidad?&lt;/h2&gt;
+&lt;p&gt;La vulnerabilidad de toma de control de subdominio, ocurre cuando un &lt;strong&gt;registro DNS&lt;/strong&gt; (principalmente CNAME) habilita la delegación de zona &lt;strong&gt;a un servicio de terceros&lt;/strong&gt; (Amazon S3, Azure, GitHub, Heroku, etc) y, pasado un tiempo, este servicio &lt;strong&gt;puede dejar de ser utilizado o borrado y reclamado por un usuario malintencionado&lt;/strong&gt;, un ejemplo de un caso real sería el siguiente:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Instalación de Golang y Goca en Kali Linux</title>
+      <link>http://localhost:1313/es/posts/instalacion-de-golang-y-goca-en-kali-linux/</link>
+      <pubDate>Sun, 31 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/instalacion-de-golang-y-goca-en-kali-linux/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/instalacion-de-golang-y-goca-en-kali-linux/instalacion-de-golang-y-goca-en-kali-linux_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/instalacion-de-golang-y-goca-en-kali-linux/instalacion-de-golang-y-goca-en-kali-linux_banner.png&#34; alt=&#34;/images/instalacion-de-golang-y-goca-en-kali-linux/instalacion-de-golang-y-goca-en-kali-linux_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Golang, es un lenguaje de programación moderno desarrollado por Google, inspirado en la sintaxis de C, es multiplataforma y orientado a objetos. Muchos de los proyectos Open Source, están pasando a este lenguaje, un ejemplo es &lt;a href=&#34;https://github.com/michenriksen/aquatone&#34;&gt;Aquatone&lt;/a&gt; o &lt;a href=&#34;https://github.com/gocaio/goca&#34;&gt;Goca&lt;/a&gt;, además, &lt;a href=&#34;https://github.com/dreddsa5dies/goHackTools&#34;&gt;existen repositorios&lt;/a&gt; interesantes con variedad de herramientas de hacking desarrolladas en este lenguaje, por lo tanto, es recomendado tenerlo en nuestra máquina por si necesitáramos usarlo.&lt;/p&gt;
+&lt;p&gt;En esta entrada, vamos a ver como instalar Golang en nuestra máquina Kali Linux desde su binario.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>CVE-2019-7400 Rukovoditel ERP &amp; CRM 2.4.1 - Cross-Site Scripting Reflejado</title>
       <link>http://localhost:1313/es/posts/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado/</link>
       <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>

@@ -177,6 +177,30 @@
                 href="http://localhost:1313/es/cheatsheets/crto/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/posts/guia-sobre-analisis-estatico-de-codigo-javascript/</loc>
+    <lastmod>2019-05-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/smalisca-parsing-analisis-y-graficos-de-codigo-smali/</loc>
+    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/que-es-smali-y-como-parchear-una-aplicacion-android/</loc>
+    <lastmod>2019-05-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/instalacion-de-docker-en-kali-linux/</loc>
+    <lastmod>2019-05-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/listado-de-comandos-adb-mas-utilizados/</loc>
+    <lastmod>2019-05-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/persistencia-en-sistemas-linux-a-traves-de-xscreensaver/</loc>
+    <lastmod>2019-04-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/guia-sobre-toma-de-control-de-subdominios/</loc>
+    <lastmod>2019-04-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/instalacion-de-golang-y-goca-en-kali-linux/</loc>
+    <lastmod>2019-03-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/es/posts/cve-2019-7400-rukovoditel-erp-crm-2-4-1-cross-site-scripting-reflejado/</loc>
     <lastmod>2019-03-24T00:00:00+00:00</lastmod>
   </url><url>
