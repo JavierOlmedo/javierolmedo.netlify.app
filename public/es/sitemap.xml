@@ -177,6 +177,9 @@
                 href="http://localhost:1313/es/cheatsheets/crto/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/posts/write-up-htb-chaos/</loc>
+    <lastmod>2019-05-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/es/posts/guia-sobre-analisis-estatico-de-codigo-javascript/</loc>
     <lastmod>2019-05-20T00:00:00+00:00</lastmod>
   </url><url>

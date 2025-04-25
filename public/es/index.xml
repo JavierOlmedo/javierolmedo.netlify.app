@@ -248,6 +248,22 @@
     </item>
     
     <item>
+      <title>Write-up HTB Chaos</title>
+      <link>http://localhost:1313/es/posts/write-up-htb-chaos/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/write-up-htb-chaos/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34; alt=&#34;/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Buenas a todos,&lt;/p&gt;
+&lt;p&gt;Con esta entrada vamos a comenzar una nueva serie de posts en los cuales vamos a aprender a explotar máquinas vulnerables y a resolver retos de temática hacking.&lt;/p&gt;
+&lt;p&gt;En este caso vamos a comenzar con la última máquina retirada de &lt;a href=&#34;https://www.hackthebox.eu/&#34;&gt;Hack The Box&lt;/a&gt;, &lt;strong&gt;Chaos&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34; alt=&#34;/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Para quién no conozca &lt;strong&gt;HTB&lt;/strong&gt;, es un laboratorio de pentesting que proporciona diferentes máquinas y retos para sus usuarios.  Suelo recomendar este tipo de plataformas ya que nos permiten aprender diferentes tecnologías enfrentándonos a ellas.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Guía sobre análisis estático de código JavaScript</title>
       <link>http://localhost:1313/es/posts/guia-sobre-analisis-estatico-de-codigo-javascript/</link>
       <pubDate>Mon, 20 May 2019 00:00:00 +0000</pubDate>
