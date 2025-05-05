@@ -195,14 +195,37 @@
     </item>
     
     <item>
+      <title>LIVING C1B3RWALL</title>
+      <link>http://localhost:1313/es/posts/living-c1b3rwall/</link>
+      <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/living-c1b3rwall/</guid>
+      
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/living-c1b3rwall/living-c1b3rwall_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/living-c1b3rwall/living-c1b3rwall_banner.png&#34; alt=&#34;/images/living-c1b3rwall/living-c1b3rwall_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A primeros de Diciembre de este pasado año, me llamó la atención un twitter en el que ví algo que ponía &lt;strong&gt;C1B3RWALL&lt;/strong&gt; ,por lo que mi curiosidad hizo que me pusiera a indagar que era aquello .Quedé sorprendido por lo encontrado en el mismo: EL primer evento Nacional de &lt;strong&gt;Ciberseguridad&lt;/strong&gt; convocado por la Policía Nacional de nuestro país con la colaboración de la &lt;strong&gt;Universidad Autónoma de Madrid,&lt;/strong&gt;( Instituto de Ciencias Forenses y de la Seguridad )a realizar en el mismo vientre donde El Cuerpo engendra a todos los Policías Nacionales de España, La academia de Policía Nacional de Ávila.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Desplegar un servidor privado de Burp Collaborator en Azure</title>
+      <link>http://localhost:1313/es/posts/desplegar-un-servidor-privado-de-burp-collaborator-en-azure/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/desplegar-un-servidor-privado-de-burp-collaborator-en-azure/</guid>
+      
+      <description>&lt;p&gt;Burp Collaborator es un &lt;strong&gt;servicio externo&lt;/strong&gt; de Burp Suite que nos ayuda a detectar algunas vulnerabilidades basadas en interacciones con &lt;strong&gt;servicios externos&lt;/strong&gt; o las llamadas &lt;strong&gt;vulnerabilidades ciegas&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Por defecto, Burp Suite &lt;strong&gt;crea de manera automática&lt;/strong&gt; una instancia &lt;strong&gt;pública&lt;/strong&gt; de Collaborator en sus servidores de AWS para la realización de estas pruebas, por este motivo, algunos usuarios pueden tener &lt;strong&gt;preocupaciones sobre la seguridad de los datos procesados&lt;/strong&gt;, más aún si son de terceros. A continuación, se detallan los pasos para crear nuestro propio Burp Collaborator ayudándonos y complementando la &lt;a href=&#34;https://portswigger.net/burp/documentation/collaborator/deploying&#34;&gt;documentación oficial&lt;/a&gt; de PortSwigger.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Write-up HTB Chaos</title>
       <link>http://localhost:1313/es/posts/write-up-htb-chaos/</link>
       <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/es/posts/write-up-htb-chaos/</guid>
       
-      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34; alt=&#34;/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Buenas a todos,&lt;/p&gt;
+      <description>&lt;p&gt;Buenas a todos,&lt;/p&gt;
 &lt;p&gt;Con esta entrada vamos a comenzar una nueva serie de posts en los cuales vamos a aprender a explotar máquinas vulnerables y a resolver retos de temática hacking.&lt;/p&gt;
 &lt;p&gt;En este caso vamos a comenzar con la última máquina retirada de &lt;a href=&#34;https://www.hackthebox.eu/&#34;&gt;Hack The Box&lt;/a&gt;, &lt;strong&gt;Chaos&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34; alt=&#34;/images/write-up-htb-chaos/write-up-htb-chaos_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
@@ -1479,17 +1502,6 @@ Se deberá tener en cuenta que aquellos dormidos deberán ser despertados conven
       <description>&lt;p&gt;Bienvenido a mi blog sobre &lt;strong&gt;Hacking, Seguridad Informática y Programación&lt;/strong&gt;, antes de nada, me presentaré, mi nombre es &lt;strong&gt;Javier Olmedo&lt;/strong&gt; y soy Técnico en Sistemas Informáticos y Técnico Superior en Desarrollo de Aplicaciones Multiplataforma, desde hace unos años aprendo seguridad informática de manera autodidacta.&lt;/p&gt;
 &lt;h2 id=&#34;a-quién-va-dirigido-este-blog&#34;&gt;¿A quién va dirigido este blog?&lt;/h2&gt;
 &lt;p&gt;Este blog va dirigido a &lt;strong&gt;personas que deseen empezar&lt;/strong&gt; en el mundo del hacking y seguridad de sistemas informáticos, no pretendo hacer un blog demasiado técnico.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Z</title>
-      <link>http://localhost:1313/es/posts/z/</link>
-      <pubDate>Sat, 05 Nov 2011 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/es/posts/z/</guid>
-      
-      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/xxx/xxx_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/xxx/xxx_001.png&#34; alt=&#34;/images/xxx/xxx_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
       
     </item>
     

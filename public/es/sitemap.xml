@@ -177,6 +177,9 @@
                 href="http://localhost:1313/es/cheatsheets/crto/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/posts/desplegar-un-servidor-privado-de-burp-collaborator-en-azure/</loc>
+    <lastmod>2019-06-12T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/es/posts/write-up-htb-chaos/</loc>
     <lastmod>2019-05-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -425,9 +428,6 @@
   </url><url>
     <loc>http://localhost:1313/es/posts/blog-seguridad-informatica-hacking/</loc>
     <lastmod>2015-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/es/posts/z/</loc>
-    <lastmod>2011-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/es/pages/about/</loc>
     <xhtml:link
