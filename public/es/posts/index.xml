@@ -195,6 +195,62 @@
     </item>
     
     <item>
+      <title>CVE-2019-14346 Adive Framework 2.0.7 - Cross-Site Request Forgery</title>
+      <link>http://localhost:1313/es/posts/cve-2019-14346-adive-framework-2-0-7-cross-site-request-forgery/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2019-14346-adive-framework-2-0-7-cross-site-request-forgery/</guid>
+      
+      <description>&lt;p&gt;Las vulnerabilidades &lt;a href=&#34;https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%5C%28CSRF%5C%29&#34;&gt;Cross-Site Request Forgery (CSRF)&lt;/a&gt; encontradas en Adive Framework 2.0.7 &lt;strong&gt;permiten a un usuario malintencionado realizar acciones como cambiar la contraseña de un usuario&lt;/strong&gt; a través de este ataque. La vulnerabilidad, ha sido asociada al &lt;strong&gt;CVE-2019-14346&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;cve-2019-14346&#34;&gt;CVE-2019-14346&lt;/h2&gt;
+&lt;h3 id=&#34;adive-framework-207--cross-site-request-forgery&#34;&gt;Adive Framework 2.0.7 – Cross-Site Request Forgery&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2019-14346-adive-framework-2-0-7-cross-site-request-forgery/cve-2019-14346-adive-framework-2-0-7-cross-site-request-forgery_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2019-14346-adive-framework-2-0-7-cross-site-request-forgery/cve-2019-14346-adive-framework-2-0-7-cross-site-request-forgery_001.png&#34; alt=&#34;/images/cve-2019-14346-adive-framework-2-0-7-cross-site-request-forgery/cve-2019-14346-adive-framework-2-0-7-cross-site-request-forgery_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://adive.es/&#34;&gt;www.adive.es&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Vulnerabilidad descubierta por Pablo Santiago el &lt;strong&gt;02/08/2019&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🐛 &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14346&#34;&gt;CVE-2019-14346&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔗 Link del software &lt;a href=&#34;https://www.adive.es/&#34;&gt;web&lt;/a&gt; y del &lt;a href=&#34;https://github.com/ferdinandmartin/adive-php7&#34;&gt;github&lt;/a&gt; con el proyecto.&lt;/li&gt;
+&lt;li&gt;🐞 Versión vulnerable = &lt;strong&gt;2.0.7&lt;/strong&gt; y anteriores probablemente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Solución&lt;/strong&gt;: Añadir tokens anti-CSRF en las peticiones.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2019-14347 Escalacion de privilegios en Adive</title>
+      <link>http://localhost:1313/es/posts/cve-2019-14347-escalacion-de-privilegios-en-adive/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2019-14347-escalacion-de-privilegios-en-adive/</guid>
+      
+      <description>&lt;h2 id=&#34;adive-framework-207&#34;&gt;Adive Framework 2.0.7&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/cve-2019-14347-escalacion-de-privilegios-en-adive/cve-2019-14347-escalacion-de-privilegios-en-adive_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/cve-2019-14347-escalacion-de-privilegios-en-adive/cve-2019-14347-escalacion-de-privilegios-en-adive_001.png&#34; alt=&#34;/images/cve-2019-14347-escalacion-de-privilegios-en-adive/cve-2019-14347-escalacion-de-privilegios-en-adive_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.adive.es/&#34;&gt;https://www.adive.es/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Adive es un Framework PHP 7 para desarrollar webs y aplicaciones en línea,administra bases de datos MySQL, es una alternativa rápida, fácil y excelente para generar plantillas teniendo así la principal estructura visual de cualquier pagina web. Esta versión incluye un kit de herramientas para desarrolladores para generar tablas, campos y entidades, formas de control y bases de datos. Adive es un ambicioso proyecto de Schben, cuyo objetivo es convertir la «codificación» en «diseño».&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE 2019-14348 JoomSport - for Sports - SQL injection</title>
+      <link>http://localhost:1313/es/posts/cve-2019-14348-joomsport-for-sports-sql-injection/</link>
+      <pubDate>Mon, 29 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2019-14348-joomsport-for-sports-sql-injection/</guid>
+      
+      <description>&lt;h2 id=&#34;joomsport-33-for-sports-team--league-football-hockey--more&#34;&gt;JoomSport 3.3– for Sports: Team &amp;amp; League, Football, Hockey &amp;amp; more&lt;/h2&gt;
+&lt;p&gt;JoomSport es un plugin de WordPress desarrollado en 2009 que ofrece características esenciales para cualquier sitio de deporte, estándares de ligas de deportes, deportes de equipo con sus respectivas descripciones, historial de partidos, estadísticas y fotos, incluyendo los enfrentamientos entre los equipos con los goles o tantos anotados por ambos equipos y detalles de los partidos.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📅 Vulnerabilidad descubierta por Pablo Santiago el &lt;strong&gt;29/07/2019&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🐛 &lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-14348&#34;&gt;CVE-2019-14348&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.exploit-db.com/exploits/47210&#34;&gt;ExploitDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🔗 Link del software &lt;a href=&#34;https://wordpress.org/plugins/joomsport-sports-league-results-management/&#34;&gt;JoomSport&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;🐞 Versión vulnerable = &lt;strong&gt;3.3&lt;/strong&gt; y anteriores probablemente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Solución&lt;/strong&gt;: Parchear la vulnerabilidad para la siguiente versión filtrando los datos de entradas introducidos por el usuario.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>LIVING C1B3RWALL</title>
       <link>http://localhost:1313/es/posts/living-c1b3rwall/</link>
       <pubDate>Mon, 22 Jul 2019 00:00:00 +0000</pubDate>

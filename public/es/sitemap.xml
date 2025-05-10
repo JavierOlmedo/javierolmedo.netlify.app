@@ -177,6 +177,15 @@
                 href="http://localhost:1313/es/cheatsheets/crto/"
                 />
   </url><url>
+    <loc>http://localhost:1313/es/posts/cve-2019-14347-escalacion-de-privilegios-en-adive/</loc>
+    <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/cve-2019-14348-joomsport-for-sports-sql-injection/</loc>
+    <lastmod>2019-07-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/es/posts/living-c1b3rwall/</loc>
+    <lastmod>2019-07-22T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/es/posts/desplegar-un-servidor-privado-de-burp-collaborator-en-azure/</loc>
     <lastmod>2019-06-12T00:00:00+00:00</lastmod>
   </url><url>
