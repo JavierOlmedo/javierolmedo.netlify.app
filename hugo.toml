@@ -146,10 +146,15 @@ theme = "hugo-blog-awesome"
     url = '/projects/'
     weight = 40
   [[Languages.es.menu.main]]
+    pageRef="cv"
+    name = 'CV'
+    url = '/cv/'
+    weight = 50
+  [[Languages.es.menu.main]]
     pageRef="about"
     name = 'Sobre mí'
     url = '/about/'
-    weight = 50
+    weight = 60
 
 [Languages.es.params]
   sitename = "Hackpuntes"

@@ -7,6 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language><atom:link href="http://localhost:1313/es/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>http://localhost:1313/es/pages/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/pages/cv/</guid>
+      
+      <description>&lt;h1 id=&#34;javier-olmedo&#34;&gt;Javier Olmedo&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Red Team Operator · Security Researcher · Ethical Hacker&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;📍 Toledo, España · 🕶️ &lt;a href=&#34;https://hackpuntes.com&#34;&gt;hackpuntes.com&lt;/a&gt; &lt;br&gt;
+🔗 &lt;a href=&#34;https://www.linkedin.com/in/jjavierolmedo/&#34;&gt;LinkedIn&lt;/a&gt; · &lt;a href=&#34;https://github.com/JavierOlmedo&#34;&gt;GitHub&lt;/a&gt; · &lt;a href=&#34;https://www.exploit-db.com/?author=9580&#34;&gt;Exploit-DB&lt;/a&gt; · &lt;a href=&#34;https://www.hackthebox.eu/profile/37005&#34;&gt;HTB&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-resumen-profesional&#34;&gt;🧠 Resumen Profesional&lt;/h2&gt;
+&lt;p&gt;Red Teamer con más de 7 años de experiencia en operaciones ofensivas, simulaciones avanzadas y auditorías de seguridad para banca, entornos corporativos y organismos públicos. Especializado en técnicas de evasión, ataques sobre Active Directory, desarrollo de herramientas propias y pentesting realista. Descubridor de múltiples vulnerabilidades 0day con CVEs asignadas y colaborador activo en la comunidad técnica. Perfil técnico, creativo y autónomo.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>About</title>
       <link>http://localhost:1313/es/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

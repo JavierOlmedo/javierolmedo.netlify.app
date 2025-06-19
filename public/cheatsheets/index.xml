@@ -6,15 +6,41 @@
     <description>Recent content in Cheatsheets on Hackpuntes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/cheatsheets/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CRTO Cheatsheet</title>
       <link>http://localhost:1313/cheatsheets/crto/</link>
-      <pubDate>Mon, 27 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/cheatsheets/crto/</guid>
       
       <description></description>
+      
+    </item>
+    
+    <item>
+      <title>RedTeam Cheatsheet</title>
+      <link>http://localhost:1313/cheatsheets/redteam/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/cheatsheets/redteam/</guid>
+      
+      <description>&lt;h1 id=&#34;-reconnaissance&#34;&gt;🔍 Reconnaissance&lt;/h1&gt;
+&lt;h2 id=&#34;1-nmap&#34;&gt;1️⃣ Nmap&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;Discover hosts&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Basic&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nmap -sn -oA alive -iL scope -vvv
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Full&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nmap -sn -n -PR -PE -PA80,443,445,3389 -PS22,80,443 --max-retries &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --min-parallelism &lt;span class=&#34;m&#34;&gt;100&lt;/span&gt; --host-timeout 30s --reason -oA alive -vvv -iL scope
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Extracts alive and count&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;awk &lt;span class=&#34;s1&#34;&gt;&amp;#39;/Status: Up/{print $2}&amp;#39;&lt;/span&gt; alive.gnmap &amp;gt; alive &lt;span class=&#34;c1&#34;&gt;# Only IPs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;wc -l alive
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Scan all ports&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo nmap -sSV -p- -Pn -n --open --reason --max-retries &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; --host-timeout 10m --min-rate &lt;span class=&#34;m&#34;&gt;500&lt;/span&gt; --scan-delay 50ms  --script &lt;span class=&#34;s2&#34;&gt;&amp;#34;vulners,http-title,http-server-header&amp;#34;&lt;/span&gt; --script-args vulners.showall&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;true,http.useragent&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Mozilla/5.0&amp;#34;&lt;/span&gt;,http.pipeline&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; -T3 -oA all_ports -vvv -iL alive
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Detect web applications&lt;/p&gt;</description>
       
     </item>
     
