@@ -53,7 +53,7 @@ firefox http://picklerick.thm &
 A text string is also found when checking the robots.txt file, which could be the user's password.
 
 ```bash
-curl [http://picklerick.thm/robots.txt](http://picklerick.thm/robots.txt)
+curl http://picklerick.thm/robots.txt
 xxxxxxxxxxxxxxxxx
 ```
 

